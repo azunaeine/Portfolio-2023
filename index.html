@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/x-icon" href="/img/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -34,23 +34,12 @@
       <a href="/"><img src="images/logo.svg" alt="logo" class="logo" /></a>
 
       <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <i
+        class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
+        onclick="hideMenu()"
+      ></i>
 
       <script>
-        // function getMyVar(){ return 123 }
-
-        // const mySecretVar = getMyVar()
-
-        // variables
-        // "variable declarations"
-        // "I declare a variable named 'myVar' "
-        const myVar = 123;
-        const myVar2 = "123 hello mom";
-        let myObject = {
-          cat: "meow",
-          age: 23,
-        };
-        const myList = ["how are you", "hey", "milkshake"];
-
         function $(cssSelector) {
           return document.querySelector(cssSelector);
         }
@@ -69,6 +58,9 @@
           // 2. change the class to include "visible"
           hamburgerMenuContent.classList.add("visible");
 
+          const btnCloseMenu = $(".btn-close-menu");
+          btnCloseMenu.classList.add("visible");
+
           // MAKE THE BODY overflow: hidden
           // TODO 3. grab the body
           const body = document.querySelector("body");
@@ -83,6 +75,9 @@
           );
           // 2. change the class to include "visible"
           hamburgerMenuContent.classList.remove("visible");
+
+          const btnCloseMenu = $(".btn-close-menu");
+          btnCloseMenu.classList.remove("visible");
 
           // MAKE THE BODY NOT overflow: hidden
           const body = document.querySelector("body");

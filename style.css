@@ -297,3 +297,16 @@ footer {
 .sub {
   font-weight: 400;
 }
+
+.btn-close-menu {
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  opacity: 1;
+  transition: all 0.3s ease-in-out; /* animate the values if they change */
+}
+
+.btn-close-menu:not(.visible) {
+  opacity: 0;
+  pointer-events: none;
+}
