@@ -16,7 +16,7 @@
       src="https://kit.fontawesome.com/b85921a939.js"
       crossorigin="anonymous"
     ></script>
-    <title>Portfolio</title>
+    <title>Azuna Ekundayo - Portfolio</title>
   </head>
 
   <body>
@@ -84,6 +84,17 @@
           body.classList.remove("menu-is-open");
         }
       </script>
+      <script>
+        function takeUsDownToCaseStudies() {
+          // scroll down to the element with id "case-studies"
+          // 1. grab the element
+          const myContainer = document.querySelector(".main-b");
+          // 2. scrollIntoView({bahavior:"smooth"})
+          myContainer.scrollIntoView({ behavior: "smooth" });
+          // 3. hide the menu
+          hideMenu();
+        }
+      </script>
 
       <a class="nav-item" href="/"> Home</a>
       <a class="nav-item" href="/about"> About </a>
@@ -100,7 +111,9 @@
         <h1 class="intro">I’m Azuna, a product designer</h1>
         <p class="sub-intro">previously product design intern at Freshfind</p>
       </div>
-      <button class="main-b">View Work</button>
+      <button class="main-b" onclick="takeUsDownToCaseStudies()">
+        View Work
+      </button>
       <img src="images/laptop.svg" class="laptop" />
     </div>
     <div class="container">

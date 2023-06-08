@@ -310,3 +310,16 @@ footer {
   opacity: 0;
   pointer-events: none;
 }
+
+.main-b:active {
+  transform: scale(1.03);
+}
+
+button.case:active {
+  transform: scale (1.04);
+}
+/* .icon:hover {
+  transform: scale(1.5) rotate(36deg);
+  transition: all 0.3s ease-in-out;
+}
+ */
