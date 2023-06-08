@@ -315,8 +315,8 @@ footer {
   transform: scale(1.03);
 }
 
-button.case:active {
-  transform: scale (1.04);
+.case:active {
+  transform: scale (1.34);
 }
 /* .icon:hover {
   transform: scale(1.5) rotate(36deg);
