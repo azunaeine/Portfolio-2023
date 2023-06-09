@@ -18,19 +18,27 @@
 .logo {
   width: 3em;
   display: flex;
-  margin-left: 1em;
-}
-.nav-bar a {
-  flex-grow: 1;
 }
 
 .nav-bar {
   display: flex;
-  justify-content: space-between;
   margin-top: 1em;
-  justify-content: flex-end;
-  gap: 1em;
-  padding-right: 1em;
+  justify-content: right;
+  gap: 3em;
+  padding: 19px;
+}
+
+.s-icon {
+  flex-grow: 1;
+  transition: all 0.3s linear;
+}
+
+.s-icon:hover {
+  transform: scale(1.23);
+  transform: translateX(20px);
+}
+.nav-item {
+  font-size: 18px;
 }
 .fa-solid {
   font-size: 1.563rem;
@@ -233,6 +241,9 @@ footer {
 .icon {
   color: white;
 }
+.land {
+  display: none;
+}
 
 .icon i {
   font-size: 1.3125rem;
@@ -376,6 +387,10 @@ footer {
     margin-left: auto;
   }
 
+  .land {
+    display: none;
+  }
+
   .intro {
     margin: auto;
   }
@@ -439,14 +454,6 @@ footer {
     position: relative;
     top: 10px;
   }
-  /* .nav-bar {
-   
-  }
-  .nav-item {
-    margin-left: 25em;
-    padding: 0 2rem;
-  }
-} */
 }
 @media screen and (min-width: 1440px) {
   .one,
@@ -516,5 +523,76 @@ footer {
     padding: 0.7rem 1rem;
     margin-top: 7rem;
     color: white;
+  }
+
+  .small-box {
+    display: none;
+  }
+
+  .main-button {
+    padding-right: 29px;
+    padding-left: 41px;
+    border-radius: 20px;
+    box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transition-duration: 350ms, 350ms;
+    transition-duration: 350ms, 350ms;
+    color: #fff;
+    background: black;
+    width: 196px;
+    border: none;
+    height: 77px;
+    margin-top: 14px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .main-button:active {
+    transform: scale(1.23);
+  }
+  .computer {
+    width: 569px;
+    height: 742px;
+  }
+
+  .land {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: fit-content;
+    justify-content: center;
+    margin-top: -3rem;
+  }
+  .intro-a {
+    font-size: 69px;
+  }
+
+  .logo {
+    width: 5em;
+    margin-left: 5em;
+  }
+
+  .nav-item {
+    margin-left: 3em;
+  }
+
+  .hamburger-menu-content {
+    display: none;
+  }
+
+  .nav-item:active {
+    transition: all 0.5s ease-out;
+  }
+  .nav-item {
+    transform: skew(0deg);
+  }
+
+  .two-intro {
+    font-size: 20px;
   }
 }
