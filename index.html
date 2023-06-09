@@ -38,48 +38,29 @@
         class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
         onclick="hideMenu()"
       ></i>
-
       <script>
-        function $(cssSelector) {
-          return document.querySelector(cssSelector);
-        }
-
-        // arrowFunction(); // won't work because arrow functions don't get pre-initialized like functions do
-
-        // const arrowFunction = () => {};
-
-        // "function declarations"
-        // "i declare a function named 'showMenu'"
-        // "a function runs some"
         function showMenu() {
-          // MAKE THE HAMBURGER MENU CONTENT VISIBLE
-          // 1. grab the .hamburger-menu-content element
-          const hamburgerMenuContent = $(".hamburger-menu-content");
-          // 2. change the class to include "visible"
-          hamburgerMenuContent.classList.add("visible");
-
-          const btnCloseMenu = $(".btn-close-menu");
-          btnCloseMenu.classList.add("visible");
-
-          // MAKE THE BODY overflow: hidden
-          // TODO 3. grab the body
-          const body = document.querySelector("body");
-          // 4. change the class to include "menu-is-open"
-          body.classList.add("menu-is-open");
-        }
-        function hideMenu() {
-          // MAKE THE HAMBURGER MENU CONTENT INVISIBLE
-          // 1. grab the .hamburger-menu-content element
           const hamburgerMenuContent = document.querySelector(
             ".hamburger-menu-content"
           );
-          // 2. change the class to include "visible"
+          hamburgerMenuContent.classList.add("visible");
+
+          const btnCloseMenu = document.querySelector(".btn-close-menu");
+          btnCloseMenu.classList.add("visible");
+
+          const body = document.querySelector("body");
+          body.classList.add("menu-is-open");
+        }
+
+        function hideMenu() {
+          const hamburgerMenuContent = document.querySelector(
+            ".hamburger-menu-content"
+          );
           hamburgerMenuContent.classList.remove("visible");
 
-          const btnCloseMenu = $(".btn-close-menu");
+          const btnCloseMenu = document.querySelector(".btn-close-menu");
           btnCloseMenu.classList.remove("visible");
 
-          // MAKE THE BODY NOT overflow: hidden
           const body = document.querySelector("body");
           body.classList.remove("menu-is-open");
         }
@@ -88,7 +69,9 @@
         function takeUsDownToCaseStudies() {
           // scroll down to the element with id "case-studies"
           // 1. grab the element
-          const myContainer = document.querySelector(".main-b");
+          const myContainer = document.querySelector(
+            ".container .brief .title"
+          );
           // 2. scrollIntoView({bahavior:"smooth"})
           myContainer.scrollIntoView({ behavior: "smooth" });
           // 3. hide the menu
@@ -116,73 +99,74 @@
       </button>
       <img src="images/laptop.svg" class="laptop" />
     </div>
-    <div class="container">
-      <div class="shadow"></div>
-      <div class="square">
-        <span class="one"></span>
-        <div class="brief">
-          <span class="sub">UI/UX Design</span>
-          <h3 class="title">Levitate</h3>
-          <p class="description">
-            Levitate is a mobile application that solves the time-consuming and
-            inconvenient process of clothes shopping by providing an online
-            platform that allows users to order clothes with ease and have them
-            delivered to their doorstep.
-          </p>
-          <button class="case">View Case Study</button>
+    <div class="big-box">
+      <div class="container">
+        <div class="shadow"></div>
+        <div class="square">
+          <span class="one"></span>
+          <div class="brief">
+            <span class="sub">UI/UX Design</span>
+            <h3 class="title">Levitate</h3>
+            <p class="description">
+              Levitate is a mobile application that solves the time-consuming
+              and inconvenient process of clothes shopping by providing an
+              online platform that allows users to order clothes with ease and
+              have them delivered to their doorstep.
+            </p>
+            <button class="case">View Case Study</button>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="container">
+        <div class="shadow"></div>
+        <div class="square">
+          <span class="two"></span>
+          <div class="brief">
+            <span class="sub">UI/UX Design</span>
+            <h3 class="title-one">Levitate</h3>
+            <p class="description">
+              Levitate is a solution for the time-consuming and inconvenient
+              process of clothes shopping by providing an online platform that
+              allows users to order clothes with ease and have them delivered to
+              their doorstep.
+            </p>
+            <button class="case">View Case Study</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="shadow"></div>
+        <div class="square">
+          <span class="three"></span>
+          <div class="brief">
+            <span class="sub">UI/UX Design</span>
+            <h3 class="title-two">Levitate</h3>
+            <p class="description">
+              Levitate is a solution for the time-consuming and inconvenient
+              process of clothes shopping by providing an online platform that
+              allows users to order clothes with ease and have them delivered to
+              their doorstep.
+            </p>
+            <button class="case">View Case Study</button>
+          </div>
+        </div>
+      </div>
 
-    <div class="container">
-      <div class="shadow"></div>
-      <div class="square">
-        <span class="two"></span>
-        <div class="brief">
-          <span class="sub">UI/UX Design</span>
-          <h3 class="title">Levitate</h3>
-          <p class="description">
-            Levitate is a solution for the time-consuming and inconvenient
-            process of clothes shopping by providing an online platform that
-            allows users to order clothes with ease and have them delivered to
-            their doorstep.
-          </p>
-          <button class="case">View Case Study</button>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="shadow"></div>
-      <div class="square">
-        <span class="three"></span>
-        <div class="brief">
-          <span class="sub">UI/UX Design</span>
-          <h3 class="title">Levitate</h3>
-          <p class="description">
-            Levitate is a solution for the time-consuming and inconvenient
-            process of clothes shopping by providing an online platform that
-            allows users to order clothes with ease and have them delivered to
-            their doorstep.
-          </p>
-          <button class="case">View Case Study</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="shadow"></div>
-      <div class="square">
-        <span class="four"></span>
-        <div class="brief">
-          <span class="sub">UI/UX Design</span>
-          <h3 class="title">Levitate</h3>
-          <p class="description">
-            Levitate is a solution for the time-consuming and inconvenient
-            process of clothes shopping by providing an online platform that
-            allows users to order clothes with ease and have them delivered to
-            their doorstep.
-          </p>
-          <button class="case">View Case Study</button>
+      <div class="container">
+        <div class="shadow"></div>
+        <div class="square">
+          <span class="four"></span>
+          <div class="brief">
+            <span class="sub">UI/UX Design</span>
+            <h3 class="title-three">Levitate</h3>
+            <p class="description">
+              Levitate is a solution for the time-consuming and inconvenient
+              process of clothes shopping by providing an online platform that
+              allows users to order clothes with ease and have them delivered to
+              their doorstep.
+            </p>
+            <button class="case">View Case Study</button>
+          </div>
         </div>
       </div>
     </div>
@@ -198,7 +182,11 @@
         ><div class="icon"><i class="fa-brands fa-twitter"></i></div
       ></a>
       <a href="mailto:azunaeine@gmail.com" target="_blank"
-        ><div class="icon"><i class="fa-solid fa-envelope"></i></div
+        ><div class="icon">
+          <i
+            class="fa-solid fa-envelope"
+            style="background: none; box-shadow: none"
+          ></i></div
       ></a>
       <div class="copyrighttext">
         © Azuna Ekundayo <span class="year">2022</span>
