@@ -333,12 +333,7 @@ footer {
 .main-b:active {
   transform: scale(1.23);
 }
-.case {
-  cursor: pointer;
-}
-.case:hover {
-  color: #d3d3d3;
-}
+
 .icon {
   transition: all 0.3s ease-in-out;
 }
