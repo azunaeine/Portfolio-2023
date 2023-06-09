@@ -267,6 +267,7 @@ footer {
 }
 
 .case {
+  font-size: 16.5px;
   width: 14.625rem;
   background: black;
   border: none;
@@ -333,13 +334,11 @@ footer {
   transform: scale(1.23);
 }
 .case {
-  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 .case:hover {
-  transform: scale(1.23);
+  color: #d3d3d3;
 }
-
 .icon {
   transition: all 0.3s ease-in-out;
 }
@@ -607,5 +606,13 @@ footer {
 
   .two-intro {
     font-size: 20px;
+  }
+
+  .case {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .case:hover {
+    transform: scale(1.1);
   }
 }
