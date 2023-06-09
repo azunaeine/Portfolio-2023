@@ -29,8 +29,8 @@
 }
 
 .s-icon {
-  flex-grow: 1;
   transition: all 0.3s linear;
+  flex-grow: 1;
 }
 
 .s-icon:hover {
@@ -454,13 +454,25 @@ footer {
     position: relative;
     top: 10px;
   }
+  .nav-bar {
+    display: flex;
+    margin-top: 1em;
+    justify-content: right;
+    gap: 3em;
+    padding: 19px;
+  }
+
+  .s-icon {
+    flex-grow: 1;
+    transition: all 0.3s linear;
+  }
 }
 @media screen and (min-width: 1440px) {
   .one,
   .two,
   .three,
   .four {
-    width: 25%;
+    width: 24%;
     height: 54%;
     border-radius: 50%;
     margin: auto;
@@ -497,6 +509,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10em;
+    margin-top: 12em;
   }
   .sub {
     font-size: 21px;
