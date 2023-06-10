@@ -41,6 +41,9 @@
 body.fade-in .panel-fade-in {
   opacity: 0;
 }
+.panel-fade-out {
+  opacity: 1;
+}
 .nav-item {
   transition: all 1s ease;
 }
@@ -625,7 +628,11 @@ footer {
     transition: all 0.5s ease-out;
   }
   .nav-item {
-    transform: skew(0deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-item:hover {
+    transform: skewX(30deg);
   }
 
   .two-intro {
