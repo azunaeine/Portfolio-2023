@@ -24,18 +24,42 @@
   display: flex;
   margin-top: 1em;
   justify-content: space-between;
-  gap: 3em;
-  padding: 1.1875rem;
+  gap: 0.4em;
+  margin-right: 0.6em;
+  position: relative;
+}
+.panel-fade-in {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  transition: all 1s ease;
 }
 
+/* when the body is faded-in, fade out the panel */
+body.fade-in .panel-fade-in {
+  opacity: 0;
+}
+.nav-item {
+  transition: all 1s ease;
+}
+.nav-item:nth-child(0) {
+  transform: translateY(-10px);
+}
+/* when the body is faded-in, put the nav-item back to its original position */
+body.fade-in .nav-item:nth-child(0) {
+  transform: translateY(0px);
+}
 .s-icon {
+  margin-right: auto;
   transition: all 0.3s linear;
-  flex-grow: 1;
 }
-
+body {
+  padding: 4em;
+}
 .s-icon:hover {
-  transform: scale(1.23);
-  transform: translateX(20px);
+  /* transform: scale(1.23) translateX(20px); */
 }
 .nav-item {
   font-size: 18px;
@@ -453,11 +477,9 @@ footer {
     margin-top: 1em;
     justify-content: right;
     gap: 3em;
-    padding: 1.1875rem;
   }
 
   .s-icon {
-    flex-grow: 1;
     transition: all 0.3s linear;
   }
 
@@ -572,7 +594,7 @@ footer {
   .land {
     display: flex;
     gap: 5em;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .head {
@@ -589,7 +611,6 @@ footer {
 
   .logo {
     width: 5em;
-    margin-left: 5em;
   }
 
   .nav-item {
@@ -617,5 +638,13 @@ footer {
   }
   .case:hover {
     transform: scale(1.1);
+  }
+  .nav-bar {
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-between;
+    gap: 2px;
+    margin-right: 0.6em;
+    position: relative;
   }
 }
