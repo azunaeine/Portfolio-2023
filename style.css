@@ -25,7 +25,7 @@
   margin-top: 1em;
   justify-content: space-between;
   gap: 3em;
-  padding: 19px;
+  padding: 1.1875rem;
 }
 
 .s-icon {
@@ -453,7 +453,7 @@ footer {
     margin-top: 1em;
     justify-content: right;
     gap: 3em;
-    padding: 19px;
+    padding: 1.1875rem;
   }
 
   .s-icon {
