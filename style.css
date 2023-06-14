@@ -495,7 +495,6 @@ footer {
   .four {
     width: 35%;
     height: 50%;
-
     border-radius: 50%;
     margin: auto;
     position: relative;
@@ -616,14 +615,15 @@ footer {
     transform: scale(1.23);
   }
   .computer {
-    width: 569px;
-    height: 742px;
+    width: 40vw;
+    height: 60vh;
   }
 
   .land {
     display: flex;
     gap: 5em;
     justify-content: space-between;
+    margin-top: 10em;
   }
 
   .head {
@@ -635,7 +635,7 @@ footer {
     margin-top: -3rem;
   }
   .intro-a {
-    font-size: 69px;
+    font-size: 5vw;
   }
 
   .logo {
