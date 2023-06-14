@@ -42,14 +42,16 @@
         onclick="hideMenu()"
       ></i>
 
-      <a class="nav-item" href="/"> Home</a>
-      <a class="nav-item" href="/about"> About </a>
-      <a
-        href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-        class="nav-item"
-        target="_blank"
-        >Resume</a
-      >
+      <div class="nav-items">
+        <a class="nav-item" href="/"> Home</a>
+        <a class="nav-item" href="/about"> About </a>
+        <a
+          href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+          class="nav-item"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
     </nav>
 
     <div class="small-box">
@@ -199,7 +201,8 @@
         document.querySelector("body").classList.add("fade-in");
       }
       // delay this by 1s (this will run 1s in the future)
-      setTimeout(startTheAnimation, 1 * 1000);
+      // start the animation 1s after page loads, so that the user can see the animation (otherwise it's too fast)
+      setTimeout(startTheAnimation, 0.8 * 1000);
 
       function showMenu() {
         const hamburgerMenuContent = document.querySelector(
