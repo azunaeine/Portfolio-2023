@@ -295,6 +295,7 @@ footer {
 
 .copyrighttext {
   font-size: 0.75rem;
+  margin-left: auto;
 }
 
 .fa-envelope {
@@ -430,9 +431,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-  }
-  .copyrighttext {
-    margin-left: auto;
   }
 
   .land {
