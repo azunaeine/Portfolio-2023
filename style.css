@@ -80,7 +80,7 @@ body {
   padding: 3em;
 }
 .s-icon:hover {
-  /* transform: scale(1.23) translateX(20px); */
+  transform: scale(1.23) translateX(20px);
 }
 .nav-item {
   font-size: 18px;
