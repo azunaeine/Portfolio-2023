@@ -510,14 +510,6 @@ footer {
   .s-icon {
     transition: all 0.3s linear;
   }
-
-  .case {
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-  .case:hover {
-    transform: scale(1.1);
-  }
 }
 @media screen and (min-width: 1440px) {
   .one,
