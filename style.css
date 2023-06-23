@@ -78,6 +78,7 @@ body.fade-in .panel-fade-in {
 }
 body {
   padding: 1em;
+  overflow-x: hidden;
 }
 .s-icon:hover {
   transform: scale(1.23) translateX(20px);
