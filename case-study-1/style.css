@@ -255,3 +255,50 @@ a {
 .process-diagram {
   width: 100%;
 }
+
+.shadow {
+  position: absolute;
+  top: 255em;
+  left: 2.375rem;
+  width: 16.5rem;
+  height: 31rem;
+  background-color: black;
+  z-index: 1;
+  box-shadow: 0 0.1875rem;
+}
+.square {
+  position: relative;
+  width: 17.5rem;
+  height: 31rem;
+  background-color: white;
+  z-index: 2;
+  border: black solid 0.25rem;
+  padding: 1.2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 5em;
+}
+
+.grey {
+  color: black;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 2rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.description {
+  line-height: 2.4rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+}
