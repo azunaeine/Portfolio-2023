@@ -239,13 +239,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin-left: auto;
   margin-top: 1.3rem;
 }
 
 .literature {
   margin-top: 2rem;
-  padding-left: 1em;
 }
 
 .process {
