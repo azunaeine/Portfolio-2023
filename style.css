@@ -313,13 +313,14 @@ footer {
 }
 
 .case {
+  text-align: center;
   font-size: 16.5px;
   width: 14.625rem;
   background: black;
   border: none;
   height: 3.375rem;
   color: white;
-  padding: 0.563rem;
+  padding-top: 15px;
   border-radius: 1.625rem;
   box-shadow: 0 0.063rem 0.665rem 0 rgba(0, 0, 0, 0.3);
 }
@@ -362,7 +363,6 @@ footer {
 .sub {
   font-weight: 400;
 }
-
 .btn-close-menu {
   z-index: 100;
   position: absolute;
@@ -388,12 +388,16 @@ footer {
 }
 
 .title-one {
+  text-transform: uppercase;
+  font-size: 1.563rem;
   color: #0e1ed8;
 }
 .title-two {
+  font-size: 1.563rem;
   color: #f4e100;
 }
 .title-three {
+  font-size: 1.563rem;
   color: #d80e0e;
 }
 
@@ -517,7 +521,7 @@ footer {
   .two,
   .three,
   .four {
-    width: 24%;
+    width: 31%;
     height: 54%;
     border-radius: 50%;
     margin: auto;
@@ -530,7 +534,7 @@ footer {
     top: 0.625rem;
     left: 1.3rem;
     width: 77.5em;
-    height: 39rem;
+    height: 46rem;
     background-color: black;
     z-index: 1;
     border-radius: 3.125rem;
@@ -539,7 +543,7 @@ footer {
   .square {
     position: relative;
     width: 77.5rem;
-    height: 39rem;
+    height: 46rem;
     background-color: white;
     z-index: 2;
     border: 0.25rem solid black;

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Azuna Ekundayo - Portfolio</title>
+  </head>
+
+  <body>
+    <div class="hamburger-menu-content">
+      <a class="hamburger-menu-nav-item" href="/"> Home</a>
+      <a class="hamburger-menu-nav-item" href="/about"> About </a>
+      <a
+        href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+        class="hamburger-menu-nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </div>
+    <nav class="nav-bar">
+      <div class="panel-fade-in"></div>
+      <a class="s-icon" href="/"
+        ><img src="/images/logo.svg" alt="logo" class="logo"
+      /></a>
+
+      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <i
+        class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
+        onclick="hideMenu()"
+      ></i>
+
+      <div class="nav-items">
+        <a class="nav-item" href="/"> Home</a>
+        <a class="nav-item" href="/about"> About </a>
+        <a
+          href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+          class="nav-item"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
+    </nav>
+    <script>
+      function showMenu() {
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        hamburgerMenuContent.classList.add("visible");
+
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.add("visible");
+
+        const body = document.querySelector("body");
+        body.classList.add("menu-is-open");
+      }
+
+      // javascript animate an element function
+      function hideMenu() {
+        // 1. grab the element
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        // 2. change its class
+        hamburgerMenuContent.classList.remove("visible");
+
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.remove("visible");
+
+        const body = document.querySelector("body");
+        body.classList.remove("menu-is-open");
+      }
+    </script>
+    <div class="mini">
+      <span class="ux">UI/UX Design</span>
+      <h3 class="intro">Levitate</h3>
+    </div>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+      class="img"
+    />
+    <div class="mini">
+      <h3 class="summary">Summary</h3>
+      <p>
+        In the summer of 2023, I developed a mobile application aimed at
+        simplifying the process of purchasing clothes from various retail
+        stores. The application enables users to effortlessly browse and select
+        clothing items from their preferred stores, facilitating convenient
+        delivery to their doorstep without the need for in-person visits to the
+        retail establishments.
+      </p>
+
+      <div class="flex-row">
+        <div>
+          <h4>Role</h4>
+          <ul>
+            <li>User Research,</li>
+            <li>Visual Design,</li>
+            <li>UX Design</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li>Figma</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Timeline</h4>
+          <ul>
+            <li>10 weeks</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Team</h4>
+          <ul>
+            <li>Azuna Ekundayo</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prototype</h4>
+          <a
+            target="_blank"
+            href="https://www.figma.com/proto/GhlrLanaNuiqSO85mhtOVM/Magnitude?node-id=2%3A142&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A142&show-proto-sidebar=1"
+            ><button class="btn-view">View</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="mini">
+      <h3 class="summary">The Problem</h3>
+      <p>
+        When shopping for clothing, visiting a physical store presents several
+        drawbacks. These challenges encompass the need to physically travel to
+        the store, maneuver through crowded aisles, and endure lengthy wait
+        times in queues.
+      </p>
+    </div>
+    <div class="mini">
+      <h3 class="summary">The Solution</h3>
+      <p>
+        My solution aims to address the challenges associated with shopping for
+        clothing in physical stores. By leveraging technology and e-commerce,
+        Levitate provides a convenient and efficient alternative that eliminates
+        the need for customers to physically travel to stores, navigate crowded
+        aisles, and endure lengthy wait times in queues. Through the platform,
+        users can browse and purchase clothing items from the comfort of their
+        own homes, benefiting from a seamless online shopping experience and
+        doorstep delivery.
+      </p>
+    </div>
+    <div class="present">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+        class="phone-one"
+      />
+      <div class="caption">
+        <h3 class="title">Clothing Store selection</h3>
+        <p>
+          This functionality empowers users to seamlessly explore and choose
+          from a vast array of clothing retailers.
+        </p>
+      </div>
+      <div class="present">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+          class="phone-one"
+        />
+        <div class="caption">
+          <h3 class="title">Clothing Categories</h3>
+          <p>
+            This feature facilitates users in navigating a well-structured and
+            organized browsing experience by providing categorized sections that
+            represent various types of clothing.
+          </p>
+        </div>
+      </div>
+      <div class="present">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+          class="phone-one"
+        />
+        <div class="caption">
+          <h3 class="title">Delivery Tracker</h3>
+          <p>
+            This feature empowers users to monitor the precise location and
+            real-time movements of the assigned delivery driver.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3 class="process">The Process</h3>
+    <img src="/images/process.svg" class="process-diagram" />
+    <h3 class="review">Literature Review</h3>
+    <p class="literature">
+      I began my research stage by gathering data and information from many
+      sources about the clothing industry, delivery industry and its
+      participants. By doing this it helped me to discover the behaviors,
+      attitudes and pain points of the user I was designing for.
+    </p>
+  </body>
+</html>
