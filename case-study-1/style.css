@@ -285,6 +285,8 @@ a {
   flex-direction: column;
   gap: 2em;
   margin-top: 5em;
+  justify-content: center;
+  align-items: center;
 }
 
 .grey {
