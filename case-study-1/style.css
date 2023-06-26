@@ -11,6 +11,14 @@
   gap: 0.4em;
   position: relative;
 }
+@media (min-width: 768px) {
+  .nav-item {
+    display: inline-block;
+  }
+  i.btn-hamburger-menu {
+    display: none;
+  }
+}
 
 body.menu-is-open {
   /* turn off scroll when menu is open */
@@ -355,12 +363,6 @@ p.persona {
   margin-top: 2rem;
 }
 
-.inquires {
-  margin-top: 2rem;
-  font-weight: 700;
-  font-size: 1.562rem;
-}
-
 .disc {
   list-style-type: disc;
 }
@@ -409,21 +411,16 @@ p.info {
   align-items: center;
 }
 
-.interviews {
-  font-weight: 700;
-  font-size: 1.563rem;
-  margin-top: 2rem;
-}
-
 .interview-b {
   font-weight: normal;
   font-style: italic;
   font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .bold {
   font-weight: 700;
-  margin-top: 2rem;
+  margin-top: 1rem;
   line-height: 1.7rem;
 }
 
@@ -467,12 +464,6 @@ p.info {
   margin-top: 1em;
 }
 
-.mapping {
-  margin-top: 2rem;
-  font-weight: 700;
-  font-size: 1.563rem;
-}
-
 p.mapping {
   margin-top: 1rem;
   font-weight: 400;
@@ -484,13 +475,80 @@ p.mapping {
 .journey {
   width: 17em;
   box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
+}
+
+.u-journey {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sketches {
+.w {
+  margin-top: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.user-flow {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.high {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.iterations {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.headline {
   font-weight: 700;
   font-size: 1.563rem;
   margin-top: 2rem;
+}
+
+p.system {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+p.test {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.u-test {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 4rem;
+}
+
+.reflection {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
 }
