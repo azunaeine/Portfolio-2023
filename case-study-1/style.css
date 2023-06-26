@@ -317,9 +317,65 @@ p.persona {
   align-items: center;
   justify-content: center;
   gap: 2em;
-  margin-top: 6em;
+  margin-top: 3em;
 }
 
 .spectrum {
-  width: 16em;
+  width: 17em;
+}
+
+.benefits {
+  font-size: 1.563rem;
+  font-weight: 700;
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bento {
+  width: 16rem;
+  height: 16rem;
+  background-color: #0ad81dff;
+  color: white;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 14px rgba(10, 216, 29, 0.5);
+  font-weight: 700;
+}
+
+.bento-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2rem;
+}
+
+.inquires {
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 1.562rem;
+}
+
+.disc {
+  list-style-type: disc;
+}
+
+li.disc {
+  font-size: 0.875rem;
+  line-height: 1.7rem;
+  margin-top: 1rem;
+}
+
+.info {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.7rem;
+  padding: 21px;
+  text-align: left;
 }
