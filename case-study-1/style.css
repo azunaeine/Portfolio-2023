@@ -486,3 +486,9 @@ p.mapping {
   box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
   margin: auto;
 }
+
+.sketches {
+  font-weight: 700;
+  font-size: 1.563rem;
+  margin-top: 2rem;
+}
