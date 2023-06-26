@@ -379,3 +379,13 @@ li.disc {
   padding: 21px;
   text-align: left;
 }
+
+p.info {
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: -1rem;
+  line-height: 1.7rem;
+  padding: 21px;
+  text-align: left;
+  font-weight: 400;
+}
