@@ -484,7 +484,9 @@ p.mapping {
 .journey {
   width: 17em;
   box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
-  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sketches {
