@@ -389,3 +389,10 @@ p.info {
   text-align: left;
   font-weight: 400;
 }
+
+.find-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
