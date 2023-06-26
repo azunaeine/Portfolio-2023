@@ -408,3 +408,52 @@ p.info {
   justify-content: center;
   align-items: center;
 }
+
+.interviews {
+  font-weight: 700;
+  font-size: 1.563rem;
+  margin-top: 2rem;
+}
+
+.interview-b {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.bold {
+  font-weight: 700;
+  margin-top: 2rem;
+  line-height: 1.7rem;
+}
+
+.chat {
+  width: 16em;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.persona-2 {
+  margin-top: 2rem;
+}
+
+.two-person {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.two {
+  width: 16em;
+  box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
+}
