@@ -178,14 +178,12 @@ p {
   font-size: 1rem;
   font-weight: 400;
 }
-
 .flex-row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
 }
-
 .btn-view {
   background: rgba(14, 30, 216, 1);
   border: none;
@@ -237,4 +235,64 @@ a {
   padding: 28px;
   gap: 8px;
   text-align: left;
+}
+
+.disc {
+  list-style-type: disc;
+}
+
+li.disc {
+  font-size: 0.875rem;
+  line-height: 1.7rem;
+  margin-top: 1rem;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 1.563rem;
+  margin-top: 2rem;
+}
+
+p.problem {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+p.feature {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+p.grid {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+p.wireframe {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+p.high {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+p.reflection {
+  line-height: 2rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
 }
