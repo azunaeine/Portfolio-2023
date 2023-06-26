@@ -396,3 +396,15 @@ p.info {
   gap: 2em;
   padding: 2em;
 }
+
+.diagram {
+  width: 15em;
+}
+
+.circle-graph {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
