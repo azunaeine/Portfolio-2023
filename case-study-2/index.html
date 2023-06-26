@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Azuna Ekundayo - Portfolio</title>
+  </head>
+
+  <body>
+    <div class="hamburger-menu-content">
+      <a class="hamburger-menu-nav-item" href="/"> Home</a>
+      <a class="hamburger-menu-nav-item" href="/about"> About </a>
+      <a
+        href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+        class="hamburger-menu-nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </div>
+    <nav class="nav-bar">
+      <div class="panel-fade-in"></div>
+      <a class="s-icon" href="/"
+        ><img src="/images/logo.svg" alt="logo" class="logo"
+      /></a>
+
+      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <i
+        class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
+        onclick="hideMenu()"
+      ></i>
+
+      <div class="nav-items">
+        <a class="nav-item" href="/"> Home</a>
+        <a class="nav-item" href="/about"> About </a>
+        <a
+          href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+          class="nav-item"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
+    </nav>
+    <script>
+      function showMenu() {
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        hamburgerMenuContent.classList.add("visible");
+
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.add("visible");
+
+        const body = document.querySelector("body");
+        body.classList.add("menu-is-open");
+      }
+
+      // javascript animate an element function
+      function hideMenu() {
+        // 1. grab the element
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        // 2. change its class
+        hamburgerMenuContent.classList.remove("visible");
+
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.remove("visible");
+
+        const body = document.querySelector("body");
+        body.classList.remove("menu-is-open");
+      }
+    </script>
+    <div class="mini">
+      <span class="ux">UI/UX Design</span>
+      <h3 class="intro">MAZE</h3>
+    </div>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+      class="img"
+    />
+    <div class="mini">
+      <h3 class="summary">Summary</h3>
+      <p>
+        Tutoring services play a crucial role in assisting students in
+        comprehending challenging concepts and addressing problems encountered
+        in their school projects. This mobile application integrates video
+        calling, planning, and professional tutors within a single platform,
+        providing a comprehensive tutoring experience. By leveraging the
+        capabilities of video calling technology, students can engage in
+        interactive virtual sessions with tutors. The application also
+        incorporates planning features to facilitate scheduling and organizing
+        tutoring sessions. With the inclusion of qualified tutors, the platform
+        ensures that students receive expert guidance and support tailored to
+        their specific needs. Overall, this tutoring mobile application combines
+        essential features to deliver an efficient and effective learning
+        experience for students.
+      </p>
+
+      <div class="flex-row">
+        <div>
+          <h4>Role</h4>
+          <ul>
+            <li>User Research,</li>
+            <li>Visual Design,</li>
+            <li>UX Design</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li>Figma</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Timeline</h4>
+          <ul>
+            <li>10 weeks</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Team</h4>
+          <ul>
+            <li>Azuna Ekundayo</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prototype</h4>
+          <a
+            target="_blank"
+            href="https://www.figma.com/proto/GhlrLanaNuiqSO85mhtOVM/Magnitude?node-id=2%3A142&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A142&show-proto-sidebar=1"
+            ><button class="btn-view">View</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="mini">
+      <h3 class="summary">The Problem</h3>
+      <p>
+        Many students struggle to understand difficult concepts and complete
+        their school projects, necessitating the need for effective tutoring
+        services. However, existing tutoring solutions often lack an integrated
+        and comprehensive approach. The absence of a mobile application that
+        combines video calling, planning, and professional tutors limits
+        students' access to convenient and personalized support. Therefore,
+        there is a need for a tutoring platform that seamlessly integrates these
+        functionalities to provide students with a holistic and efficient
+        learning experience.
+      </p>
+    </div>
+    <div class="mini">
+      <h3 class="summary">The Solution</h3>
+      <p>
+        My solution is to develop a mobile application that revolutionizes the
+        tutoring experience by integrating video calling, planning, and access
+        to professional tutors. By leveraging the power of technology, my
+        platform will provide students with a convenient and personalized
+        learning environment. Through seamless communication via video calls,
+        students can engage in real-time interactive sessions with experienced
+        tutors who can address their specific needs and challenges. The
+        application will also offer planning features to help students organize
+        their assignment deadlines and track their progress. By combining these
+        essential components, my solution aims to enhance students'
+        understanding of difficult concepts and empower them to excel in their
+        school subjects.
+      </p>
+    </div>
+    <div class="present">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+        class="phone-one"
+      />
+      <div class="caption">
+        <h3 class="title">Tracker</h3>
+        <p>
+          This functionality empowers users to seamlessly explore and choose
+          from a vast array of clothing retailers.
+        </p>
+      </div>
+      <div class="present">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+          class="phone-one"
+        />
+        <div class="caption">
+          <h3 class="title">Planning</h3>
+          <p>
+            This feature facilitates users in navigating a well-structured and
+            organized browsing experience by providing categorized sections that
+            represent various types of clothing.
+          </p>
+        </div>
+      </div>
+      <div class="present">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+          class="phone-one"
+        />
+        <div class="caption">
+          <h3 class="title">Video calls</h3>
+          <p>
+            This feature empowers users to monitor the precise location and
+            real-time movements of the assigned delivery driver.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
