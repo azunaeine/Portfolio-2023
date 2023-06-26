@@ -186,10 +186,11 @@ p {
   box-shadow: 1px 1px 14px rgba(10, 216, 29, 1);
   font-weight: bold;
   color: white;
-  width: 100px;
+  width: 148px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   margin-top: 0.5em;
+  font-size: 16px;
 }
 
 ul {
@@ -198,6 +199,7 @@ ul {
 
 .flex-row h4 {
   margin-bottom: 0.5em;
+  font-size: 20px;
 }
 
 a {
@@ -206,6 +208,7 @@ a {
 
 .flex-row li {
   line-height: 1.5em;
+  font-size: 18px;
 }
 
 .phone-one {
@@ -234,12 +237,12 @@ a {
   width: 13em;
   height: 3em;
   font-size: 15px;
-  border-radius: 3em;
+  border-radius: 2px;
   padding: 2px 4px 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: auto;
+  margin: auto;
   margin-top: 1.3rem;
 }
 
@@ -256,35 +259,25 @@ a {
   width: 100%;
 }
 
-.shadow {
-  position: absolute;
-  top: 255em;
-  left: 2.375rem;
-  width: 16.5rem;
-  height: 31rem;
-  background-color: black;
-  z-index: 1;
-  box-shadow: 0 0.1875rem;
-}
 .square {
   position: relative;
   width: 17.5rem;
-  height: 31rem;
+  height: 20rem;
   background-color: white;
-  z-index: 2;
   border: black solid 0.25rem;
   padding: 1.2rem;
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  padding: 20px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  margin-top: 5em;
+  margin-top: 3em;
   justify-content: center;
   align-items: center;
 }
@@ -301,6 +294,32 @@ a {
 .description {
   line-height: 2.4rem;
   text-align: left;
-  font-size: 1rem;
+  font-size: 11px;
   font-weight: 400;
+}
+
+.persona {
+  font-size: 1.563rem;
+  margin-top: 2rem;
+}
+p.persona {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.persona-b {
+  margin-top: 2rem;
+}
+
+.spectrum-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 6em;
+}
+
+.spectrum {
+  width: 26em;
 }
