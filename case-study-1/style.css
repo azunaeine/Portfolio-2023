@@ -482,7 +482,7 @@ p.mapping {
 }
 
 .journey {
-  margin-top: 2rem;
   width: 17em;
   box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
+  margin: auto;
 }
