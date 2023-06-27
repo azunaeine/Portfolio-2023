@@ -30,3 +30,12 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
+@media (min-width: 768px) {
+  div.nav-items {
+    display: inline-block;
+  }
+  i.btn-hamburger-menu {
+    display: none;
+  }
+}
