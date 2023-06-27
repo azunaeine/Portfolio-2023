@@ -409,6 +409,10 @@ p.info {
   justify-content: center;
   align-items: center;
 }
+.chatq,
+.chata {
+  width: 16em;
+}
 
 .persona-2 {
   margin-top: 2rem;
