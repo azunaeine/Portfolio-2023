@@ -30,6 +30,75 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+.disc {
+  list-style-type: disc;
+  padding: 1rem;
+}
+.maze,
+.freshf,
+.boldy,
+.levitate {
+  color: white;
+  font-weight: 700;
+}
+
+.three-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  gap: 2rem;
+}
+.maze {
+  background-color: #0e1ed8ff;
+  padding: 1.4rem;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  width: 90%;
+  padding-top: 15px;
+  padding-bottom: 9px;
+  border-radius: 14px;
+  box-shadow: 1px 1px 14px rgba(14, 30, 216, 0.7);
+}
+.freshf {
+  background-color: #946cffff;
+  padding: 1.4rem;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  width: 90%;
+  padding-top: 15px;
+  padding-bottom: 9px;
+  border-radius: 14px;
+  box-shadow: 1px 1px 14px rgba(148, 108, 255, 1);
+}
+
+.boldy {
+  background-color: #f4e101ff;
+  padding: 1.4rem;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  width: 90%;
+  padding-top: 15px;
+  padding-bottom: 9px;
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(244, 225, 1, 1);
+}
+.levitate {
+  background-color: #0ad81dff;
+  padding: 1.4rem;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  width: 90%;
+  padding-top: 15px;
+  padding-bottom: 9px;
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(10, 216, 29, 1);
+}
 
 @media (min-width: 768px) {
   div.nav-items {
