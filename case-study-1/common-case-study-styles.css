@@ -126,9 +126,6 @@ ul {
     margin-top: 2em;
   }
 
-  .padder {
-    padding: 0.8rem;
-  }
   .flex-row {
     gap: 2em;
     margin-top: 2em;
@@ -232,5 +229,64 @@ ul {
     display: flex;
     flex-direction: column;
     margin-top: -2rem;
+  }
+
+  .padder {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: -4rem;
+  }
+
+  .summary {
+    font-size: 2.563rem;
+  }
+
+  .together {
+    margin-top: 4rem;
+  }
+
+  .mini {
+    gap: 18px;
+  }
+
+  p {
+    line-height: 52px;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .stack {
+    gap: 2px;
+  }
+  .intro {
+    color: black;
+    font-weight: 700;
+    font-size: 2.563rem;
+  }
+
+  .ux {
+    color: #0ad81d;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  .three-box {
+    gap: 5em;
+  }
+
+  .one,
+  .deux,
+  .three {
+    gap: 21em;
+  }
+
+  .caption {
+    width: 26em;
+  }
+
+  .padder {
+    padding: 3.8rem;
   }
 }
