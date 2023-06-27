@@ -401,10 +401,6 @@ p.info {
   line-height: 1.7rem;
 }
 
-.chat {
-  width: 16em;
-}
-
 .chat-box {
   display: flex;
   flex-direction: column;
@@ -616,5 +612,30 @@ i.fa-arrow-up {
   }
   .spice {
     margin-top: 2rem;
+  }
+
+  .chat-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chatq,
+  .chata {
+    width: 18em;
+  }
+
+  .two-person {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .two {
+    width: 22em;
+  }
+
+  .journey {
+    width: 40em;
+    margin-top: 2em;
   }
 }

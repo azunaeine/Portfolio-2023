@@ -145,6 +145,11 @@ ul {
     flex-direction: row-reverse;
   }
 
+  .three {
+    display: flex;
+    flex-direction: row;
+  }
+
   .three-box {
     display: flex;
     flex-direction: column;
@@ -153,8 +158,29 @@ ul {
     gap: 2em;
   }
 
-  .three {
+  .three-items {
     display: flex;
     flex-direction: row;
+    padding: 1px;
+  }
+
+  .freshf,
+  .boldy,
+  .maze,
+  .levitate {
+    width: 42%;
+  }
+  i.fa-arrow-up {
+    margin-left: 42rem;
+    margin-top: 4rem;
+    font-size: 1.563rem;
+    color: white;
+    background: black;
+    width: 2.813rem;
+    border-radius: 2.875rem;
+    text-align: center;
+    height: 2.813rem;
+    box-shadow: 0 0.188rem 1.063rem 0 rgba(0, 0, 0, 0.3);
+    padding: 0.625rem;
   }
 }
