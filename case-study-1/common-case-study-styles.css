@@ -97,7 +97,6 @@ ul {
   padding-top: 15px;
   padding-bottom: 9px;
   border-radius: 14px;
-  box-shadow: 0 0 10px rgba(10, 216, 29, 1);
 }
 
 .one,
@@ -187,12 +186,51 @@ ul {
 
 @media screen and (min-width: 1440px) {
   .padder {
-    padding: 1.8rem;
+    padding: 2.8rem;
   }
 
   .flex-row {
     display: flex;
     justify-content: center;
-    gap: 12em;
+    gap: 11em;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .logo {
+    width: 5em;
+    margin-left: 2em;
+  }
+
+  div.nav-items {
+    display: flex;
+    gap: 3em;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+  }
+
+  div.nav-bar {
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-between;
+    gap: 2px;
+    margin-right: 0.6em;
+  }
+  .mini {
+    margin-left: 2em;
+  }
+
+  .img {
+    height: 450px;
+  }
+
+  .sum-add {
+    display: flex;
+    flex-direction: column;
+    margin-top: -2rem;
   }
 }

@@ -643,3 +643,12 @@ i.fa-arrow-up {
     margin-top: 2em;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .p-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 5rem;
+  }
+}
