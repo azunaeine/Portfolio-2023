@@ -550,8 +550,21 @@ i.fa-arrow-up {
   text-align: left;
   margin-top: 2rem;
 }
+.circle-one {
+  display: flex;
+  flex-direction: column;
+}
 
-@media screen and (min-width: 764px) {
+.circle-two {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle-three {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
   .description {
     line-height: 2.4rem;
     text-align: left;
@@ -580,5 +593,22 @@ i.fa-arrow-up {
 
   .bento-box {
     flex-direction: row;
+  }
+  .circle-one {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .circle-two {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .circle-three {
+    display: flex;
+    flex-direction: row;
+  }
+  .spice {
+    margin-top: 2rem;
   }
 }
