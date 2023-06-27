@@ -228,7 +228,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: auto;
-  margin-top: 1.3rem;
+  margin-top: 2.3rem;
 }
 
 .literature {
@@ -529,6 +529,11 @@ p.test {
   font-weight: 400;
   margin-top: 1rem;
 }
+.p-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 
 i.fa-arrow-up {
   margin-left: 16rem;
@@ -648,7 +653,7 @@ i.fa-arrow-up {
   .p-box {
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    margin-top: 5rem;
+    gap: 14px;
+    margin-top: 2rem;
   }
 }
