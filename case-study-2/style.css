@@ -215,13 +215,6 @@ a {
   margin: auto;
 }
 
-.present {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  margin-top: 3em;
-}
-
 .caption {
   display: flex;
   flex-direction: column;

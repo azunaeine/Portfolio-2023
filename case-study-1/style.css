@@ -208,13 +208,6 @@ a {
   margin: auto;
 }
 
-.present {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  margin-top: 3em;
-}
-
 .caption {
   display: flex;
   flex-direction: column;
@@ -538,7 +531,7 @@ p.test {
 }
 
 i.fa-arrow-up {
-  margin-left: 15rem;
+  margin-left: 16rem;
   margin-top: 2rem;
   font-size: 1.563rem;
   color: white;
@@ -556,4 +549,36 @@ i.fa-arrow-up {
   font-weight: 700;
   text-align: left;
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 764px) {
+  .description {
+    line-height: 2.4rem;
+    text-align: left;
+    font-size: 8.5px;
+    font-weight: 400;
+  }
+
+  .container {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    margin-top: 3em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spectrum-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .spectrum {
+    width: 14em;
+  }
+
+  .bento-box {
+    flex-direction: row;
+  }
 }

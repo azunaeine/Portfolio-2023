@@ -100,11 +100,59 @@ ul {
   box-shadow: 0 0 10px rgba(10, 216, 29, 1);
 }
 
+.one,
+.deux,
+.three {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
 @media (min-width: 768px) {
   div.nav-items {
     display: inline-block;
   }
   i.btn-hamburger-menu {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.nav-items {
+    display: flex;
+    gap: 3em;
+  }
+
+  .nav-bar {
+    margin-top: 2em;
+  }
+
+  .padder {
+    padding: 0.8rem;
+  }
+  .flex-row {
+    gap: 2em;
+    margin-top: 2em;
+  }
+
+  .one {
+    display: flex;
+  }
+
+  .deux {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .three-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .three {
+    display: flex;
   }
 }
