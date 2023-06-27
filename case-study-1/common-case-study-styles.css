@@ -1,0 +1,32 @@
+.fa-solid {
+  font-size: 1.563rem;
+  color: white;
+  background: black;
+  width: 2.813rem;
+  border-radius: 0.875rem;
+  text-align: center;
+  height: 2.813rem;
+  box-shadow: 0 0.188rem 1.063rem 0 rgba(0, 0, 0, 0.3);
+  padding: 0.625rem;
+}
+
+.btn-close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.btn-close-menu:not(.visible) {
+  opacity: 0;
+  pointer-events: none;
+}
+.flex-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}

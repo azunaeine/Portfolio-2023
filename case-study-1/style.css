@@ -11,8 +11,9 @@
   gap: 0.4em;
   position: relative;
 }
+/* TODO move all appropriate css to common file */
 @media (min-width: 768px) {
-  .nav-item {
+  div.nav-items {
     display: inline-block;
   }
   i.btn-hamburger-menu {
@@ -114,23 +115,6 @@ a.hamburger-menu-nav-item {
 .fa-solid,
 .fas {
   font-weight: 900;
-}
-
-.fa-solid {
-  font-size: 1.563rem;
-  color: white;
-  background: black;
-  width: 2.813rem;
-  border-radius: 0.875rem;
-  text-align: center;
-  height: 2.813rem;
-  box-shadow: 0 0.188rem 1.063rem 0 rgba(0, 0, 0, 0.3);
-  padding: 0.625rem;
-}
-
-.btn-close-menu:not(.visible) {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .nav-items {

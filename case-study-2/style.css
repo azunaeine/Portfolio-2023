@@ -1,3 +1,5 @@
+/* TODO move all CSS that's for ALL case study pages into common file */
+
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -178,12 +180,7 @@ p {
   font-size: 1rem;
   font-weight: 400;
 }
-.flex-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1em;
-}
+
 .btn-view {
   background: rgba(14, 30, 216, 1);
   border: none;
@@ -197,10 +194,6 @@ p {
   transition: all 0.3s ease-in-out;
   margin-top: 0.5em;
   font-size: 16px;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .flex-row h4 {
