@@ -356,6 +356,28 @@ footer {
     width: 16%;
   }
 
+  .freshf,
+  .boldy,
+  .maze,
+  .levitate {
+    width: 16%;
+    transition: all 0.3s ease-in-out;
+  }
+  .freshf:hover,
+  .boldy:hover,
+  .maze:hover,
+  .levitate:hover {
+    width: 16%;
+    transform: scale(1.1);
+  }
+  .freshf,
+  .boldy,
+  .maze,
+  .levitate {
+    width: 16%;
+    transition: all 0.3s ease-in-out;
+  }
+
   .three-items {
     display: flex;
     flex-direction: row;
