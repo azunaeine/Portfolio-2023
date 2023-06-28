@@ -68,6 +68,13 @@ a {
   width: fit-content;
 }
 
+.last {
+  font-size: 1.563rem;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 2rem;
+}
+
 .copyrighttext {
   font-size: 0.75rem;
   margin-left: auto;
@@ -345,7 +352,7 @@ footer {
     gap: 2em;
   }
   .last {
-    font-size: 2.563rem;
+    font-size: 3.563rem;
     padding: 2.8rem;
   }
 
@@ -399,5 +406,19 @@ footer {
     padding: 0.7rem 1rem;
     margin-top: 7rem;
     color: white;
+  }
+
+  i.fa-arrow-up {
+    margin-left: 42rem;
+    margin-top: 4rem;
+    font-size: 3.563rem;
+    color: white;
+    background: black;
+    width: 4.813rem;
+    border-radius: 2.875rem;
+    text-align: center;
+    height: 4.813rem;
+    box-shadow: 0 0.188rem 1.063rem 0 rgba(0, 0, 0, 0.3);
+    padding: 0.625rem;
   }
 }

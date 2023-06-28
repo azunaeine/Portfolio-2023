@@ -146,14 +146,14 @@ body {
 
 .ux {
   color: #0e1ed8ff;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.5rem;
 }
 
 .intro {
   color: black;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.563rem;
 }
 
 .mini {
@@ -297,12 +297,6 @@ i.fa-arrow-up {
   padding: 0.625rem;
 }
 
-.last {
-  font-size: 1.563rem;
-  font-weight: 700;
-  text-align: left;
-  margin-top: 2rem;
-}
 .problem {
   font-size: 1.5rem;
   line-height: 4rem;
@@ -328,5 +322,10 @@ i.fa-arrow-up {
   p.reflection {
     font-size: 1.5rem;
     line-height: 3rem;
+  }
+
+  .btn-view {
+    position: relative;
+    right: 1em;
   }
 }

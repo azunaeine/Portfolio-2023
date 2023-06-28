@@ -203,6 +203,11 @@ a {
   text-align: left;
 }
 
+.ux {
+  color: #0ad81d;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 .review {
   color: white;
   background: black;
@@ -536,12 +541,6 @@ i.fa-arrow-up {
   padding: 0.625rem;
 }
 
-.last {
-  font-size: 1.563rem;
-  font-weight: 700;
-  text-align: left;
-  margin-top: 2rem;
-}
 .circle-one {
   display: flex;
   flex-direction: column;
@@ -842,9 +841,9 @@ i.fa-arrow-up {
     position: relative;
     bottom: 4em;
   }
-}
-.ux {
-  color: #0ad81d;
-  font-weight: 400;
-  font-size: 1.5rem;
+
+  .btn-view {
+    position: relative;
+    right: 1em;
+  }
 }
