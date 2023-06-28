@@ -72,16 +72,10 @@ body.fade-in .nav-item {
 body.fade-in .panel-fade-in {
   opacity: 0;
 }
-.s-icon {
-  margin-right: auto;
-  transition: all 0.3s linear;
-}
+
 body {
   padding: 1em;
   overflow-x: hidden;
-}
-.s-icon:hover {
-  transform: scale(1.23) translateX(20px);
 }
 
 .s-icon {

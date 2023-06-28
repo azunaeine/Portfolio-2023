@@ -303,3 +303,30 @@ i.fa-arrow-up {
   text-align: left;
   margin-top: 2rem;
 }
+.problem {
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+
+@media screen and (min-width: 1440px) {
+  li.disc {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin-top: 1rem;
+  }
+
+  p.problem {
+    font-size: 1.563rem;
+    line-height: 3rem;
+  }
+
+  p.feature,
+  p.mapping,
+  p.wireframes,
+  p.high,
+  p.grid,
+  p.reflection {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}

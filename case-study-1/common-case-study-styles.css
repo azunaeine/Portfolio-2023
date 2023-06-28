@@ -53,6 +53,26 @@ ul {
   font-size: 1.3125rem;
 }
 
+.icon {
+  transition: all 0.3s ease-in-out;
+}
+.icon:hover {
+  transform: scale(1.5) rotate(36deg);
+}
+
+a {
+  text-decoration: none;
+}
+.fa-envelope {
+  margin-top: -0.625rem;
+  width: fit-content;
+}
+
+.copyrighttext {
+  font-size: 0.75rem;
+  margin-left: auto;
+}
+
 footer {
   position: absolute;
   left: 0;
