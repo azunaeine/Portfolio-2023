@@ -845,5 +845,9 @@ i.fa-arrow-up {
   .btn-view {
     position: relative;
     right: 1em;
+    transition: all ease-in-out 0.3s;
+  }
+  .btn-view:hover {
+    transform: scale(1.2);
   }
 }
