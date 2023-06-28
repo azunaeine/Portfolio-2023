@@ -129,6 +129,8 @@ ul {
   .flex-row {
     gap: 2em;
     margin-top: 2em;
+    display: flex;
+    justify-content: center;
   }
 
   .one {
@@ -158,13 +160,15 @@ ul {
     display: flex;
     flex-direction: row;
     padding: 1px;
+    justify-content: unset;
+    margin-left: 2.8rem;
   }
 
   .freshf,
   .boldy,
   .maze,
   .levitate {
-    width: 42%;
+    width: 16%;
   }
   i.fa-arrow-up {
     margin-left: 42rem;
@@ -266,12 +270,6 @@ ul {
     font-size: 2.563rem;
   }
 
-  .ux {
-    color: #0ad81d;
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
-
   .three-box {
     gap: 5em;
   }
@@ -288,5 +286,26 @@ ul {
 
   .padder {
     padding: 3.8rem;
+  }
+
+  .title {
+    font-size: 21px;
+  }
+
+  .headline {
+    font-size: 2.563rem;
+  }
+  .stack {
+    margin-top: 2rem;
+  }
+  .broken {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .last {
+    font-size: 2.563rem;
+    padding: 2.8rem;
   }
 }

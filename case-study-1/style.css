@@ -126,23 +126,17 @@ body {
   overflow-x: hidden;
 }
 
-.ux {
-  color: #0ad81d;
-  font-weight: 400;
-  font-size: 1.375rem;
-}
-
 .intro {
   color: black;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.563rem;
 }
 
 .mini {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 .img {
@@ -153,7 +147,7 @@ body {
 .summary {
   color: black;
   font-weight: 700;
-  font-size: 1.563rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -161,13 +155,6 @@ p {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
-}
-
-.flex-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1em;
 }
 
 .btn-view {
@@ -697,5 +684,167 @@ i.fa-arrow-up {
 
   .description {
     font-size: 15.5px;
+  }
+
+  .headline {
+    font-size: 2.563rem;
+  }
+
+  p.persona {
+    font-size: 1.5rem;
+  }
+
+  .persona-b {
+    font-size: 1.5rem;
+  }
+
+  .spectrum-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+  }
+
+  .spectrum {
+    width: 23em;
+  }
+
+  .container {
+    gap: 4em;
+  }
+
+  .grey {
+    font-size: 1.5rem;
+  }
+
+  li.disc {
+    font-size: 21px;
+    line-height: 2.7rem;
+    margin-top: -1rem;
+  }
+
+  .benefits {
+    font-size: 2.563rem;
+    font-weight: 700;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bento {
+    width: 18rem;
+    height: 18rem;
+    font-size: 22px;
+  }
+  .info {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.7rem;
+    padding: 21px;
+    text-align: left;
+  }
+  p.info {
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    line-height: 2.7rem;
+    padding: 21px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .finding {
+    line-height: 52px;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 400;
+  }
+
+  .circle-one,
+  .circle-two,
+  .circle-three {
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .spice {
+    font-size: 21px;
+  }
+
+  .diagram {
+    width: 23em;
+  }
+
+  .interview-b {
+    font-size: 1.5rem;
+  }
+  .bold {
+    font-size: 21px;
+  }
+
+  .chatq,
+  .chata {
+    width: 38em;
+  }
+
+  .chatbox {
+    margin-top: 2rem;
+  }
+  .sum {
+    line-height: 3rem;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 400;
+    margin-top: 1em;
+  }
+  .gap-fix {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 2.8rem;
+  }
+
+  .two {
+    width: 38.5em;
+  }
+
+  .two-person {
+    gap: 5em;
+  }
+  .chat-box {
+    gap: 3em;
+    margin-top: 0rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p.mapping,
+  .w,
+  .user-flow,
+  .high,
+  .iterations,
+  p.system,
+  p.test,
+  .reflection,
+  .u-test {
+    line-height: 3rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+
+  .journey {
+    width: 64em;
+    margin: auto;
+    position: relative;
+    bottom: 4em;
+  }
+  .ux {
+    color: #0ad81d;
+    font-weight: 400;
+    font-size: 1.5rem;
   }
 }
