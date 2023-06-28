@@ -837,14 +837,14 @@ i.fa-arrow-up {
   }
 
   .journey {
-    width: 64em;
+    width: 71em;
     margin: auto;
     position: relative;
     bottom: 4em;
   }
-  .ux {
-    color: #0ad81d;
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
+}
+.ux {
+  color: #0ad81d;
+  font-weight: 400;
+  font-size: 1.5rem;
 }

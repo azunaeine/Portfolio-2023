@@ -83,6 +83,15 @@ body {
 .s-icon:hover {
   transform: scale(1.23) translateX(20px);
 }
+
+.s-icon {
+  margin-right: auto;
+  transition: all 0.3s linear;
+}
+
+.s-icon:hover {
+  transform: scale(1.23) translateX(20px);
+}
 .nav-item {
   font-size: 18px;
 }

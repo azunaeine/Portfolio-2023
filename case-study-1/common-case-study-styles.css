@@ -42,6 +42,32 @@ ul {
   font-weight: 700;
 }
 
+.icon {
+  color: white;
+}
+.land {
+  display: none;
+}
+
+.icon i {
+  font-size: 1.3125rem;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  transform: translateY(0.5rem);
+  background-color: black;
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  gap: 1.25rem;
+  padding: 0.7rem 1rem;
+  margin-top: 2rem;
+  color: white;
+}
+
 .three-items {
   display: flex;
   flex-direction: column;
@@ -161,15 +187,9 @@ ul {
     flex-direction: row;
     padding: 1px;
     justify-content: unset;
-    margin-left: 2.8rem;
+    margin-right: 2rem;
   }
 
-  .freshf,
-  .boldy,
-  .maze,
-  .levitate {
-    width: 16%;
-  }
   i.fa-arrow-up {
     margin-left: 42rem;
     margin-top: 4rem;
@@ -307,5 +327,35 @@ ul {
   .last {
     font-size: 2.563rem;
     padding: 2.8rem;
+  }
+
+  .freshf,
+  .boldy,
+  .maze,
+  .levitate {
+    width: 16%;
+  }
+
+  .three-items {
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+    justify-content: unset;
+    margin-left: 2.8rem;
+  }
+
+  footer {
+    position: absolute;
+    left: 0;
+    transform: translateY(0.5rem);
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    gap: 1.25rem;
+    padding: 0.7rem 1rem;
+    margin-top: 7rem;
+    color: white;
   }
 }
