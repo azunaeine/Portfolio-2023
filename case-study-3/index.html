@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="../case-study-1/common-case-study-styles.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Azuna Ekundayo - Portfolio</title>
+  </head>
+
+  <body>
+    <div class="hamburger-menu-content">
+      <a class="hamburger-menu-nav-item" href="/"> Home</a>
+      <a class="hamburger-menu-nav-item" href="/about"> About </a>
+      <a
+        href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+        class="hamburger-menu-nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </div>
+    <nav class="nav-bar">
+      <div class="panel-fade-in"></div>
+      <a class="s-icon" href="/"
+        ><img src="/images/logo.svg" alt="logo" class="logo"
+      /></a>
+
+      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <i
+        class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
+        onclick="hideMenu()"
+      ></i>
+
+      <div class="nav-items">
+        <a class="nav-item" href="/"> Home</a>
+        <a class="nav-item" href="/about"> About </a>
+        <a
+          href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+          class="nav-item"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
+    </nav>
+    <script>
+      function showMenu() {
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        hamburgerMenuContent.classList.add("visible");
+
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.add("visible");
+
+        const body = document.querySelector("body");
+        body.classList.add("menu-is-open");
+      }
+
+      // javascript animate an element function
+      function hideMenu() {
+        // 1. grab the element
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        // 2. change its class
+        hamburgerMenuContent.classList.remove("visible");
+
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.remove("visible");
+
+        const body = document.querySelector("body");
+        body.classList.remove("menu-is-open");
+      }
+    </script>
+    <div class="mini stack">
+      <span class="ux">Visual Design</span>
+      <h3 class="intro">Bold</h3>
+    </div>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+      class="img"
+    />
+    <div class="padder">
+      <div class="mini">
+        <h3 class="summary"> Project Summary</h3>
+        <p>
+          The objective of this project was to conceptualize, refine, choose, and design a sign-in page that incorporates an adjective to establish a distinct personality. Furthermore, the project  necessitated the application of visual design techniques to effectively convey the intended adjective without overtly stating it. The project progressed through stages of ideation, iterative refinement, careful selection, and meticulous design implementation. By leveraging visual design skills, the aim is to evoke the desired adjective in a subtle and compelling manner, enhancing the overall user experience of the sign-in page.
+
+
+        </p>
+
+        <div class="visual-row">
+          <div>
+            <h4>Role</h4>
+            <ul>
+              <li>User Research,</li>
+              <li>Visual Design,</li>
+              <li>UX Design</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tools</h4>
+            <ul>
+              <li>Figma</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Timeline</h4>
+            <ul>
+              <li>10 weeks</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Team</h4>
+            <ul>
+              <li>Azuna Ekundayo</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <div class="mini together">
+        <h3 class="summary">Final Design</h3>
+        <p>
+          The final design of the project incorporates a monochromatic yellow background, carefully chosen for its symbolic representation of intelligence and optimism. These qualities closely align with the concept of boldness, commonly observed in individuals who exhibit daring and audacious behavior. Additionally, the design features an eye element, symbolizing attributes of protection and wisdom. The gradual formation of its inner layer metaphorically depicts the progressive development of boldness. This gradual progression in the design establishes a visual connection between the eye element and the concept of boldness, effectively reinforcing the underlying theme throughout the entire design.
+
+        </p>
+      </div>
+      <div class="mini together">
+        <h3 class="summary">The Solution</h3>
+        
+This sign-in page employs a restricted color palette, featuring two equally relevant hues of blue. Additionally, a black accent color is incorporated into the design. Contrast is utilized to convey the adjective "magical," particularly through the use of contrasting shapes. A simplistic shape is juxtaposed with a more intricate shape. However, after careful evaluation, I  chose not to proceed with this sign-in page as the final design. I believe that the visual elements and colors fail to effectively capture the intended essence of "magical."
+
+
+      </div>
+      <div class="mini together">
+        <h3 class="summary">The Solution</h3>
+        
+This sign-in page employs a restricted color palette, featuring two equally relevant hues of blue. Additionally, a black accent color is incorporated into the design. Contrast is utilized to convey the adjective "magical," particularly through the use of contrasting shapes. A simplistic shape is juxtaposed with a more intricate shape. However, after careful evaluation, I  chose not to proceed with this sign-in page as the final design. I believe that the visual elements and colors fail to effectively capture the intended essence of "magical."
+
+
+      </div>
+      
+      
+        <h3 class="headline">Feature Prioritization</h3>
+        <p class="feature">     
+​​A visual graph was created to outline and prioritize potential features for the mobile application. This graph serves as a valuable reference for identifying focal points, strategizing future enhancements, and determining which features will be incorporated into the current version of the mobile application.
+        </p>
+        <h3 class="headline">Affinity Mapping</h3>
+        <p class="feature">
+          Based on the data extracted from the graph, I analyzed and organized
+          the pertinent attributes into distinct categories.
+        </p>
+        <h3 class="headline">Defining the Grid System</h3>
+        <p class="grid">
+          The selection and implementation of a grid system is a fundamental
+          aspect of interface design. In this project, I opted for the 6-point
+          grid system due to its adaptability and suitability. I made a
+          concerted effort to align UI elements with the grid whenever feasible.
+        </p>
+        <h3 class="headline">Wireframes</h3>
+        <p class="wireframes">
+          Wireframing is an essential process in my project as it allows me to
+          visualize and plan the layout and structure of the user interface. By
+          creating wireframes, I am able to map out the placement of key
+          elements, such as buttons, menus, and content sections, ensuring a
+          clear and intuitive design. These wireframes serve as a blueprint for
+          the development phase, providing a solid foundation for building an
+          effective and user-friendly interface.
+        </p>
+        <h3 class="headline">High Fidelity Design</h3>
+        <p class="high">
+          Upon completion of the wireframing process, I gained a clear vision of
+          the final concept for the mobile application. Subsequently, I
+          proceeded to implement various design elements, such as colors, icons,
+          and other visual components, onto MAZE. These additions further
+          enhanced the aesthetic appeal and user experience of the application,
+          aligning it with the intended design direction.
+        </p>
+        <h3 class="headline">Reflection</h3>
+        <p class="reflection">
+          This project necessitated a spirit of experimentation as it involved
+          venturing into uncharted territory. Reflecting upon the experience, I
+          would advise myself to cultivate greater confidence in my design
+          skills and to embrace a mindset of perseverance and continual
+          experimentation.
+        </p>
+      </div>
+    </div>
+    <i class="fa-solid fa-arrow-up"></i>
+    <div class="last">See more work</div>
+    <div class="three-items">
+      <a class="levitate" href="/case-study-1/"> Levitate</a>
+      <a class="boldy" href="/case-study-3/"> Bold</a>
+      <a class="freshf" href="/case-study-3/"> Freshfind</a>
+    </div>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+        <div class="icon"><i class="fa-brands fa-linkedin"></i></div
+      ></a>
+      <a href="https://github.com/azunaeine" target="_blank"
+        ><div class="icon"><i class="fa-brands fa-github"></i></div
+      ></a>
+      <a href="https://twitter.com/xxxazuna" target="_blank"
+        ><div class="icon"><i class="fa-brands fa-twitter"></i></div
+      ></a>
+      <a href="mailto:azunaeine@gmail.com" target="_blank"
+        ><div class="icon">
+          <i
+            class="fa-solid fa-envelope"
+            style="background: none; box-shadow: none"
+          ></i></div
+      ></a>
+      <div class="copyrighttext">
+        © Azuna Ekundayo <span class="year">2022</span>
+      </div>
+    </footer>
+    <script>
+      // update the year to the current year
+      // 1. grab the year span
+      const yearSpan = document.querySelector("span.year");
+      // 2. set the innerHTML = current year
+      const currentYear = new Date().getFullYear();
+      yearSpan.innerHTML = currentYear;
+    </script>
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

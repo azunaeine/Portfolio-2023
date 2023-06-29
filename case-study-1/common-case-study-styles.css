@@ -273,7 +273,7 @@ footer {
   }
 
   .img {
-    height: 450px;
+    height: 530px;
   }
 
   .sum-add {
@@ -346,7 +346,7 @@ footer {
     margin-top: 2rem;
   }
   .broken {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 2em;
