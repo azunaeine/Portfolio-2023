@@ -109,6 +109,10 @@ a.hamburger-menu-nav-item {
   transition: all 0.3s linear 0s;
 }
 
+.wireframe {
+  line-height: 1rem;
+}
+
 .s-icon:hover {
   transform: scale(1.23) translateX(20px);
 }
