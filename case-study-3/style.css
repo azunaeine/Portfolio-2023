@@ -113,6 +113,19 @@ a.hamburger-menu-nav-item {
   line-height: 1rem;
 }
 
+.alter {
+  font-size: 1.763em;
+  margin-top: 2.5rem;
+}
+.final {
+  font-size: 1.763em;
+  margin-top: 2.5rem;
+}
+
+.magical {
+  color: #add8e6 !important;
+}
+
 .visual-row {
   display: flex;
   justify-content: flex-start;
@@ -303,5 +316,15 @@ i.fa-arrow-up {
     display: flex;
     flex-direction: column;
     margin-left: 3rem;
+  }
+  .alter {
+    font-size: 3.3rem;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+  }
+  .final {
+    font-size: 3.3rem;
+    margin-left: 2rem;
+    margin-top: 5.5rem;
   }
 }
