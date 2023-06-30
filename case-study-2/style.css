@@ -336,4 +336,10 @@ i.fa-arrow-up {
   .btn-view:hover {
     transform: scale(1.2);
   }
+
+  .adjust {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
 }

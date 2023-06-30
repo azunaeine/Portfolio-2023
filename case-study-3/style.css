@@ -298,4 +298,10 @@ i.fa-arrow-up {
   .visual-row {
     gap: 18.5em;
   }
+
+  .adjust {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
 }
