@@ -260,7 +260,7 @@ footer {
     margin-left: 2em;
   }
 
-  div.nav-items {
+  .nav-items {
     display: flex;
     gap: 3em;
     font-size: 18px;
@@ -269,7 +269,7 @@ footer {
     margin-right: 2em;
   }
 
-  div.nav-bar {
+  .nav-bar {
     display: flex;
     margin-top: 1em;
     justify-content: space-between;
@@ -359,12 +359,7 @@ footer {
   .stack {
     margin-top: 2rem;
   }
-  .broken {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-  }
+
   .last {
     font-size: 3.563rem;
     padding: 2.8rem;

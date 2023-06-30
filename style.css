@@ -346,7 +346,7 @@ footer {
 .four {
   width: 6.25rem;
   height: 6.25rem;
-  background: #d80e0e;
+  background: #946cffff;
   border-radius: 50%;
   margin: auto;
 }
@@ -401,7 +401,7 @@ footer {
 }
 .title-three {
   font-size: 1.563rem;
-  color: #d80e0e;
+  color: #946cffff;
 }
 
 /** above mobile */
