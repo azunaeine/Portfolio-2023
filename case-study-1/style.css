@@ -839,6 +839,16 @@ i.fa-arrow-up {
     font-size: 1.5rem;
     font-weight: 400;
     margin-top: 1rem;
+    width: 55em;
+  }
+
+  p.mapping {
+    line-height: 3rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    width: 50em;
   }
 
   .journey {
