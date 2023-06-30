@@ -804,6 +804,13 @@ i.fa-arrow-up {
     gap: 2px;
     padding: 2.8rem;
   }
+  }
+  .g-fix {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 2.8rem;
+  }
 
   .two {
     width: 38.5em;
