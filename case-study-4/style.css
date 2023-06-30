@@ -327,4 +327,19 @@ i.fa-arrow-up {
     margin-left: 2rem;
     margin-top: 5.5rem;
   }
+
+  .f-fix {
+    position: absolute;
+    left: 0;
+    transform: translateY(0.5rem);
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    gap: 1.25rem;
+    padding: 0.7rem 1rem;
+    margin-top: 21rem;
+    color: white;
+  }
 }

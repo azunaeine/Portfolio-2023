@@ -406,6 +406,10 @@ p.info {
   width: 16em;
 }
 
+h3.headline {
+  margin-top: 2em;
+}
+
 .persona-2 {
   margin-top: 2rem;
   font-size: 1.563rem;
@@ -482,12 +486,6 @@ p.mapping {
   font-size: 1rem;
   font-weight: 400;
   margin-top: 1rem;
-}
-
-.headline {
-  font-weight: 700;
-  font-size: 1.563rem;
-  margin-top: 2rem;
 }
 
 p.system {
@@ -631,6 +629,9 @@ i.fa-arrow-up {
 
   .journey {
     width: 40em;
+    margin-top: 2em;
+  }
+  .headline {
     margin-top: 2em;
   }
 }
@@ -839,7 +840,7 @@ i.fa-arrow-up {
     font-size: 1.5rem;
     font-weight: 400;
     margin-top: 1rem;
-    width: 55em;
+    padding-right: 3em;
   }
 
   p.mapping {
@@ -848,7 +849,6 @@ i.fa-arrow-up {
     font-size: 1.5rem;
     font-weight: 400;
     margin-top: 1rem;
-    width: 50em;
   }
 
   .journey {
