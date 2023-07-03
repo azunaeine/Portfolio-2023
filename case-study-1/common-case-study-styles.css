@@ -417,18 +417,4 @@ footer {
     margin-top: 7rem;
     color: white;
   }
-
-  i.fa-arrow-up {
-    margin-left: 42rem;
-    margin-top: 4rem;
-    font-size: 3.563rem;
-    color: white;
-    background: black;
-    width: 4.813rem;
-    border-radius: 2.875rem;
-    text-align: center;
-    height: 4.813rem;
-    box-shadow: 0 0.188rem 1.063rem 0 rgba(0, 0, 0, 0.3);
-    padding: 0.625rem;
-  }
 }
