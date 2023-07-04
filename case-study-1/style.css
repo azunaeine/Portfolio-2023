@@ -203,6 +203,24 @@ a {
   text-align: left;
 }
 
+.v-system {
+  width: 18em;
+  margin: auto;
+  box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-flow {
+  width: 17em;
+  margin: auto;
+  box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ux {
   color: #0ad81d;
   font-weight: 700;
@@ -638,6 +656,11 @@ i.fa-arrow-up {
   .headline {
     margin-top: 2em;
   }
+
+  .v-system,
+  .u-flow {
+    width: 33em;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -869,5 +892,11 @@ i.fa-arrow-up {
   }
   .btn-view:hover {
     transform: scale(1.2);
+  }
+
+  .v-system,
+  .u-flow {
+    width: 58em;
+    margin-top: 3em;
   }
 }
