@@ -125,7 +125,17 @@ body {
   padding: 1em;
   overflow-x: hidden;
 }
-
+.gif-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+}
+gif {
+  width: 45em;
+}
 .intro {
   color: black;
   font-weight: 700;
@@ -668,6 +678,18 @@ i.fa-arrow-up {
     margin-top: 2em;
   }
 
+  .gif-box {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+  }
+  gif {
+    width: 45em;
+  }
+
   .container {
     padding: 0;
     display: flex;
@@ -753,6 +775,14 @@ i.fa-arrow-up {
   .phone-one {
     width: 18em;
     box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
+  }
+
+  .last {
+    margin-left: 1em;
+  }
+
+  .three-items {
+    margin-left: 6em !important;
   }
 
   .image-box {
