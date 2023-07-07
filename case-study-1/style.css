@@ -554,6 +554,10 @@ p.test {
   gap: 14px;
 }
 
+.phone-one {
+  box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
+}
+
 i.fa-arrow-up {
   margin-left: 16rem;
   margin-top: 2rem;
@@ -600,6 +604,9 @@ i.fa-arrow-up {
     display: flex;
     flex-direction: row;
     gap: 3em;
+  }
+  .phone-one {
+    box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
   }
 
   .image-box img {
