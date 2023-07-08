@@ -154,6 +154,11 @@ body {
   font-size: 1.5rem;
 }
 
+.blue {
+  width: 18em;
+  margin: auto;
+}
+
 .intro {
   color: black;
   font-weight: 700;
@@ -306,7 +311,12 @@ i.fa-arrow-up {
   font-size: 1.5rem;
   line-height: 4rem;
 }
-
+@media screen and (min-width: 768px) {
+  .blue {
+    width: 45em;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 1440px) {
   li.disc {
     font-size: 1.5rem;
@@ -319,6 +329,10 @@ i.fa-arrow-up {
     line-height: 3rem;
   }
 
+  .blue {
+    width: 75em;
+    margin: auto;
+  }
   p.feature,
   p.mapping,
   p.wireframes,
