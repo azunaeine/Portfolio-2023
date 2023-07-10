@@ -332,8 +332,11 @@ i.fa-arrow-up {
 
   .blue {
     width: 75em;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   p.feature,
   p.mapping,
   p.wireframes,
