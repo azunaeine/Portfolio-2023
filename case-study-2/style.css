@@ -113,6 +113,13 @@ a.hamburger-menu-nav-item {
   line-height: 1rem;
 }
 
+.blue-grid {
+  width: 18em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .s-icon:hover {
   transform: scale(1.23) translateX(20px);
 }
@@ -320,6 +327,12 @@ i.fa-arrow-up {
     margin-left: auto;
     margin-right: auto;
   }
+  .blue-grid {
+    width: 22em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1440px) {
   li.disc {
@@ -333,6 +346,12 @@ i.fa-arrow-up {
     line-height: 3rem;
   }
 
+  .blue-grid {
+    width: 24em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .blue {
     width: 75em;
     display: block;
