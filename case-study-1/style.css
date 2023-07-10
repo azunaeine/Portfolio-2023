@@ -679,7 +679,7 @@ i.fa-arrow-up {
   .gif-box {
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 6em;
     justify-content: center;
     align-items: center;
     margin-top: 3em;
