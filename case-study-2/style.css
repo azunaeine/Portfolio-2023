@@ -315,7 +315,6 @@ i.fa-arrow-up {
 }
 @media screen and (min-width: 768px) {
   .blue {
-    margin-top: 4em;
     width: 45em;
     display: flex;
     align-items: center;
