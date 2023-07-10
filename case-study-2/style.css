@@ -156,9 +156,7 @@ body {
 
 .blue {
   width: 18em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
 }
 
 .intro {
@@ -316,9 +314,7 @@ i.fa-arrow-up {
 @media screen and (min-width: 768px) {
   .blue {
     width: 45em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -335,10 +331,9 @@ i.fa-arrow-up {
 
   .blue {
     width: 75em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   margin: auto;
   }
+}
 
   p.feature,
   p.mapping,
