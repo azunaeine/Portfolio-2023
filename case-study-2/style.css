@@ -331,36 +331,35 @@ i.fa-arrow-up {
 
   .blue {
     width: 75em;
-   margin: auto;
+    margin: auto;
   }
 }
 
-  p.feature,
-  p.mapping,
-  p.wireframes,
-  p.high,
-  p.grid,
-  p.reflection {
-    font-size: 1.5rem;
-    line-height: 3rem;
-  }
+p.feature,
+p.mapping,
+p.wireframes,
+p.high,
+p.grid,
+p.reflection {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
 
-  .btn-view {
-    position: relative;
-    right: 1em;
-    transition: all ease-in-out 0.3s;
-  }
-  .btn-view:hover {
-    transform: scale(1.2);
-  }
+.btn-view {
+  position: relative;
+  right: 1em;
+  transition: all ease-in-out 0.3s;
+}
+.btn-view:hover {
+  transform: scale(1.2);
+}
 
-  .adjust {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-  }
+.adjust {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
 
-  .partial-box {
-    margin-top: 4em;
-  }
+.partial-box {
+  margin-top: 4em;
 }
