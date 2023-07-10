@@ -684,7 +684,7 @@ i.fa-arrow-up {
     align-items: center;
     margin-top: 3em;
   }
-  gif {
+  .gif {
     width: 45em;
   }
 
@@ -787,6 +787,8 @@ i.fa-arrow-up {
     display: flex;
     flex-direction: row;
     gap: 3em;
+    margin-right: 4em;
+    margin-top: 2em;
   }
 
   .image-box img {
