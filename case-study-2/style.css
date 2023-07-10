@@ -156,7 +156,9 @@ body {
 
 .blue {
   width: 18em;
-  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro {
@@ -314,7 +316,9 @@ i.fa-arrow-up {
 @media screen and (min-width: 768px) {
   .blue {
     width: 45em;
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -331,35 +335,37 @@ i.fa-arrow-up {
 
   .blue {
     width: 75em;
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
 
-p.feature,
-p.mapping,
-p.wireframes,
-p.high,
-p.grid,
-p.reflection {
-  font-size: 1.5rem;
-  line-height: 3rem;
-}
+  p.feature,
+  p.mapping,
+  p.wireframes,
+  p.high,
+  p.grid,
+  p.reflection {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
 
-.btn-view {
-  position: relative;
-  right: 1em;
-  transition: all ease-in-out 0.3s;
-}
-.btn-view:hover {
-  transform: scale(1.2);
-}
+  .btn-view {
+    position: relative;
+    right: 1em;
+    transition: all ease-in-out 0.3s;
+  }
+  .btn-view:hover {
+    transform: scale(1.2);
+  }
 
-.adjust {
-  display: flex;
-  flex-direction: column;
-  margin-left: 1rem;
-}
+  .adjust {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
 
-.partial-box {
-  margin-top: 4em;
+  .partial-box {
+    margin-top: 4em;
+  }
 }
