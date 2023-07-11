@@ -58,6 +58,7 @@ body.menu-is-open {
 
 .paper {
   width: 11em;
+  box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
 }
 
 .sign-in {
@@ -320,6 +321,7 @@ i.fa-arrow-up {
   .paper {
     margin-top: 2rem;
     width: 24em;
+    box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
   }
   p.problem {
     font-size: 1.563rem;
