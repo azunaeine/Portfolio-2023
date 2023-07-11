@@ -48,10 +48,22 @@ body.menu-is-open {
   pointer-events: none;
 }
 
+.wireframe-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.paper {
+  width: 11em;
+}
+
 .sign-in {
   width: 15em;
   margin-top: 2em;
-  box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
+  box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -291,7 +303,7 @@ i.fa-arrow-up {
   .sign-in {
     width: 29em;
     margin-top: 2em;
-    box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
+    box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -305,6 +317,10 @@ i.fa-arrow-up {
     margin-top: 1rem;
   }
 
+  .paper {
+    margin-top: 2rem;
+    width: 24em;
+  }
   p.problem {
     font-size: 1.563rem;
     line-height: 3rem;
@@ -352,7 +368,7 @@ i.fa-arrow-up {
   .sign-in {
     width: 54em;
     margin-top: 2em;
-    box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
+    box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
     display: block;
     margin-left: auto;
     margin-right: auto;
