@@ -48,6 +48,10 @@ body.menu-is-open {
   pointer-events: none;
 }
 
+.boldz {
+  color: #f3dc36 !important;
+}
+
 .hamburger-menu-content.visible {
   /* display: flex; */
   opacity: 1;
