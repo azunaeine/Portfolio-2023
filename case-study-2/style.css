@@ -155,6 +155,12 @@ body {
   overflow-x: hidden;
 }
 
+.phone-one {
+  width: 12em;
+  margin: auto;
+  box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
+}
+
 .ux {
   color: #0e1ed8ff;
   font-weight: 700;
@@ -227,11 +233,6 @@ a {
 .flex-row li {
   line-height: 1.5em;
   font-size: 18px;
-}
-
-.phone-one {
-  width: 8em;
-  margin: auto;
 }
 
 .caption {
@@ -357,6 +358,11 @@ i.fa-arrow-up {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .phone-one {
+    width: 18em;
+    box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
   }
 
   p.feature,
