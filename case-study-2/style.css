@@ -235,6 +235,20 @@ a {
   font-size: 18px;
 }
 
+.wrap {
+  width: 5em;
+  box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .caption {
   display: flex;
   flex-direction: column;
@@ -345,6 +359,13 @@ i.fa-arrow-up {
   p.problem {
     font-size: 1.563rem;
     line-height: 3rem;
+  }
+  .flex-wrapper {
+    margin-top: 8rem;
+  }
+  .wrap {
+    width: 12em;
+    box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
   }
 
   .blue-grid {
