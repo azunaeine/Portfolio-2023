@@ -274,20 +274,6 @@ p.problem {
   margin-top: 1rem;
 }
 
-i.fa-arrow-up {
-  margin-left: 14rem;
-  margin-top: 2rem;
-  font-size: 1.563rem;
-  color: white;
-  background: black;
-  width: 2.813rem;
-  border-radius: 2.875rem;
-  text-align: center;
-  height: 2.813rem;
-  box-shadow: 0 0.188rem 1.063rem 0 rgba(0, 0, 0, 0.3);
-  padding: 0.625rem;
-}
-
 .problem {
   font-size: 1.5rem;
   line-height: 4rem;

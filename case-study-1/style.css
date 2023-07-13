@@ -601,20 +601,6 @@ p.test {
   box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
 }
 
-i.fa-arrow-up {
-  margin-left: 16rem;
-  margin-top: 2rem;
-  font-size: 1.563rem;
-  color: white;
-  background: black;
-  width: 2.813rem;
-  border-radius: 2.875rem;
-  text-align: center;
-  height: 2.813rem;
-  box-shadow: 0 0.188rem 1.063rem 0 rgba(0, 0, 0, 0.3);
-  padding: 0.625rem;
-}
-
 .circle-one {
   display: flex;
   flex-direction: column;
