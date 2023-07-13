@@ -75,6 +75,60 @@
           HTML, CSS, and JavaScript for the coding aspect. I hope you find my
           portfolio enjoyable and informative.
         </p>
+        <a class="button"> Read More</a>
+      </div>
+    </div>
+
+    <h3 class="skills">My Skills</h3>
+    <div class="skill-flex">
+      <div class="skill-box">
+        <img src="/images/teamwork.svg" class="cube" />
+        <h6>Teamwork</h6>
+        <p class="response">
+          I possess strong interpersonal skills and excel in collaborative
+          environments, demonstrating effective communication and interaction
+          with team members.
+        </p>
+      </div>
+      <div class="skill-box">
+        <img src="/images/design.svg" class="cube" />
+        <h6>Design</h6>
+        <p class="response">
+          I possess proficiency in utilizing design software such as Figma,
+          Adobe XD, and various other industry-standard design tools.
+        </p>
+      </div>
+      <div class="skill-box">
+        <img src="/images/coding.svg" class="cube" />
+        <h6>Coding</h6>
+        <p class="response">
+          I have a proficient command of HTML, CSS, and JavaScript,
+          demonstrating expertise in these programming languages.
+        </p>
+      </div>
+      <div class="skill-box">
+        <img src="/images/communication.svg" class="cube" />
+        <h6 class="xl">communication</h6>
+        <p class="response">
+          I possess strong interpersonal communication skills, enabling
+          effective collaboration and information exchange with others.
+        </p>
+      </div>
+      <div class="skill-box">
+        <img src="/images/search.svg" class="cube" />
+        <h6 class="xl">User Research</h6>
+        <p class="response">
+          I have a strong aptitude for conducting interviews and user tests,
+          employing effective methodologies to gather valuable insights and user
+          feedback.
+        </p>
+      </div>
+      <div class="skill-box">
+        <img src="/images/wireframe.svg" class="cube" />
+        <h6>Wireframing</h6>
+        <p class="response">
+          I have exceptional knowledge of wireframing techniques and practices.
+        </p>
       </div>
     </div>
     <footer>
@@ -110,5 +164,16 @@
       src="https://kit.fontawesome.com/b85921a939.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function takeUsDownToCaseStudies() {
+        // scroll down to the element with id "case-studies"
+        // 1. grab the element
+        const myContainer = document.querySelector(".skill-flex");
+        // 2. scrollIntoView({bahavior:"smooth"})
+        myContainer.scrollIntoView({ behavior: "smooth" });
+        // 3. hide the menu
+        hideMenu();
+      }
+    </script>
   </body>
 </html>
