@@ -379,4 +379,10 @@ i.fa-arrow-up {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .fine-tune {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
 }

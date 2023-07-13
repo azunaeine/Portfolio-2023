@@ -225,7 +225,12 @@ p {
   margin-bottom: 0.5em;
   font-size: 20px;
 }
-
+.scan {
+  width: 17em;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 a {
   text-decoration: none;
 }
@@ -348,6 +353,10 @@ i.fa-arrow-up {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .scan {
+    margin-top: 2em;
+  }
 }
 @media screen and (min-width: 1440px) {
   li.disc {
@@ -413,5 +422,9 @@ i.fa-arrow-up {
 
   .partial-box {
     margin-top: 4em;
+  }
+
+  .scan {
+    width: 44em;
   }
 }

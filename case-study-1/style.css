@@ -134,6 +134,13 @@ body {
   margin-top: 4em;
 }
 
+.scan {
+  width: 10em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .intro {
   color: black;
   font-weight: 700;
@@ -635,7 +642,10 @@ i.fa-arrow-up {
     font-size: 8.5px;
     font-weight: 400;
   }
-
+  .scan {
+    width: 25em;
+    margin-top: 2em;
+  }
   .image-box {
     display: flex;
     flex-direction: row;
@@ -770,6 +780,10 @@ i.fa-arrow-up {
     margin-top: 2rem;
   }
 
+  .scan {
+    width: 41em;
+    margin-top: 4em;
+  }
   .phone-one {
     width: 18em;
     box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
