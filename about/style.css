@@ -98,7 +98,7 @@ p {
 
 @media screen and (min-width: 1440px) {
   .main-content {
-    flex-direction: row;
+    flex-direction: row-reverse;
     padding: 3rem;
     display: flex;
     gap: 6em;
