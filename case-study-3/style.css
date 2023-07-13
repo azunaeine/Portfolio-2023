@@ -351,6 +351,10 @@ i.fa-arrow-up {
     gap: 18.5em;
   }
 
+  .fix {
+    padding: 2em;
+  }
+
   .adjust {
     display: flex;
     flex-direction: column;
