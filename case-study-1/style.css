@@ -103,6 +103,10 @@ a.hamburger-menu-nav-item {
   width: 3em;
 }
 
+.screen {
+  border: solid black 2px;
+}
+
 .s-icon {
   margin-right: auto;
   transition: all 0.3s linear 0s;
