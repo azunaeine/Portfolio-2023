@@ -23,6 +23,14 @@
   width: fit-content;
 }
 
+.s-icon {
+  transition: all 0.3s linear;
+}
+
+.s-icon:hover {
+  transform: scale(1.23) translateX(20px);
+}
+
 .main-content {
   display: flex;
   flex-direction: column;

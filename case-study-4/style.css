@@ -345,4 +345,9 @@ p.problem {
     margin-top: 21rem;
     color: white;
   }
+
+  .three-items {
+    position: relative !important;
+    bottom: 2em !important;
+  }
 }
