@@ -40,7 +40,7 @@
 }
 .skills {
   margin-top: 1rem;
-  padding-left: 1rem;
+  text-align: center;
 }
 
 .skill-flex {
@@ -176,6 +176,11 @@ p {
     gap: 2em;
     justify-content: center;
     align-items: baseline;
+  }
+
+  .skills {
+    margin-top: 1rem;
+    text-align: center;
   }
 
   .azuna {
