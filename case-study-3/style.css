@@ -48,6 +48,10 @@ body.menu-is-open {
   pointer-events: none;
 }
 
+.screen-opening {
+  background: #fdda44ff !important;
+}
+
 .wireframe-box {
   display: flex;
   flex-wrap: wrap;
@@ -68,6 +72,11 @@ body.menu-is-open {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.screen-fix {
+  width: 9em;
+  border: solid 2px black;
 }
 
 .boldz {
@@ -295,6 +304,9 @@ p.problem {
     margin-left: auto;
     margin-right: auto;
   }
+  .screen-fix {
+    width: 24em;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -308,6 +320,10 @@ p.problem {
     margin-top: 2rem;
     width: 24em;
     box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
+  }
+
+  .screen-fix {
+    width: 33em;
   }
   p.problem {
     font-size: 1.563rem;
