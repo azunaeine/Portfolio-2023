@@ -252,10 +252,9 @@ p {
   .skill-flex {
     display: flex;
     flex-wrap: wrap;
-    padding: 2em;
     gap: 1em;
     flex-direction: row;
-    justify-content: normal;
+    justify-content: center;
     align-items: stretch;
     position: relative;
     bottom: 5em;
