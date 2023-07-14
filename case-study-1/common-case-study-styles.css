@@ -308,6 +308,13 @@ footer {
     margin-right: 0.6em;
   }
 
+  .screen-opening {
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    justify-content: center;
+  }
+
   .nav-bar {
     margin-top: 2em;
     padding: 4em 1em 1em;
