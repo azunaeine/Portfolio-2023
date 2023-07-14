@@ -149,8 +149,6 @@ p {
   font-size: 1.4rem;
   line-height: 3rem;
   text-align: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
   font-weight: 400;
 }
 
@@ -175,7 +173,9 @@ p {
   }
   .contact-info {
     display: flex;
-    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    align-items: baseline;
   }
 
   .azuna {
