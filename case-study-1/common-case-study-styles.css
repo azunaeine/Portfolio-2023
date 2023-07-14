@@ -26,6 +26,16 @@
   flex-wrap: wrap;
   gap: 2em;
 }
+
+.nav-items {
+  display: none;
+}
+
+body {
+  padding: 1em;
+  overflow-x: hidden;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -62,6 +72,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 .fa-envelope {
   margin-top: -0.625rem;

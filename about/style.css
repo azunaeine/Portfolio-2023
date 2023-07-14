@@ -184,7 +184,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
   }
   .h6 {
@@ -263,9 +263,5 @@ p {
 
   .number {
     font-size: 1.7em;
-  }
-
-  h6 {
-    margin-right: auto;
   }
 }

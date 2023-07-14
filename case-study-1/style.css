@@ -121,14 +121,6 @@ a.hamburger-menu-nav-item {
   font-weight: 900;
 }
 
-.nav-items {
-  display: none;
-}
-
-body {
-  padding: 1em;
-  overflow-x: hidden;
-}
 .gif-box {
   display: flex;
   flex-direction: column;

@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./common-case-study-styles.css" />
+    <link
+      rel="stylesheet"
+      href="../case-study-1/common-case-study-styles.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -87,7 +90,7 @@
         <p class="number">780-807-5625</p>
       </div>
     </div>
-    <a class="button"> Read More</a>
+    <a class="button" onclick="takeUsDown()"> Read More</a>
     <h3 class="skills">My Skills</h3>
     <div class="skill-flex">
       <div class="skill-box">
@@ -175,14 +178,12 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      function takeUsDownToCaseStudies() {
+      function takeUsDown() {
         // scroll down to the element with id "case-studies"
         // 1. grab the element
         const myContainer = document.querySelector(".skill-flex");
         // 2. scrollIntoView({bahavior:"smooth"})
         myContainer.scrollIntoView({ behavior: "smooth" });
-        // 3. hide the menu
-        hideMenu();
       }
     </script>
   </body>
