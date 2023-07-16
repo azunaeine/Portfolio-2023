@@ -313,6 +313,17 @@ footer {
   background: #0ed81e;
   border-radius: 50%;
   margin: auto;
+  display: inline-block;
+  position: relative;
+}
+
+.one img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 17em;
+  height: 12em;
 }
 
 .case {
@@ -370,6 +381,16 @@ footer {
   background: #946cffff;
   border-radius: 50%;
   margin: auto;
+  display: inline-block;
+  position: relative;
+}
+.four img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11em;
+  height: 8em;
 }
 
 .title {
@@ -446,6 +467,15 @@ footer {
     z-index: 1;
     border-radius: 2.125rem;
     box-shadow: 0px 0.1875rem;
+  }
+
+  .one img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 31em;
+    height: 22em;
   }
   .square {
     position: relative;
@@ -559,7 +589,6 @@ footer {
   }
 }
 @media screen and (min-width: 1440px) {
-  .one,
   .three,
   .four {
     width: 31%;
@@ -568,6 +597,23 @@ footer {
     margin: auto;
     position: relative;
     top: 10px;
+  }
+
+  .one {
+    width: 31%;
+    height: 54%;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: 37px;
+  }
+  .one img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50em;
+    height: 39em;
   }
 
   .two {
@@ -595,7 +641,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40em;
+    width: 39em;
     height: 28em;
   }
   .square {
