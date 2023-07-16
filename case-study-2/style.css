@@ -199,6 +199,16 @@ body {
   font-size: 1.563rem;
 }
 
+#test1,
+#test2,
+#test3 {
+  display: none;
+}
+
+#special {
+  width: 4em;
+}
+
 p {
   line-height: 2rem;
   text-align: left;
@@ -344,6 +354,17 @@ p.reflection {
   .scan {
     margin-top: 2em;
   }
+
+  #test1,
+  #test2,
+  #test3 {
+    display: block;
+  }
+
+  #special {
+    display: block;
+    width: 7em;
+  }
 }
 @media screen and (min-width: 1440px) {
   li.disc {
@@ -364,6 +385,16 @@ p.reflection {
     box-shadow: 1px 1px 14px rgba(240, 240, 240, 1);
   }
 
+  #test1,
+  #test2,
+  #test3 {
+    display: block;
+    width: 12em;
+  }
+
+  #special {
+    width: 12em;
+  }
   .blue-grid {
     width: 24em;
     display: block;
