@@ -333,8 +333,18 @@ footer {
   background: #0e1ed8;
   border-radius: 50%;
   margin: auto;
+  display: inline-block;
+  position: relative;
 }
 
+.two img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15em;
+  height: 15em;
+}
 .three {
   width: 6.25rem;
   height: 6.25rem;
@@ -472,7 +482,7 @@ footer {
     margin-top: 9rem;
   }
   .laptop {
-    width: 36.5rem;
+    width: 34.5rem;
     display: flex;
     margin: auto;
   }
@@ -506,7 +516,16 @@ footer {
     border-radius: 50%;
     margin: auto;
     position: relative;
-    top: 10px;
+    top: 25px;
+  }
+
+  .two img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30em;
+    height: 27em;
   }
   .nav-bar {
     display: flex;
@@ -521,7 +540,6 @@ footer {
 }
 @media screen and (min-width: 1440px) {
   .one,
-  .two,
   .three,
   .four {
     width: 31%;
@@ -532,6 +550,14 @@ footer {
     top: 10px;
   }
 
+  .two {
+    width: 31%;
+    height: 54%;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: 27px;
+  }
   .shadow {
     position: absolute;
     top: 0.625rem;
@@ -684,5 +710,14 @@ footer {
 
   body {
     padding: 4em;
+  }
+
+  .two img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50em;
+    height: 46em;
   }
 }
