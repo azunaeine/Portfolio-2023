@@ -388,9 +388,9 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-56%, -46%);
   width: 11em;
-  height: 8em;
+  height: 7em;
 }
 
 .title {
@@ -502,6 +502,15 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 24em;
+    height: 17em;
+  }
+
+  .four img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-56%, -46%);
+    width: 26em;
     height: 17em;
   }
   .intro {
@@ -699,7 +708,14 @@ footer {
     margin-top: 7rem;
     color: white;
   }
-
+  .four img {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-56%, -46%);
+    width: 42em;
+    height: 29em;
+  }
   .small-box {
     display: none;
   }
