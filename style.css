@@ -594,8 +594,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 41em;
-    height: 26em;
+    width: 40em;
+    height: 28em;
   }
   .square {
     position: relative;
