@@ -656,11 +656,11 @@ footer {
 
   .three img {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 42em;
-    height: 31em;
+    width: 46em;
+    height: 34em;
   }
   .square {
     position: relative;
@@ -715,7 +715,6 @@ footer {
     transform: translate(-56%, -46%);
     width: 44em;
     height: 31em;
-}
   }
   .small-box {
     display: none;
