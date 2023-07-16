@@ -353,7 +353,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 15em;
+  width: 16em;
   height: 15em;
 }
 .three {
@@ -639,8 +639,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 16em;
-    height: 15em;
+    width: 52em;
+    height: 46em;
   }
   .shadow {
     position: absolute;
