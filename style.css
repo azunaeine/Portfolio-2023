@@ -471,7 +471,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 26em;
+    width: 24em;
     height: 17em;
   }
   .intro {
@@ -546,6 +546,7 @@ footer {
     width: 30em;
     height: 27em;
   }
+
   .nav-bar {
     display: flex;
     margin-top: 1em;
