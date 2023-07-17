@@ -144,7 +144,7 @@ h3 {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.2rem !important;
   line-height: 3rem;
   text-align: left;
   font-weight: 400;
