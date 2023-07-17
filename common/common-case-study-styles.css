@@ -309,7 +309,7 @@ footer {
 
   .flex-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 11em;
   }
 
@@ -346,11 +346,20 @@ footer {
     margin-right: 0.6em;
   }
 
-  .screen-opening {
+  .images-wrapper {
     display: flex;
     gap: 5em;
     align-items: center;
     justify-content: center;
+    /* starting position of the images */
+    transform: translateY(241px);
+    opacity: 0.1;
+    transition: all 0.3s ease-out;
+  }
+  /* when the animation is finished we've faded in */
+  .images-wrapper.fade-in {
+    transform: translateY(0px);
+    opacity: 1;
   }
 
   .nav-bar {
