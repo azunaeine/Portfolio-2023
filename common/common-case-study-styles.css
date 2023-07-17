@@ -122,7 +122,7 @@ a {
   pointer-events: none;
 }
 
-.screen-opening {
+.images-wrapper {
   display: flex;
   gap: 2em;
   align-items: center;
@@ -300,6 +300,9 @@ footer {
     box-shadow: 0 0.188rem 1.063rem 0 rgba(0, 0, 0, 0.3);
     padding: 0.625rem;
   }
+  .images-wrapper {
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -355,6 +358,7 @@ footer {
     transform: translateY(241px);
     opacity: 0.1;
     transition: all 0.3s ease-out;
+    height: 100%;
   }
   /* when the animation is finished we've faded in */
   .images-wrapper.fade-in {
