@@ -356,7 +356,7 @@ footer {
     align-items: center;
     justify-content: center;
     /* starting position of the images */
-    transform: translateY(241px);
+    transform: translateY(130px);
     opacity: 0.1;
     transition: all 0.3s ease-out;
     height: 100%;
