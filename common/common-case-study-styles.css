@@ -507,4 +507,9 @@ footer {
     margin-top: 7rem;
     color: white;
   }
+
+  .screen-opening {
+    position: relative;
+    top: 5px;
+  }
 }
