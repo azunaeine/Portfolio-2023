@@ -127,6 +127,7 @@ a {
   gap: 2em;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 footer {
   position: absolute;
