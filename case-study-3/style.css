@@ -68,7 +68,7 @@ body.menu-is-open {
 .sign-in {
   width: 15em;
   margin-top: 2em;
-  box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
+  box-shadow: 1px 1px 14px rgba(128, 128, 128, 1);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -300,7 +300,7 @@ p.problem {
   .sign-in {
     width: 29em;
     margin-top: 2em;
-    box-shadow: 1px 1px 14px rgba(246, 246, 246, 1);
+    box-shadow: 1px 1px 14px rgba(128, 128, 128, 1);
     display: block;
     margin-left: auto;
     margin-right: auto;
