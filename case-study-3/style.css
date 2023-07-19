@@ -159,7 +159,7 @@ a.hamburger-menu-nav-item {
 
 .alt {
   display: flex;
-  gap: 4px;
+  gap: 14px;
   flex-direction: column;
 }
 
@@ -389,7 +389,7 @@ p.problem {
     display: flex;
     flex-direction: column;
     display: flex;
-    gap: 1px;
+    gap: 14px;
     padding: 2em;
   }
 }
