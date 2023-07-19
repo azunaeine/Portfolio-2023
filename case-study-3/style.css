@@ -157,6 +157,12 @@ a.hamburger-menu-nav-item {
   margin-top: 2.5rem;
 }
 
+.alt {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
 .magical {
   color: #add8e6 !important;
 }
@@ -349,10 +355,6 @@ p.problem {
     justify-content: space-between;
   }
 
-  .fix {
-    padding: 2em;
-  }
-
   .adjust {
     display: flex;
     flex-direction: column;
@@ -360,7 +362,6 @@ p.problem {
   }
   .alter {
     font-size: 3.3rem;
-    margin-left: 2rem;
     margin-top: 2.5rem;
   }
   .final {
@@ -382,5 +383,13 @@ p.problem {
     display: flex;
     flex-direction: column;
     gap: 2em;
+  }
+
+  .alt {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    gap: 1px;
+    padding: 2em;
   }
 }

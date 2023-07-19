@@ -282,6 +282,12 @@ li.disc {
   margin-top: 1rem;
 }
 
+.fea {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
 .headline {
   font-weight: 700;
   font-size: 1.563rem;
