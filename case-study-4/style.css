@@ -257,10 +257,10 @@ p.problem {
   line-height: 4rem;
 }
 
-@media screen and (min-width: 764px) {
+@media screen and (min-width: 768px) {
   .visual-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 7em;
     margin-top: 2em;
@@ -307,6 +307,7 @@ p.problem {
   }
 
   .visual-row {
+    justify-content: space-between;
     gap: 18.5em;
   }
 
