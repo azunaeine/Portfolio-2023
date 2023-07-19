@@ -273,6 +273,7 @@ footer {
   }
 
   .three-box {
+    padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,9 +313,10 @@ footer {
   }
 
   .flex-row {
+    gap: 2em;
+    margin-top: 2em;
     display: flex;
     justify-content: space-between;
-    gap: 11em;
   }
 
   body {
