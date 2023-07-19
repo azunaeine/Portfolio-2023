@@ -367,7 +367,8 @@ p.problem {
   .final {
     font-size: 3.3rem;
     margin-left: 2rem;
-    margin-top: 5.5rem;
+    position: relative;
+    top: 1.4em;
   }
 
   .sign-in {
