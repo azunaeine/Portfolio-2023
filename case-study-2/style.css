@@ -370,6 +370,10 @@ p.reflection {
     display: block;
     width: 7em;
   }
+
+  .scan {
+    width: 24em;
+  }
 }
 @media screen and (min-width: 1440px) {
   li.disc {
