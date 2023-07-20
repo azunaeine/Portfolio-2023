@@ -145,6 +145,7 @@ a.hamburger-menu-nav-item {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2em;
 }
 
 .intro {
@@ -269,6 +270,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
 }
 
 .u-flow {
@@ -546,7 +548,6 @@ p.mapping {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 1rem;
 }
 
 .high {
@@ -570,7 +571,6 @@ p.system {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 1rem;
 }
 
 p.test {
@@ -1020,7 +1020,6 @@ p.test {
     text-align: left;
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 1em;
     padding-right: 3em;
   }
 
