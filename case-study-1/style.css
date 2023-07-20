@@ -513,11 +513,9 @@ h3.headline {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 1em;
 }
 
 p.mapping {
-  margin-top: 1rem;
   font-weight: 400;
   line-height: 2rem;
   text-align: left;
@@ -536,7 +534,6 @@ p.mapping {
 }
 
 .w {
-  margin-top: 1rem;
   font-weight: 400;
   line-height: 2rem;
   text-align: left;
@@ -555,7 +552,6 @@ p.mapping {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 1rem;
 }
 
 .iterations {
@@ -563,7 +559,6 @@ p.mapping {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 1rem;
 }
 
 p.system {
@@ -578,7 +573,6 @@ p.test {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 1rem;
 }
 
 .u-test {
@@ -586,7 +580,7 @@ p.test {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 .reflection {
@@ -594,7 +588,6 @@ p.test {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 1rem;
 }
 .p-box {
   display: flex;
