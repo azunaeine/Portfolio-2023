@@ -222,8 +222,9 @@ a.hamburger-menu-nav-item {
 
 .laptop {
   width: 17.5rem;
-  display: flex;
-  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -541,8 +542,9 @@ footer {
   }
   .laptop {
     width: 34.5rem;
-    display: flex;
-    margin: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
   .main-b {
     max-width: 100%;
