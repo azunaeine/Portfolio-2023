@@ -307,7 +307,7 @@ footer {
   width: fit-content;
 }
 
-/* .one {
+.one {
   width: 6.25rem;
   height: 6.25rem;
   background: #0ed81e;
@@ -324,7 +324,7 @@ footer {
   transform: translate(-50%, -50%);
   width: 15.4em;
   height: 12em;
-} */
+}
 
 .case {
   text-align: center;
