@@ -140,7 +140,7 @@ h3 {
 .mini-content {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2px;
 }
 
 p {
