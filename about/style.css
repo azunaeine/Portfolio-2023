@@ -277,7 +277,7 @@ p {
 
   .content {
     opacity: 0;
-    animation: fade-in 2.5s ease forwards;
+    animation: fade-in 3.5s ease forwards;
   }
   @keyframes fade-in {
     0% {
