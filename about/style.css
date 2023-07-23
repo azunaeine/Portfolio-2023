@@ -150,6 +150,10 @@ p {
   font-weight: 400;
 }
 
+.gmail {
+  font-size: 1.2em;
+}
+
 @media screen and (min-width: 768px) {
   .main-content {
     flex-direction: column;
@@ -164,6 +168,10 @@ p {
 
   h3 {
     font-size: 4rem;
+  }
+
+  .number {
+    font-size: 1.7em !important;
   }
 
   .gmail {
@@ -272,7 +280,7 @@ p {
   }
 
   .number {
-    font-size: 1.7em;
+    font-size: 1.7em !important;
   }
 
   .content {
