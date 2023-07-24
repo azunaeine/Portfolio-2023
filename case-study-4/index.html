@@ -1,231 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../common/common-case-study-styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/b85921a939.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>FreshFind</title>
-  </head>
 
-  <body>
-    <div class="hamburger-menu-content">
-      <a class="hamburger-menu-nav-item" href="/"> Home</a>
-      <a class="hamburger-menu-nav-item" href="/about"> About </a>
-      <a
-        href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-        class="hamburger-menu-nav-item"
-        target="_blank"
-        >Resume</a
-      >
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="../common/common-case-study-styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
+	<title>FreshFind</title>
+</head>
+
+<body>
+	<div class="loader">
+		<div class="loader_icon"></div>
     </div>
-    <nav class="nav-bar">
-      <div class="panel-fade-in"></div>
-      <a class="s-icon" href="/"
-        ><img src="/images/logo.svg" alt="logo" class="logo"
-      /></a>
+	<div class="hamburger-menu-content">
+		<a class="hamburger-menu-nav-item" href="../index.html"> Home</a>
+		<a class="hamburger-menu-nav-item" href="../about/index.html"> About </a>
+		<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+			class="hamburger-menu-nav-item" target="_blank">Resume</a>
+	</div>
+	<nav class="nav-bar">
+		<div class="panel-fade-in"></div>
+		<a class="s-icon" href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo" /></a>
 
-      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
-      <i
-        class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
-        onclick="hideMenu()"
-      ></i>
+		<i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+		<i class="btn-hamburger-menu btn-close-menu fa-solid fa-close" onclick="hideMenu()"></i>
 
-      <div class="nav-items">
-        <a class="nav-item" href="/"> Home</a>
-        <a class="nav-item" href="/about"> About </a>
-        <a
-          href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-          class="nav-item"
-          target="_blank"
-          >Resume</a
-        >
-      </div>
-    </nav>
-    <script>
-      function showMenu() {
-        const hamburgerMenuContent = document.querySelector(
-          ".hamburger-menu-content"
-        );
-        hamburgerMenuContent.classList.add("visible");
+		<div class="nav-items">
+			<a class="nav-item" href="../index.html"> Home</a>
+			<a class="nav-item" href="../about/index.html"> About </a>
+			<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+				class="nav-item" target="_blank">Resume</a>
+		</div>
+	</nav>
+	<script>
+		function showMenu() {
+			const hamburgerMenuContent = document.querySelector(
+				".hamburger-menu-content"
+			);
+			hamburgerMenuContent.classList.add("visible");
 
-        const btnCloseMenu = document.querySelector(".btn-close-menu");
-        btnCloseMenu.classList.add("visible");
+			const btnCloseMenu = document.querySelector(".btn-close-menu");
+			btnCloseMenu.classList.add("visible");
 
-        const body = document.querySelector("body");
-        body.classList.add("menu-is-open");
-      }
+			const body = document.querySelector("body");
+			body.classList.add("menu-is-open");
+		}
 
-      // javascript animate an element function
-      function hideMenu() {
-        // 1. grab the element
-        const hamburgerMenuContent = document.querySelector(
-          ".hamburger-menu-content"
-        );
-        // 2. change its class
-        hamburgerMenuContent.classList.remove("visible");
+		// javascript animate an element function
+		function hideMenu() {
+			// 1. grab the element
+			const hamburgerMenuContent = document.querySelector(
+				".hamburger-menu-content"
+			);
+			// 2. change its class
+			hamburgerMenuContent.classList.remove("visible");
 
-        const btnCloseMenu = document.querySelector(".btn-close-menu");
-        btnCloseMenu.classList.remove("visible");
+			const btnCloseMenu = document.querySelector(".btn-close-menu");
+			btnCloseMenu.classList.remove("visible");
 
-        const body = document.querySelector("body");
-        body.classList.remove("menu-is-open");
-      }
-    </script>
-    <div class="mini stack">
-      <span class="ux">Internship</span>
-      <h3 class="intro">FreshFind</h3>
-    </div>
-    <div class="screen-opening">
-      <div class="images-wrapper">
-        <img src="/images/freshfindland.png" class="landfresh" />
-      </div>
-    </div>
-    <div class="padder">
-      <div class="mini">
-        <h3 class="summary">Summary</h3>
-        <p>
-          FreshFind is a Canadian-based startup that focuses on making local
-          products more accessible. The company operates by collaborating with
-          local producers such as farmers, artisans, chefs, and artists, as well
-          as partnering with markets. Their objective is to enhance the
-          availability of fresh and locally sourced goods to consumers. From May
-          to September 2023, I held the position of product design intern,
-          engaging in a collaborative environment alongside skilled product
-          designers, interns, and user researchers. Throughout the internship
-          duration, my main responsibilities focused on executing user research
-          initiatives, conducting comprehensive user testing sessions, and
-          carrying out interviews. In conjunction with these tasks, I diligently
-          documented observations and key insights derived from the interviews
-          and user testing sessions. This experience allowed me to contribute
-          actively to the product design process and further develop my skills
-          in user-centered research and testing methodologies.
-        </p>
+			const body = document.querySelector("body");
+			body.classList.remove("menu-is-open");
+		}
+	</script>
+	<div class="mini stack">
+		<span class="ux">Internship</span>
+		<h3 class="intro">FreshFind</h3>
+	</div>
+	<div class="screen-opening">
+		<div class="images-wrapper">
+			<img src="../images/freshfindland.jpg" class="landfresh" />
+		</div>
+	</div>
+	<div class="padder">
+		<div class="mini">
+			<h3 class="summary">Summary</h3>
+			<p>
+				FreshFind is a Canadian-based startup that focuses on making local
+				products more accessible. The company operates by collaborating with
+				local producers such as farmers, artisans, chefs, and artists, as well
+				as partnering with markets. Their objective is to enhance the
+				availability of fresh and locally sourced goods to consumers. From May
+				to September 2023, I held the position of product design intern,
+				engaging in a collaborative environment alongside skilled product
+				designers, interns, and user researchers. Throughout the internship
+				duration, my main responsibilities focused on executing user research
+				initiatives, conducting comprehensive user testing sessions, and
+				carrying out interviews. In conjunction with these tasks, I diligently
+				documented observations and key insights derived from the interviews
+				and user testing sessions. This experience allowed me to contribute
+				actively to the product design process and further develop my skills
+				in user-centered research and testing methodologies.
+			</p>
 
-        <div class="visual-row">
-          <div>
-            <h4>Role</h4>
-            <ul>
-              <li>User Research,</li>
-              <li>User Testing,</li>
-              <li>Interviews</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Tools</h4>
-            <ul>
-              <li>Figma,</li>
-              <li>Figjam,</li>
-              <li>Google Docs</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Timeline</h4>
-            <ul>
-              <li>4 months</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Team</h4>
-            <ul>
-              <li>Azuna</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+			<div class="visual-row">
+				<div>
+					<h4>Role</h4>
+					<ul>
+						<li>User Research,</li>
+						<li>User Testing,</li>
+						<li>Interviews</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Tools</h4>
+					<ul>
+						<li>Figma,</li>
+						<li>Figjam,</li>
+						<li>Google Docs</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Timeline</h4>
+					<ul>
+						<li>4 months</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Team</h4>
+					<ul>
+						<li>Azuna</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-      <div class="mini together">
-        <h3 class="summary">Reflecting on Professional Growth</h3>
-        <p>
-          I had the privilege of being immersed in a supportive and conducive
-          environment that fostered my professional development and advancement.
-          Collaborating with highly skilled designers, interns, and user
-          researchers was a constant source of inspiration, witnessing their
-          unwavering dedication and meticulous approach to their craft. ​​My
-          time at FreshFind will always hold a special place in my memories. It
-          was a transformative experience that boosted my confidence in my
-          abilities, and I feel like a changed person because of it.
-        </p>
-      </div>
+		<div class="mini together">
+			<h3 class="summary">Reflecting on Professional Growth</h3>
+			<p>
+				I had the privilege of being immersed in a supportive and conducive
+				environment that fostered my professional development and advancement.
+				Collaborating with highly skilled designers, interns, and user
+				researchers was a constant source of inspiration, witnessing their
+				unwavering dedication and meticulous approach to their craft. ​​My
+				time at FreshFind will always hold a special place in my memories. It
+				was a transformative experience that boosted my confidence in my
+				abilities, and I feel like a changed person because of it.
+			</p>
+		</div>
 
-      <div class="mini together">
-        <h3 class="summary magical">
-          Enhanced Proficiency in User Research and Testing
-        </h3>
+		<div class="mini together">
+			<h3 class="summary magical">
+				Enhanced Proficiency in User Research and Testing
+			</h3>
 
-        <p>
-          Upon successful completion of the internship, my proficiency in
-          conducting user research experienced a substantial improvement,
-          leading to enhanced confidence in this specific skill set. Throughout
-          the internship, I was provided with a predetermined script to guide
-          the process of user tests and interviews, deviating from my previous
-          practice of conducting tests without a structured framework. As I
-          progress, my intention is to develop and employ my own scripts for
-          future user tests. Additionally, I was responsible for organizing the
-          outcomes of the user tests and interviews within a Figjam file,
-          utilizing predefined categories such as facts, insights, and
-          opportunities. Going forward, Figjam will serve as my preferred tool
-          for organizing and documenting findings from user tests and
-          interviews.
-        </p>
-      </div>
-    </div>
+			<p>
+				Upon successful completion of the internship, my proficiency in
+				conducting user research experienced a substantial improvement,
+				leading to enhanced confidence in this specific skill set. Throughout
+				the internship, I was provided with a predetermined script to guide
+				the process of user tests and interviews, deviating from my previous
+				practice of conducting tests without a structured framework. As I
+				progress, my intention is to develop and employ my own scripts for
+				future user tests. Additionally, I was responsible for organizing the
+				outcomes of the user tests and interviews within a Figjam file,
+				utilizing predefined categories such as facts, insights, and
+				opportunities. Going forward, Figjam will serve as my preferred tool
+				for organizing and documenting findings from user tests and
+				interviews.
+			</p>
+		</div>
+	</div>
 
-    <div class="adjust">
-      <div class="last">See more work</div>
-      <div class="three-items">
-        <a class="levitate" href="/case-study-1/"> Levitate</a>
-        <a class="maze" href="/case-study-2/"> MAZE</a>
-        <a class="boldy" href="/case-study-3/"> Bold</a>
-      </div>
-    </div>
+	<div class="adjust">
+		<div class="last">See more work</div>
+		<div class="three-items">
+			<a class="levitate" href="../case-study-1/index.html"> Levitate</a>
+			<a class="maze" href="../case-study-2/index.html"> MAZE</a>
+			<a class="boldy" href="../case-study-3/index.html"> Bold</a>
+		</div>
+	</div>
 
-    <footer class="f-fix">
-      <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
-        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-      </a>
-      <a href="https://github.com/azunaeine" target="_blank">
-        <div class="icon"><i class="fa-brands fa-github"></i></div>
-      </a>
-      <a href="https://twitter.com/xxxazuna" target="_blank">
-        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
-      </a>
-      <a href="mailto:azunaeine@gmail.com" target="_blank">
-        <div class="icon">
-          <i
-            class="fa-solid fa-envelope"
-            style="background: none; box-shadow: none"
-          ></i>
-        </div>
-      </a>
-      <div class="copyrighttext">
-        © Azuna Ekundayo <span class="year">2022</span>
-      </div>
-    </footer>
-    <script>
-      // update the year to the current year
-      // 1. grab the year span
-      const yearSpan = document.querySelector("span.year");
-      // 2. set the innerHTML = current year
-      const currentYear = new Date().getFullYear();
-      yearSpan.innerHTML = currentYear;
-    </script>
-    <script
-      src="https://kit.fontawesome.com/b85921a939.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../common/common-case-study-js.js"></script>
-  </body>
+	<footer class="f-fix">
+		<a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+			<div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+		</a>
+		<a href="https://github.com/azunaeine" target="_blank">
+			<div class="icon"><i class="fa-brands fa-github"></i></div>
+		</a>
+		<a href="https://twitter.com/xxxazuna" target="_blank">
+			<div class="icon"><i class="fa-brands fa-twitter"></i></div>
+		</a>
+		<a href="mailto:azunaeine@gmail.com" target="_blank">
+			<div class="icon">
+				<i class="fa-solid fa-envelope" style="background: none; box-shadow: none"></i>
+			</div>
+		</a>
+		<div class="copyrighttext">
+			© Azuna Ekundayo <span class="year">2022</span>
+		</div>
+	</footer>
+	<script>
+		// update the year to the current year
+		// 1. grab the year span
+		const yearSpan = document.querySelector("span.year");
+		// 2. set the innerHTML = current year
+		const currentYear = new Date().getFullYear();
+		yearSpan.innerHTML = currentYear;
+	</script>
+	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
+	<script src="../common/common-case-study-js.js"></script>
+</body>
+
 </html>

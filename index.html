@@ -1,255 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/b85921a939.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Azuna Ekundayo - Portfolio</title>
-  </head>
 
-  <body>
-    <div class="hamburger-menu-content">
-      <a class="hamburger-menu-nav-item" href="/"> Home</a>
-      <a class="hamburger-menu-nav-item" href="/about"> About </a>
-      <a
-        href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-        class="hamburger-menu-nav-item"
-        target="_blank"
-        >Resume</a
-      >
-    </div>
-    <nav class="nav-bar">
-      <div class="panel-fade-in"></div>
-      <a class="s-icon" href="/"
-        ><img src="images/logo.svg" alt="logo" class="logo"
-      /></a>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
+	<title>Azuna Ekundayo - Portfolio</title>
+</head>
 
-      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
-      <i
-        class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
-        onclick="hideMenu()"
-      ></i>
+<body>
+	<div class="hamburger-menu-content">
+		<a class="hamburger-menu-nav-item" href="index.html"> Home</a>
+		<a class="hamburger-menu-nav-item" href="about/index.html"> About </a>
+		<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+			class="hamburger-menu-nav-item" target="_blank">Resume</a>
+	</div>
+	<nav class="nav-bar">
+		<div class="panel-fade-in"></div>
+		<a class="s-icon" href="index.html"><img src="images/logo.svg" alt="logo" class="logo" /></a>
 
-      <div class="nav-items">
-        <a class="nav-item" href="/"> Home</a>
-        <a class="nav-item" href="/about"> About </a>
-        <a
-          href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-          class="nav-item"
-          target="_blank"
-          >Resume</a
-        >
-      </div>
-    </nav>
+		<i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+		<i class="btn-hamburger-menu btn-close-menu fa-solid fa-close" onclick="hideMenu()"></i>
 
-    <div class="small-box">
-      <div class="header">
-        <h1 class="intro">I’m Azuna, a product designer</h1>
-        <p class="sub-intro">
-          previously product design intern at <br />
-          <strong>Freshfind</strong>
-        </p>
-      </div>
-      <button class="main-b" onclick="takeUsDownToCaseStudies()">
-        View Work
-      </button>
-      <img src="images/laptop.svg" class="laptop" />
-    </div>
+		<div class="nav-items">
+			<a class="nav-item" href="index.html"> Home</a>
+			<a class="nav-item" href="about/index.html"> About </a>
+			<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
+				class="nav-item" target="_blank">Resume</a>
+		</div>
+	</nav>
 
-    <div class="land">
-      <div class="head">
-        <h1 class="intro-a">
-          I’m Azuna, a <br />
-          product designer
-        </h1>
-        <p class="two-intro">
-          previously product design intern at <br />
-          <strong> Freshfind</strong>
-        </p>
-        <button class="main-button" onclick="takeUsDownToCaseStudies()">
-          View Work
-        </button>
-      </div>
-      <img src="images/laptop.svg" class="computer" />
-    </div>
-    <div class="big-box">
-      <div class="container">
-        <div class="shadow"></div>
-        <div class="square">
-          <span class="one">
-            <img src="images/phone2.webp" />
-          </span>
-          <div class="brief">
-            <span class="sub">UI/UX Design</span>
-            <h3 class="title">Levitate</h3>
-            <p class="description">
-              Levitate is a mobile application that revolutionizes clothes
-              shopping by simplifying the process. Users can easily order
-              clothes on the mobile app and have them delivered to their
-              doorstep, eliminating the need to visit physical clothing stores.
-            </p>
-            <a class="case" href="case-study-1/">View Case Study</a>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="shadow"></div>
-        <div class="square">
-          <span class="two">
-            <img src="images/phone1.webp" />
-          </span>
-          <div class="brief">
-            <span class="sub">UI/UX Design</span>
-            <h3 class="title-one">Maze</h3>
-            <p class="description">
-              MAZE is a mobile application that offers online tutoring services.
-              This mobile application has a planning feature, a video calling
-              feature, and provides access to a pool of professional tutors.
-            </p>
-            <a class="case" href="/case-study-2/">View Case Study</a>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="shadow"></div>
-        <div class="square">
-          <span class="three">
-            <img src="images/computer1.webp" />
-          </span>
-          <div class="brief">
-            <span class="sub"> Visual Design</span>
-            <h3 class="title-two">Bold</h3>
-            <p class="description">
-              Bold is a school project that aims to create a bold and
-              personality-driven sign-in page. By incorporating elements that
-              represent "bold" into the final design, the sign-in page will
-              exude a strong and assertive character.
-            </p>
-            <a class="case" href="/case-study-3/">View Case Study</a>
-          </div>
-        </div>
-      </div>
+	<div class="small-box">
+		<div class="header">
+			<h1 class="intro">I’m Azuna, a product designer</h1>
+			<p class="sub-intro">
+				previously product design intern at <br />
+				<strong>Freshfind</strong>
+			</p>
+		</div>
+		<button class="main-b" onclick="takeUsDownToCaseStudies()">
+			View Work
+		</button>
+		<img src="images/laptop.svg" class="laptop" />
+	</div>
 
-      <div class="container">
-        <div class="shadow"></div>
-        <div class="square">
-          <span class="four">
-            <img src="images/computer2.webp" />
-          </span>
-          <div class="brief">
-            <span class="sub"> Internship</span>
-            <h3 class="title-three">FreshFind</h3>
-            <p class="description">
-              Impacted the product team by conducting user research, user
-              testing, and interviews.
-            </p>
-            <a class="case" href="case-study-4/">View Case Study</a>
-          </div>
-        </div>
-      </div>
-    </div>
+	<div class="land">
+		<div class="head">
+			<h1 class="intro-a">
+				I’m Azuna, a <br />
+				product designer
+			</h1>
+			<p class="two-intro">
+				previously product design intern at <br />
+				<strong> Freshfind</strong>
+			</p>
+			<button class="main-button" onclick="takeUsDownToCaseStudies()">
+				View Work
+			</button>
+		</div>
+		<img src="images/laptop.svg" class="computer" />
+	</div>
+	<div class="big-box">
+		<div class="container">
+			<div class="shadow"></div>
+			<div class="square">
+				<span class="one">
+					<img src="images/phone2.webp" />
+				</span>
+				<div class="brief">
+					<span class="sub">UI/UX Design</span>
+					<h3 class="title">Levitate</h3>
+					<p class="description">
+						Levitate is a mobile application that revolutionizes clothes
+						shopping by simplifying the process. Users can easily order
+						clothes on the mobile app and have them delivered to their
+						doorstep, eliminating the need to visit physical clothing stores.
+					</p>
+					<a class="case" href="case-study-1/index.html">View Case Study</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="shadow"></div>
+			<div class="square">
+				<span class="two">
+					<img src="images/phone1.webp" />
+				</span>
+				<div class="brief">
+					<span class="sub">UI/UX Design</span>
+					<h3 class="title-one">Maze</h3>
+					<p class="description">
+						MAZE is a mobile application that offers online tutoring services.
+						This mobile application has a planning feature, a video calling
+						feature, and provides access to a pool of professional tutors.
+					</p>
+					<a class="case" href="case-study-2/index.html">View Case Study</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="shadow"></div>
+			<div class="square">
+				<span class="three">
+					<img src="images/computer1.webp" />
+				</span>
+				<div class="brief">
+					<span class="sub"> Visual Design</span>
+					<h3 class="title-two">Bold</h3>
+					<p class="description">
+						Bold is a school project that aims to create a bold and
+						personality-driven sign-in page. By incorporating elements that
+						represent "bold" into the final design, the sign-in page will
+						exude a strong and assertive character.
+					</p>
+					<a class="case" href="case-study-3/index.html">View Case Study</a>
+				</div>
+			</div>
+		</div>
 
-    <footer>
-      <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
-        <div class="icon"><i class="fa-brands fa-linkedin"></i></div
-      ></a>
-      <a href="https://github.com/azunaeine" target="_blank"
-        ><div class="icon"><i class="fa-brands fa-github"></i></div
-      ></a>
-      <a href="https://twitter.com/xxxazuna" target="_blank"
-        ><div class="icon"><i class="fa-brands fa-twitter"></i></div
-      ></a>
-      <a href="mailto:azunaeine@gmail.com" target="_blank"
-        ><div class="icon">
-          <i
-            class="fa-solid fa-envelope"
-            style="background: none; box-shadow: none"
-          ></i></div
-      ></a>
-      <div class="copyrighttext">
-        © Azuna Ekundayo <span class="year">2022</span>
-      </div>
-    </footer>
+		<div class="container">
+			<div class="shadow"></div>
+			<div class="square">
+				<span class="four">
+					<img src="images/computer2.webp" />
+				</span>
+				<div class="brief">
+					<span class="sub"> Internship</span>
+					<h3 class="title-three">FreshFind</h3>
+					<p class="description">
+						Impacted the product team by conducting user research, user
+						testing, and interviews.
+					</p>
+					<a class="case" href="case-study-4/index.html">View Case Study</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <script>
-      // update the year to the current year
-      // 1. grab the year span
-      const yearSpan = document.querySelector("span.year");
-      // 2. set the innerHTML = current year
-      const currentYear = new Date().getFullYear();
-      yearSpan.innerHTML = currentYear;
-    </script>
-    <script
-      src="https://kit.fontawesome.com/b85921a939.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      // 1. fade in the nav items + logo - panel around the nav that fades in
-      // TODO
-      // 2. nav links transition in - move down, move at different speeds, start at different heights
-      // 3. (optional) last item (CTA button) comes down all the way (more than the others)
-      // grab the element
-      //
-      // this will add a class "fade-in" to the body, we can use it to make all our elements fade in!
-      function startTheAnimation() {
-        // start the animation!
-        document.querySelector("body").classList.add("fade-in");
-      }
-      // delay this by 1s (this will run 1s in the future)
-      // start the animation 1s after page loads, so that the user can see the animation (otherwise it's too fast)
-      setTimeout(startTheAnimation, 0.4 * 1000);
+	<footer>
+		<a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+			<div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+		</a>
+		<a href="https://github.com/azunaeine" target="_blank">
+			<div class="icon"><i class="fa-brands fa-github"></i></div>
+		</a>
+		<a href="https://twitter.com/xxxazuna" target="_blank">
+			<div class="icon"><i class="fa-brands fa-twitter"></i></div>
+		</a>
+		<a href="mailto:azunaeine@gmail.com" target="_blank">
+			<div class="icon">
+				<i class="fa-solid fa-envelope" style="background: none; box-shadow: none"></i>
+			</div>
+		</a>
+		<div class="copyrighttext">
+			© Azuna Ekundayo <span class="year">2022</span>
+		</div>
+	</footer>
 
-      function showMenu() {
-        const hamburgerMenuContent = document.querySelector(
-          ".hamburger-menu-content"
-        );
-        hamburgerMenuContent.classList.add("visible");
+	<script>
+		// update the year to the current year
+		// 1. grab the year span
+		const yearSpan = document.querySelector("span.year");
+		// 2. set the innerHTML = current year
+		const currentYear = new Date().getFullYear();
+		yearSpan.innerHTML = currentYear;
+	</script>
+	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
+	<script>
+		// 1. fade in the nav items + logo - panel around the nav that fades in
+		// TODO
+		// 2. nav links transition in - move down, move at different speeds, start at different heights
+		// 3. (optional) last item (CTA button) comes down all the way (more than the others)
+		// grab the element
+		//
+		// this will add a class "fade-in" to the body, we can use it to make all our elements fade in!
+		function startTheAnimation() {
+			// start the animation!
+			document.querySelector("body").classList.add("fade-in");
+		}
+		// delay this by 1s (this will run 1s in the future)
+		// start the animation 1s after page loads, so that the user can see the animation (otherwise it's too fast)
+		setTimeout(startTheAnimation, 0.4 * 1000);
 
-        const btnCloseMenu = document.querySelector(".btn-close-menu");
-        btnCloseMenu.classList.add("visible");
+		function showMenu() {
+			const hamburgerMenuContent = document.querySelector(
+				".hamburger-menu-content"
+			);
+			hamburgerMenuContent.classList.add("visible");
 
-        const body = document.querySelector("body");
-        body.classList.add("menu-is-open");
-      }
+			const btnCloseMenu = document.querySelector(".btn-close-menu");
+			btnCloseMenu.classList.add("visible");
 
-      // javascript animate an element function
-      function hideMenu() {
-        // 1. grab the element
-        const hamburgerMenuContent = document.querySelector(
-          ".hamburger-menu-content"
-        );
-        // 2. change its class
-        hamburgerMenuContent.classList.remove("visible");
+			const body = document.querySelector("body");
+			body.classList.add("menu-is-open");
+		}
 
-        const btnCloseMenu = document.querySelector(".btn-close-menu");
-        btnCloseMenu.classList.remove("visible");
+		// javascript animate an element function
+		function hideMenu() {
+			// 1. grab the element
+			const hamburgerMenuContent = document.querySelector(
+				".hamburger-menu-content"
+			);
+			// 2. change its class
+			hamburgerMenuContent.classList.remove("visible");
 
-        const body = document.querySelector("body");
-        body.classList.remove("menu-is-open");
-      }
-    </script>
-    <script>
-      function takeUsDownToCaseStudies() {
-        // scroll down to the element with id "case-studies"
-        // 1. grab the element
-        const myContainer = document.querySelector(".container .brief .title");
-        // 2. scrollIntoView({bahavior:"smooth"})
-        myContainer.scrollIntoView({ behavior: "smooth" });
-        // 3. hide the menu
-        hideMenu();
-      }
-    </script>
-  </body>
+			const btnCloseMenu = document.querySelector(".btn-close-menu");
+			btnCloseMenu.classList.remove("visible");
+
+			const body = document.querySelector("body");
+			body.classList.remove("menu-is-open");
+		}
+	</script>
+	<script>
+		function takeUsDownToCaseStudies() {
+			// scroll down to the element with id "case-studies"
+			// 1. grab the element
+			const myContainer = document.querySelector(".container .brief .title");
+			// 2. scrollIntoView({bahavior:"smooth"})
+			myContainer.scrollIntoView({ behavior: "smooth" });
+			// 3. hide the menu
+			hideMenu();
+		}
+	</script>
+</body>
+
 </html>
