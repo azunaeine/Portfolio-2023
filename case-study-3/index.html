@@ -1,265 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../common/common-case-study-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bold</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="../common/common-case-study-styles.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
-	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
-	<title>Bold</title>
-</head>
-
-<body>
-	<div class="loader">
-		<div class="loader_icon"></div>
+  <body>
+    <div class="loader">
+      <div class="loader_icon"></div>
     </div>
-	<div class="hamburger-menu-content">
-		<a class="hamburger-menu-nav-item" href="../index.html"> Home</a>
-		<a class="hamburger-menu-nav-item" href="../about/index.html"> About </a>
-		<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-			class="hamburger-menu-nav-item" target="_blank">Resume</a>
-	</div>
-	<nav class="nav-bar">
-		<div class="panel-fade-in"></div>
-		<a class="s-icon" href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo" /></a>
+    <div class="hamburger-menu-content">
+      <a class="hamburger-menu-nav-item" href="../index.html"> Home</a>
+      <a class="hamburger-menu-nav-item" href="../about/index.html"> About </a>
+      <a
+        href="https://drive.google.com/file/d/1uLXBSILn9RizXddDTxU8b7XusnnCFbgf/view?usp=sharing"
+        class="hamburger-menu-nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </div>
+    <nav class="nav-bar">
+      <div class="panel-fade-in"></div>
+      <a class="s-icon" href="../index.html"
+        ><img src="../images/logo.svg" alt="logo" class="logo"
+      /></a>
 
-		<i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
-		<i class="btn-hamburger-menu btn-close-menu fa-solid fa-close" onclick="hideMenu()"></i>
+      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <i
+        class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
+        onclick="hideMenu()"
+      ></i>
 
-		<div class="nav-items">
-			<a class="nav-item" href="../index.html"> Home</a>
-			<a class="nav-item" href="../about/index.html"> About </a>
-			<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-				class="nav-item" target="_blank">Resume</a>
-		</div>
-	</nav>
-	<script>
-		function showMenu() {
-			const hamburgerMenuContent = document.querySelector(
-				".hamburger-menu-content"
-			);
-			hamburgerMenuContent.classList.add("visible");
+      <div class="nav-items">
+        <a class="nav-item" href="../index.html"> Home</a>
+        <a class="nav-item" href="../about/index.html"> About </a>
+        <a
+          href="https://drive.google.com/file/d/1uLXBSILn9RizXddDTxU8b7XusnnCFbgf/view?usp=sharing"
+          class="nav-item"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
+    </nav>
+    <script>
+      function showMenu() {
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        hamburgerMenuContent.classList.add("visible");
 
-			const btnCloseMenu = document.querySelector(".btn-close-menu");
-			btnCloseMenu.classList.add("visible");
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.add("visible");
 
-			const body = document.querySelector("body");
-			body.classList.add("menu-is-open");
-		}
+        const body = document.querySelector("body");
+        body.classList.add("menu-is-open");
+      }
 
-		// javascript animate an element function
-		function hideMenu() {
-			// 1. grab the element
-			const hamburgerMenuContent = document.querySelector(
-				".hamburger-menu-content"
-			);
-			// 2. change its class
-			hamburgerMenuContent.classList.remove("visible");
+      // javascript animate an element function
+      function hideMenu() {
+        // 1. grab the element
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        // 2. change its class
+        hamburgerMenuContent.classList.remove("visible");
 
-			const btnCloseMenu = document.querySelector(".btn-close-menu");
-			btnCloseMenu.classList.remove("visible");
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.remove("visible");
 
-			const body = document.querySelector("body");
-			body.classList.remove("menu-is-open");
-		}
-	</script>
-	<div class="mini stack">
-		<span class="ux">Visual Design</span>
-		<h3 class="intro">Bold</h3>
-	</div>
-	<div class="screen-opening">
-		<div class="images-wrapper">
-			<img src="../images/bold-case.svg" class="screen-fix" />
-		</div>
-	</div>
-	<div class="padder">
-		<div class="mini">
-			<h3 class="summary">Project Summary</h3>
-			<p>
-				The objective of this project was to conceptualize, refine, choose,
-				and design a sign-in page that incorporates an adjective to establish
-				a distinct personality. Furthermore, the project necessitated the
-				application of visual design techniques to effectively convey the
-				intended adjective without overtly stating it. The project progressed
-				through stages of ideation, iterative refinement, careful selection,
-				and meticulous design implementation. By leveraging visual design
-				skills, the aim is to evoke the desired adjective in a subtle and
-				compelling manner.
-			</p>
+        const body = document.querySelector("body");
+        body.classList.remove("menu-is-open");
+      }
+    </script>
+    <div class="mini stack">
+      <span class="ux">Visual Design</span>
+      <h3 class="intro">Bold</h3>
+    </div>
+    <div class="screen-opening">
+      <div class="images-wrapper">
+        <img src="../images/bold-case.svg" class="screen-fix" />
+      </div>
+    </div>
+    <div class="padder">
+      <div class="mini">
+        <h3 class="summary">Project Summary</h3>
+        <p>
+          The objective of this project was to conceptualize, refine, choose,
+          and design a sign-in page that incorporates an adjective to establish
+          a distinct personality. Furthermore, the project necessitated the
+          application of visual design techniques to effectively convey the
+          intended adjective without overtly stating it. The project progressed
+          through stages of ideation, iterative refinement, careful selection,
+          and meticulous design implementation. By leveraging visual design
+          skills, the aim is to evoke the desired adjective in a subtle and
+          compelling manner.
+        </p>
 
-			<div class="visual-row">
-				<div>
-					<h4>Role</h4>
-					<ul>
-						<li>Visual Design</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Tools</h4>
-					<ul>
-						<li>Adobe XD,</li>
-						<li>Adobe Illustrator</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Timeline</h4>
-					<ul>
-						<li>4 weeks</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Team</h4>
-					<ul>
-						<li>Azuna</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<h2 class="final">Final Design</h2>
-		<div class="mini together">
-			<h3 class="summary boldz">Bold</h3>
-			<p>
-				The final design of the project incorporates a monochromatic yellow
-				background, carefully chosen for its symbolic representation of
-				intelligence and optimism. These qualities closely align with the
-				concept of boldness, commonly observed in individuals who exhibit
-				daring and audacious behavior. Additionally, the design features an
-				<strong>eye element,</strong> symbolizing attributes of protection,
-				insight, and wisdom. The gradual formation of the
-				<strong>eye's inner layer </strong>symbolizes the progressive
-				development of boldness, fueled by the acquisition of wisdom and
-				deeper understanding. This visual representation establishes a strong
-				connection between the <strong>eye element,</strong> wisdom, and the
-				concept of boldness, effectively reinforcing the underlying theme
-				throughout the entire design. It communicates that boldness is not
-				solely driven by audacity, but also by the careful consideration and
-				discernment that wisdom brings, creating a powerful and well-rounded
-				embodiment of boldness.
-			</p>
-		</div>
-		<img src="../images/bold-case.svg" class="sign-in" />
+        <div class="visual-row">
+          <div>
+            <h4>Role</h4>
+            <ul>
+              <li>Visual Design</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tools</h4>
+            <ul>
+              <li>Adobe XD,</li>
+              <li>Adobe Illustrator</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Timeline</h4>
+            <ul>
+              <li>4 weeks</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Team</h4>
+            <ul>
+              <li>Azuna</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h2 class="final">Final Design</h2>
+      <div class="mini together">
+        <h3 class="summary boldz">Bold</h3>
+        <p>
+          The final design of the project incorporates a monochromatic yellow
+          background, carefully chosen for its symbolic representation of
+          intelligence and optimism. These qualities closely align with the
+          concept of boldness, commonly observed in individuals who exhibit
+          daring and audacious behavior. Additionally, the design features an
+          <strong>eye element,</strong> symbolizing attributes of protection,
+          insight, and wisdom. The gradual formation of the
+          <strong>eye's inner layer </strong>symbolizes the progressive
+          development of boldness, fueled by the acquisition of wisdom and
+          deeper understanding. This visual representation establishes a strong
+          connection between the <strong>eye element,</strong> wisdom, and the
+          concept of boldness, effectively reinforcing the underlying theme
+          throughout the entire design. It communicates that boldness is not
+          solely driven by audacity, but also by the careful consideration and
+          discernment that wisdom brings, creating a powerful and well-rounded
+          embodiment of boldness.
+        </p>
+      </div>
+      <img src="../images/bold-case.svg" class="sign-in" />
 
-		<div class="alt">
-			<h2 class="alter">Alternative sign-in pages</h2>
-			<p>
-				During the iterative design process of the sign-in page, I embarked on
-				a creative exploration, exploring a multitude of design concepts
-				infused with various adjectives to establish unique and captivating
-				personalities. Through meticulous evaluation and thoughtful
-				deliberation, I ultimately settled on one sign-in page that
-				incorporated elements representing 'bold,' aiming to exude a strong
-				and assertive character. Moreover, I present below a selection of
-				alternative sign-in pages that were considered, showcasing the
-				creative journey undertaken to create a compelling
-				<strong>sign-in page</strong> with a striking personality.
-			</p>
-		</div>
+      <div class="alt">
+        <h2 class="alter">Alternative sign-in pages</h2>
+        <p>
+          During the iterative design process of the sign-in page, I embarked on
+          a creative exploration, exploring a multitude of design concepts
+          infused with various adjectives to establish unique and captivating
+          personalities. Through meticulous evaluation and thoughtful
+          deliberation, I ultimately settled on one sign-in page that
+          incorporated elements representing 'bold,' aiming to exude a strong
+          and assertive character. Moreover, I present below a selection of
+          alternative sign-in pages that were considered, showcasing the
+          creative journey undertaken to create a compelling
+          <strong>sign-in page</strong> with a striking personality.
+        </p>
+      </div>
 
-		<div class="mini together">
-			<h3 class="summary magical">Magical</h3>
+      <div class="mini together">
+        <h3 class="summary magical">Magical</h3>
 
-			<p>
-				This sign-in page employs a restricted color palette, featuring two
-				equally relevant hues of blue. Additionally, a black accent color is
-				incorporated into the design. Contrast is utilized to convey the
-				adjective "magical," particularly through the use of contrasting
-				shapes. A simplistic shape is juxtaposed with a more intricate shape.
-				However, after careful evaluation, I chose not to proceed with this
-				sign-in page as the final design. I believed that the visual elements
-				and colors fail to effectively capture the intended essence of
-				"magical."
-			</p>
-		</div>
-		<img src="../images/magical.svg" class="sign-in" />
-		<div class="mini together">
-			<h3 class="summary">Rueful</h3>
+        <p>
+          This sign-in page employs a restricted color palette, featuring two
+          equally relevant hues of blue. Additionally, a black accent color is
+          incorporated into the design. Contrast is utilized to convey the
+          adjective "magical," particularly through the use of contrasting
+          shapes. A simplistic shape is juxtaposed with a more intricate shape.
+          However, after careful evaluation, I chose not to proceed with this
+          sign-in page as the final design. I believed that the visual elements
+          and colors fail to effectively capture the intended essence of
+          "magical."
+        </p>
+      </div>
+      <img src="../images/magical.svg" class="sign-in" />
+      <div class="mini together">
+        <h3 class="summary">Rueful</h3>
 
-			<p>
-				The term "rueful" is synonymous with regret. The design of the sign-in
-				page employs a black and white color palette, where black symbolizes
-				grief and white represents innocence. The deliberate combination of
-				these colors aims to effectively convey the essence of ruefulness. The
-				design incorporates thick and long rectangles arranged in intersecting
-				horizontal and vertical lines, creating a visually striking cage-like
-				structure. However, the decision was made to not proceed with this
-				sign-in page as the final design due to its perceived dullness and
-				lack of appeal.
-			</p>
-			<img src="../images/rueful.svg" class="sign-in" />
-			<h3 class="headline">The planning stage</h3>
-			<p>
-				The planning stage holds significant importance as it grants the
-				designer the necessary liberty to engage in experimentation. Prior to
-				the development of three distinct sign-in pages, each representing a
-				unique adjective, it was imperative to commence with sketching and
-				creating wireframes. By undertaking these activities, a comprehensive
-				comprehension of the visual aspects and overall appearance of the
-				three sign-in pages was obtained.
-			</p>
-			<div class="wireframe-box">
-				<img src="../images/gray1.svg" class="paper" />
-				<img src="../images/gray2.svg" class="paper" />
-				<img src="../images/gray3.svg" class="paper" />
-				<img src="../images/paper1.jpg" class="paper" />
-				<img src="../images/paper3.jpg" class="paper" />
-				<img src="../images/paper0.jpg" class="paper" />
-			</div>
-			<h3 class="headline">Reflection</h3>
-			<p>
-				This school project was highly enjoyable and insightful. Upon
-				reflection, I would advise my future self to embrace the opportunity
-				to explore new avenues and broaden my expertise in the field of
-				design. While I focused primarily on UX Design and honed my skills in
-				that area, I recognized the significance of visual design as another
-				critical aspect of design that requires further development.
-			</p>
-		</div>
-	</div>
+        <p>
+          The term "rueful" is synonymous with regret. The design of the sign-in
+          page employs a black and white color palette, where black symbolizes
+          grief and white represents innocence. The deliberate combination of
+          these colors aims to effectively convey the essence of ruefulness. The
+          design incorporates thick and long rectangles arranged in intersecting
+          horizontal and vertical lines, creating a visually striking cage-like
+          structure. However, the decision was made to not proceed with this
+          sign-in page as the final design due to its perceived dullness and
+          lack of appeal.
+        </p>
+        <img src="../images/rueful.svg" class="sign-in" />
+        <h3 class="headline">The planning stage</h3>
+        <p>
+          The planning stage holds significant importance as it grants the
+          designer the necessary liberty to engage in experimentation. Prior to
+          the development of three distinct sign-in pages, each representing a
+          unique adjective, it was imperative to commence with sketching and
+          creating wireframes. By undertaking these activities, a comprehensive
+          comprehension of the visual aspects and overall appearance of the
+          three sign-in pages was obtained.
+        </p>
+        <div class="wireframe-box">
+          <img src="../images/gray1.svg" class="paper" />
+          <img src="../images/gray2.svg" class="paper" />
+          <img src="../images/gray3.svg" class="paper" />
+          <img src="../images/paper1.jpg" class="paper" />
+          <img src="../images/paper3.jpg" class="paper" />
+          <img src="../images/paper0.jpg" class="paper" />
+        </div>
+        <h3 class="headline">Reflection</h3>
+        <p>
+          This school project was highly enjoyable and insightful. Upon
+          reflection, I would advise my future self to embrace the opportunity
+          to explore new avenues and broaden my expertise in the field of
+          design. While I focused primarily on UX Design and honed my skills in
+          that area, I recognized the significance of visual design as another
+          critical aspect of design that requires further development.
+        </p>
+      </div>
+    </div>
 
-	<div class="adjust">
-		<div class="last">See more work</div>
-		<div class="three-items">
-			<a class="levitate" href="../case-study-1/index.html"> Levitate</a>
-			<a class="maze" href="../case-study-2/index.html"> MAZE</a>
-			<a class="freshf" href="../case-study-4/index.html"> Freshfind</a>
-		</div>
-	</div>
+    <div class="adjust">
+      <div class="last">See more work</div>
+      <div class="three-items">
+        <a class="levitate" href="../case-study-1/index.html"> Levitate</a>
+        <a class="maze" href="../case-study-2/index.html"> MAZE</a>
+        <a class="freshf" href="../case-study-4/index.html"> Freshfind</a>
+      </div>
+    </div>
 
-	<footer>
-		<a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
-			<div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-		</a>
-		<a href="https://github.com/azunaeine" target="_blank">
-			<div class="icon"><i class="fa-brands fa-github"></i></div>
-		</a>
-		<a href="https://twitter.com/xxxazuna" target="_blank">
-			<div class="icon"><i class="fa-brands fa-twitter"></i></div>
-		</a>
-		<a href="mailto:azunaeine@gmail.com" target="_blank">
-			<div class="icon">
-				<i class="fa-solid fa-envelope" style="background: none; box-shadow: none"></i>
-			</div>
-		</a>
-		<div class="copyrighttext">
-			© Azuna Ekundayo <span class="year">2022</span>
-		</div>
-	</footer>
-	<script>
-		// update the year to the current year
-		// 1. grab the year span
-		const yearSpan = document.querySelector("span.year");
-		// 2. set the innerHTML = current year
-		const currentYear = new Date().getFullYear();
-		yearSpan.innerHTML = currentYear;
-	</script>
-	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
-	<script src="../common/common-case-study-js.js"></script>
-</body>
-
+    <footer>
+      <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+      </a>
+      <a href="https://github.com/azunaeine" target="_blank">
+        <div class="icon"><i class="fa-brands fa-github"></i></div>
+      </a>
+      <a href="https://twitter.com/xxxazuna" target="_blank">
+        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+      </a>
+      <a href="mailto:azunaeine@gmail.com" target="_blank">
+        <div class="icon">
+          <i
+            class="fa-solid fa-envelope"
+            style="background: none; box-shadow: none"
+          ></i>
+        </div>
+      </a>
+      <div class="copyrighttext">
+        © Azuna Ekundayo <span class="year">2022</span>
+      </div>
+    </footer>
+    <script>
+      // update the year to the current year
+      // 1. grab the year span
+      const yearSpan = document.querySelector("span.year");
+      // 2. set the innerHTML = current year
+      const currentYear = new Date().getFullYear();
+      yearSpan.innerHTML = currentYear;
+    </script>
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../common/common-case-study-js.js"></script>
+  </body>
 </html>

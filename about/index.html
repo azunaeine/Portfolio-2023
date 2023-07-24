@@ -1,198 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../common/common-case-study-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>About</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="../common/common-case-study-styles.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
-	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
-	<title>About</title>
-</head>
+  <body>
+    <div class="content">
+      <div class="hamburger-menu-content">
+        <a class="hamburger-menu-nav-item" href="../index.html"> Home</a>
+        <a class="hamburger-menu-nav-item" href="about/index.html"> About </a>
+        <a
+          href="https://drive.google.com/file/d/1uLXBSILn9RizXddDTxU8b7XusnnCFbgf/view?usp=sharing"
+          class="hamburger-menu-nav-item"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
+      <nav class="nav-bar">
+        <div class="panel-fade-in"></div>
+        <a class="s-icon" href="../index.html"
+          ><img src="../images/logo.svg" alt="logo" class="logo"
+        /></a>
 
-<body>
-	<div class="content">
-		<div class="hamburger-menu-content">
-			<a class="hamburger-menu-nav-item" href="../index.html"> Home</a>
-			<a class="hamburger-menu-nav-item" href="about/index.html"> About </a>
-			<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-				class="hamburger-menu-nav-item" target="_blank">Resume</a>
-		</div>
-		<nav class="nav-bar">
-			<div class="panel-fade-in"></div>
-			<a class="s-icon" href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo" /></a>
+        <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+        <i
+          class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
+          onclick="hideMenu()"
+        ></i>
 
-			<i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
-			<i class="btn-hamburger-menu btn-close-menu fa-solid fa-close" onclick="hideMenu()"></i>
+        <div class="nav-items">
+          <a class="nav-item" href="../index.html"> Home</a>
+          <a class="nav-item" href="about/index.html"> About </a>
+          <a
+            href="https://drive.google.com/file/d/1uLXBSILn9RizXddDTxU8b7XusnnCFbgf/view?usp=sharing"
+            class="nav-item"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+      </nav>
+      <div class="main-content">
+        <img src="../images/azuna.JPG" class="azuna" />
 
-			<div class="nav-items">
-				<a class="nav-item" href="../index.html"> Home</a>
-				<a class="nav-item" href="about/index.html"> About </a>
-				<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-					class="nav-item" target="_blank">Resume</a>
-			</div>
-		</nav>
-		<div class="main-content">
-			<img src="../images/azuna.JPG" class="azuna" />
+        <div class="mini-content">
+          <h3>About Me</h3>
+          <p>
+            My name is Azuna Ekundayo, and I am currently enrolled at Sheridan
+            College, pursuing a major in Interaction Design. Originally from
+            Nigeria, I was raised in Edmonton, Alberta, Canada, and now I reside
+            in Toronto, Ontario, Canada. I possess a deep passion for UX design
+            and web design, driven by my desire to create intuitive solutions
+            and visually appealing products. With extensive internship
+            experience and a profound understanding of UX Design and web design,
+            I offer valuable expertise in these domains. Should you wish to
+            contact me, please feel free to reach out via
+            <strong> email or phone.</strong> Outside of designing, you can find
+            me engrossed in the latest TV shows, indulging in a good book, or
+            engaging in coding activities. I have developed my portfolio using
+            Adobe XD for the design phase and implemented it using HTML, CSS,
+            and JavaScript for the coding aspect. I hope you find my portfolio
+            enjoyable and informative.
+          </p>
+        </div>
+      </div>
+      <div class="contact-flex">
+        <h6>Contact Me</h6>
+        <div class="contact-info">
+          <a class="gmail" href="mailto:azunaeine@gmail.com" target="_blank">
+            azunaeine@gmail.com
+          </a>
+          <p><strong>or call</strong></p>
+          <p class="number">780-807-5625</p>
+        </div>
+      </div>
+      <a class="button" onclick="takeUsDown()"> Read More</a>
+      <h3 class="skills">My Skills</h3>
+      <div class="skill-flex">
+        <div class="skill-box">
+          <img src="../images/teamwork.svg" class="cube" />
+          <h6>Teamwork</h6>
+          <p class="response">
+            I can collaborate effectively with other designers and developers,
+            demonstrating a strong teamworking spirit.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/design.svg" class="cube" />
+          <h6>Design</h6>
+          <p class="response">
+            I have a strong proficiency in design softwares, with expertise in
+            Figma, Adobe XD, and other industry-standard tools.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/coding.svg" class="cube" />
+          <h6>Coding</h6>
+          <p class="response">
+            I have a proficient command of HTML, CSS, and JavaScript,
+            demonstrating expertise in these programming languages.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/communication.svg" class="cube" />
+          <h6 class="xl">Communication</h6>
+          <p class="response">
+            I have a knack for conveying ideas with clarity and engaging in
+            productive discussions.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/search.svg" class="cube" />
+          <h6 class="xl">User Research</h6>
+          <p class="response">
+            I have a strong aptitude for conducting interviews and user tests,
+            employing effective methodologies to gather valuable insights and
+            user feedback.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/wireframe.svg" class="cube" />
+          <h6>Wireframing</h6>
+          <p class="response">
+            I possess exceptional knowledge of wireframing techniques and
+            practices.
+          </p>
+        </div>
+      </div>
 
-			<div class="mini-content">
-				<h3>About Me</h3>
-				<p>
-					My name is Azuna Ekundayo, and I am currently enrolled at Sheridan
-					College, pursuing a major in Interaction Design. Originally from
-					Nigeria, I was raised in Edmonton, Alberta, Canada, and now I reside
-					in Toronto, Ontario, Canada. I possess a deep passion for UX design
-					and web design, driven by my desire to create intuitive solutions
-					and visually appealing products. With extensive internship
-					experience and a profound understanding of UX Design and web design,
-					I offer valuable expertise in these domains. Should you wish to
-					contact me, please feel free to reach out via
-					<strong> email or phone.</strong> Outside of designing, you can find
-					me engrossed in the latest TV shows, indulging in a good book, or
-					engaging in coding activities. I have developed my portfolio using
-					Adobe XD for the design phase and implemented it using HTML, CSS,
-					and JavaScript for the coding aspect. I hope you find my portfolio
-					enjoyable and informative.
-				</p>
-			</div>
-		</div>
-		<div class="contact-flex">
-			<h6>Contact Me</h6>
-			<div class="contact-info">
-				<a class="gmail" href="mailto:azunaeine@gmail.com" target="_blank">
-					azunaeine@gmail.com
-				</a>
-				<p><strong>or call</strong></p>
-				<p class="number">780-807-5625</p>
-			</div>
-		</div>
-		<a class="button" onclick="takeUsDown()"> Read More</a>
-		<h3 class="skills">My Skills</h3>
-		<div class="skill-flex">
-			<div class="skill-box">
-				<img src="../images/teamwork.svg" class="cube" />
-				<h6>Teamwork</h6>
-				<p class="response">
-					I can collaborate effectively with other designers and developers,
-					demonstrating a strong teamworking spirit.
-				</p>
-			</div>
-			<div class="skill-box">
-				<img src="../images/design.svg" class="cube" />
-				<h6>Design</h6>
-				<p class="response">
-					I have a strong proficiency in design softwares, with expertise in
-					Figma, Adobe XD, and other industry-standard tools.
-				</p>
-			</div>
-			<div class="skill-box">
-				<img src="../images/coding.svg" class="cube" />
-				<h6>Coding</h6>
-				<p class="response">
-					I have a proficient command of HTML, CSS, and JavaScript,
-					demonstrating expertise in these programming languages.
-				</p>
-			</div>
-			<div class="skill-box">
-				<img src="../images/communication.svg" class="cube" />
-				<h6 class="xl">Communication</h6>
-				<p class="response">
-					I have a knack for conveying ideas with clarity and engaging in
-					productive discussions.
-				</p>
-			</div>
-			<div class="skill-box">
-				<img src="../images/search.svg" class="cube" />
-				<h6 class="xl">User Research</h6>
-				<p class="response">
-					I have a strong aptitude for conducting interviews and user tests,
-					employing effective methodologies to gather valuable insights and
-					user feedback.
-				</p>
-			</div>
-			<div class="skill-box">
-				<img src="../images/wireframe.svg" class="cube" />
-				<h6>Wireframing</h6>
-				<p class="response">
-					I possess exceptional knowledge of wireframing techniques and
-					practices.
-				</p>
-			</div>
-		</div>
+      <footer>
+        <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+          <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+        </a>
+        <a href="https://github.com/azunaeine" target="_blank">
+          <div class="icon"><i class="fa-brands fa-github"></i></div>
+        </a>
+        <a href="https://twitter.com/xxxazuna" target="_blank">
+          <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+        </a>
+        <a href="mailto:azunaeine@gmail.com" target="_blank">
+          <div class="icon">
+            <i
+              class="fa-solid fa-envelope"
+              style="background: none; box-shadow: none"
+            ></i>
+          </div>
+        </a>
+        <div class="copyrighttext">
+          © Azuna Ekundayo <span class="year">2022</span>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function showMenu() {
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        hamburgerMenuContent.classList.add("visible");
 
-		<footer>
-			<a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
-				<div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-			</a>
-			<a href="https://github.com/azunaeine" target="_blank">
-				<div class="icon"><i class="fa-brands fa-github"></i></div>
-			</a>
-			<a href="https://twitter.com/xxxazuna" target="_blank">
-				<div class="icon"><i class="fa-brands fa-twitter"></i></div>
-			</a>
-			<a href="mailto:azunaeine@gmail.com" target="_blank">
-				<div class="icon">
-					<i class="fa-solid fa-envelope" style="background: none; box-shadow: none"></i>
-				</div>
-			</a>
-			<div class="copyrighttext">
-				© Azuna Ekundayo <span class="year">2022</span>
-			</div>
-		</footer>
-	</div>
-	<script>
-		function showMenu() {
-			const hamburgerMenuContent = document.querySelector(
-				".hamburger-menu-content"
-			);
-			hamburgerMenuContent.classList.add("visible");
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.add("visible");
 
-			const btnCloseMenu = document.querySelector(".btn-close-menu");
-			btnCloseMenu.classList.add("visible");
+        const body = document.querySelector("body");
+        body.classList.add("menu-is-open");
+      }
 
-			const body = document.querySelector("body");
-			body.classList.add("menu-is-open");
-		}
+      // javascript animate an element function
+      function hideMenu() {
+        // 1. grab the element
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        // 2. change its class
+        hamburgerMenuContent.classList.remove("visible");
 
-		// javascript animate an element function
-		function hideMenu() {
-			// 1. grab the element
-			const hamburgerMenuContent = document.querySelector(
-				".hamburger-menu-content"
-			);
-			// 2. change its class
-			hamburgerMenuContent.classList.remove("visible");
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.remove("visible");
 
-			const btnCloseMenu = document.querySelector(".btn-close-menu");
-			btnCloseMenu.classList.remove("visible");
-
-			const body = document.querySelector("body");
-			body.classList.remove("menu-is-open");
-		}
-	</script>
-	<script>
-		// update the year to the current year
-		// 1. grab the year span
-		const yearSpan = document.querySelector("span.year");
-		// 2. set the innerHTML = current year
-		const currentYear = new Date().getFullYear();
-		yearSpan.innerHTML = currentYear;
-	</script>
-	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
-	<script>
-		function takeUsDown() {
-			// scroll down to the element with id "case-studies"
-			// 1. grab the element
-			const myContainer = document.querySelector(".skill-flex");
-			// 2. scrollIntoView({bahavior:"smooth"})
-			myContainer.scrollIntoView({ behavior: "smooth" });
-		}
-	</script>
-</body>
-
+        const body = document.querySelector("body");
+        body.classList.remove("menu-is-open");
+      }
+    </script>
+    <script>
+      // update the year to the current year
+      // 1. grab the year span
+      const yearSpan = document.querySelector("span.year");
+      // 2. set the innerHTML = current year
+      const currentYear = new Date().getFullYear();
+      yearSpan.innerHTML = currentYear;
+    </script>
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function takeUsDown() {
+        // scroll down to the element with id "case-studies"
+        // 1. grab the element
+        const myContainer = document.querySelector(".skill-flex");
+        // 2. scrollIntoView({bahavior:"smooth"})
+        myContainer.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
 </html>

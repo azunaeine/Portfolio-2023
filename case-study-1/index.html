@@ -1,579 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../common/common-case-study-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Levitate</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="../common/common-case-study-styles.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
-	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
-	<title>Levitate</title>
-</head>
-
-<body>
-	<div class="loader">
-		<div class="loader_icon"></div>
+  <body>
+    <div class="loader">
+      <div class="loader_icon"></div>
     </div>
-	<div class="hamburger-menu-content">
-		<a class="hamburger-menu-nav-item" href="../index.html"> Home</a>
-		<a class="hamburger-menu-nav-item" href="../about/index.html"> About </a>
-		<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-			class="hamburger-menu-nav-item" target="_blank">Resume</a>
-	</div>
-	<nav class="nav-bar">
-		<div class="panel-fade-in"></div>
-		<a class="s-icon" href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo" /></a>
+    <div class="hamburger-menu-content">
+      <a class="hamburger-menu-nav-item" href="../index.html"> Home</a>
+      <a class="hamburger-menu-nav-item" href="../about/index.html"> About </a>
+      <a
+        href="https://drive.google.com/file/d/1uLXBSILn9RizXddDTxU8b7XusnnCFbgf/view?usp=sharing"
+        class="hamburger-menu-nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </div>
+    <nav class="nav-bar">
+      <div class="panel-fade-in"></div>
+      <a class="s-icon" href="../index.html"
+        ><img src="../images/logo.svg" alt="logo" class="logo"
+      /></a>
 
-		<i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
-		<i class="btn-hamburger-menu btn-close-menu fa-solid fa-close" onclick="hideMenu()"></i>
+      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <i
+        class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
+        onclick="hideMenu()"
+      ></i>
 
-		<div class="nav-items">
-			<a class="nav-item" href="../index.html"> Home</a>
-			<a class="nav-item" href="../about/index.html"> About </a>
-			<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-				class="nav-item" target="_blank">Resume</a>
-		</div>
-	</nav>
-	<script>
-		function showMenu() {
-			const hamburgerMenuContent = document.querySelector(
-				".hamburger-menu-content"
-			);
-			hamburgerMenuContent.classList.add("visible");
+      <div class="nav-items">
+        <a class="nav-item" href="../index.html"> Home</a>
+        <a class="nav-item" href="../about/index.html"> About </a>
+        <a
+          href="https://drive.google.com/file/d/1uLXBSILn9RizXddDTxU8b7XusnnCFbgf/view?usp=sharing"
+          class="nav-item"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
+    </nav>
+    <script>
+      function showMenu() {
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        hamburgerMenuContent.classList.add("visible");
 
-			const btnCloseMenu = document.querySelector(".btn-close-menu");
-			btnCloseMenu.classList.add("visible");
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.add("visible");
 
-			const body = document.querySelector("body");
-			body.classList.add("menu-is-open");
-		}
+        const body = document.querySelector("body");
+        body.classList.add("menu-is-open");
+      }
 
-		// javascript animate an element function
-		function hideMenu() {
-			// 1. grab the element
-			const hamburgerMenuContent = document.querySelector(
-				".hamburger-menu-content"
-			);
-			// 2. change its class
-			hamburgerMenuContent.classList.remove("visible");
+      // javascript animate an element function
+      function hideMenu() {
+        // 1. grab the element
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        // 2. change its class
+        hamburgerMenuContent.classList.remove("visible");
 
-			const btnCloseMenu = document.querySelector(".btn-close-menu");
-			btnCloseMenu.classList.remove("visible");
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.remove("visible");
 
-			const body = document.querySelector("body");
-			body.classList.remove("menu-is-open");
-		}
-	</script>
-	<div class="mini stack">
-		<span class="ux">UI/UX Design</span>
-		<h3 class="intro">Levitate</h3>
-	</div>
-	<div class="screen-opening">
-		<div class="images-wrapper">
-			<img src="../images/one.svg" class="screen" id="test1" />
-			<img src="../images/two.png" class="screen" id="test2" />
-			<img src="../images/three.png" class="screen" id="special" />
-			<img src="../images/4.png" class="screen" id="test3" />
-		</div>
-	</div>
-	<div class="padder">
-		<div class="mini">
-			<h3 class="summary">Summary</h3>
-			<p>
-				In the summer of 2023, I developed a mobile application aimed at
-				simplifying the process of purchasing clothes from various physical
-				clothing establishments. The mobile application enables users to
-				effortlessly browse and select clothing items from their preferred
-				physical clothing store, facilitating convenient delivery to their
-				doorstep without the need for in-person visits to clothing
-				establishments.
-			</p>
+        const body = document.querySelector("body");
+        body.classList.remove("menu-is-open");
+      }
+    </script>
+    <div class="mini stack">
+      <span class="ux">UI/UX Design</span>
+      <h3 class="intro">Levitate</h3>
+    </div>
+    <div class="screen-opening">
+      <div class="images-wrapper">
+        <img src="../images/one.svg" class="screen" id="test1" />
+        <img src="../images/two.png" class="screen" id="test2" />
+        <img src="../images/three.png" class="screen" id="special" />
+        <img src="../images/4.png" class="screen" id="test3" />
+      </div>
+    </div>
+    <div class="padder">
+      <div class="mini">
+        <h3 class="summary">Summary</h3>
+        <p>
+          In the summer of 2023, I developed a mobile application aimed at
+          simplifying the process of purchasing clothes from various physical
+          clothing establishments. The mobile application enables users to
+          effortlessly browse and select clothing items from their preferred
+          physical clothing store, facilitating convenient delivery to their
+          doorstep without the need for in-person visits to clothing
+          establishments.
+        </p>
 
-			<div class="flex-row">
-				<div>
-					<h4>Role</h4>
-					<ul>
-						<li>User Research,</li>
-						<li>Visual Design,</li>
-						<li>UX Design</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Tools</h4>
-					<ul>
-						<li>Figma,</li>
-						<li>Adobe Illustrator</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Timeline</h4>
-					<ul>
-						<li>13 weeks</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Team</h4>
-					<ul>
-						<li>Azuna</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Prototype</h4>
-					<a target="_blank"
-						href="https://www.figma.com/proto/w2GbRLH3gPA0f45IZUQvgR/Levitate?type=design&node-id=26-144&t=TDydPaZuN2JKaoCj-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=205%3A31&mode=design"><button
-							class="btn-view">View</button></a>
-				</div>
-			</div>
-		</div>
-		<div class="mini together">
-			<h3 class="summary">The Problem</h3>
-			<p>
-				When shopping for clothing, visiting a physical clothing store
-				presents several drawbacks. These challenges encompass the need to
-				physically travel to the clothing store, maneuver through crowded
-				aisles, and endure lengthy wait times in queues.
-			</p>
-		</div>
-		<div class="mini together">
-			<h3 class="summary">The Solution</h3>
-			<p>
-				My solution aims to address the challenges associated with shopping
-				for clothing in physical clothing stores. By leveraging technology and
-				e-commerce, Levitate provides a convenient and efficient alternative
-				that
-				<strong>eliminates the need for customers to physically travel to clothing
-					stores,</strong>
-				navigate crowded aisles, and endure lengthy wait times in queues.
-				Through the mobile app,
-				<strong> users can browse</strong> and purchase clothing items from
-				the comfort of their own homes, benefiting from a seamless online
-				shopping experience and doorstep delivery.
-			</p>
-		</div>
-		<div class="three-box">
-			<div class="three">
-				<img src="../images/map.svg" class="phone-one" />
-				<div class="caption">
-					<h3 class="title">Delivery Tracker</h3>
-					<p>
-						This feature eliminates the need for customers to physically
-						travel to clothing stores and empowers them to track their
-						doorstep clothing deliveries.
-					</p>
-				</div>
-			</div>
-			<div class="deux">
-				<img src="../images/three.png" class="phone-one" />
-				<div class="caption">
-					<h3 class="title">Clothing Categories</h3>
-					<p>
-						This feature facilitates users in navigating a well-structured and
-						organized browsing experience by providing categorized sections
-						that represent various types of clothing.
-					</p>
-				</div>
-			</div>
-			<div class="one">
-				<img src="../images/two.png" class="phone-one" />
-				<div class="caption">
-					<h3 class="title">Clothing Retail Picker</h3>
-					<p>
-						This functionality empowers users to seamlessly browse and choose
-						from a vast array of clothing retailers.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="p-box">
-			<h3 class="process">The Process</h3>
-			<img src="../images/process.svg" class="process-diagram" />
-		</div>
+        <div class="flex-row">
+          <div>
+            <h4>Role</h4>
+            <ul>
+              <li>User Research,</li>
+              <li>Visual Design,</li>
+              <li>UX Design</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tools</h4>
+            <ul>
+              <li>Figma,</li>
+              <li>Adobe Illustrator</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Timeline</h4>
+            <ul>
+              <li>13 weeks</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Team</h4>
+            <ul>
+              <li>Azuna</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Prototype</h4>
+            <a
+              target="_blank"
+              href="https://www.figma.com/proto/w2GbRLH3gPA0f45IZUQvgR/Levitate?type=design&node-id=26-144&t=TDydPaZuN2JKaoCj-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=205%3A31&mode=design"
+              ><button class="btn-view">View</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mini together">
+        <h3 class="summary">The Problem</h3>
+        <p>
+          When shopping for clothing, visiting a physical clothing store
+          presents several drawbacks. These challenges encompass the need to
+          physically travel to the clothing store, maneuver through crowded
+          aisles, and endure lengthy wait times in queues.
+        </p>
+      </div>
+      <div class="mini together">
+        <h3 class="summary">The Solution</h3>
+        <p>
+          My solution aims to address the challenges associated with shopping
+          for clothing in physical clothing stores. By leveraging technology and
+          e-commerce, Levitate provides a convenient and efficient alternative
+          that
+          <strong
+            >eliminates the need for customers to physically travel to clothing
+            stores,</strong
+          >
+          navigate crowded aisles, and endure lengthy wait times in queues.
+          Through the mobile app,
+          <strong> users can browse</strong> and purchase clothing items from
+          the comfort of their own homes, benefiting from a seamless online
+          shopping experience and doorstep delivery.
+        </p>
+      </div>
+      <div class="three-box">
+        <div class="three">
+          <img src="../images/map.svg" class="phone-one" />
+          <div class="caption">
+            <h3 class="title">Delivery Tracker</h3>
+            <p>
+              This feature eliminates the need for customers to physically
+              travel to clothing stores and empowers them to track their
+              doorstep clothing deliveries.
+            </p>
+          </div>
+        </div>
+        <div class="deux">
+          <img src="../images/three.png" class="phone-one" />
+          <div class="caption">
+            <h3 class="title">Clothing Categories</h3>
+            <p>
+              This feature facilitates users in navigating a well-structured and
+              organized browsing experience by providing categorized sections
+              that represent various types of clothing.
+            </p>
+          </div>
+        </div>
+        <div class="one">
+          <img src="../images/two.png" class="phone-one" />
+          <div class="caption">
+            <h3 class="title">Clothing Retail Picker</h3>
+            <p>
+              This functionality empowers users to seamlessly browse and choose
+              from a vast array of clothing retailers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-box">
+        <h3 class="process">The Process</h3>
+        <img src="../images/process.svg" class="process-diagram" />
+      </div>
 
-		<h3 class="review">Literature Review</h3>
+      <h3 class="review">Literature Review</h3>
 
-		<p class="literature">
-			I began my research stage by gathering data and information from many
-			sources about the clothing industry, delivery industry, and its
-			participants. By doing this, it helped me to discover the behaviors,
-			attitudes, and pain points of the users I was designing for.
-		</p>
+      <p class="literature">
+        I began my research stage by gathering data and information from many
+        sources about the clothing industry, delivery industry, and its
+        participants. By doing this, it helped me to discover the behaviors,
+        attitudes, and pain points of the users I was designing for.
+      </p>
 
-		<h5 class="grey">
-			Here are some facts about the negatives of traveling to a physical
-			clothing store:
-		</h5>
+      <h5 class="grey">
+        Here are some facts about the negatives of traveling to a physical
+        clothing store:
+      </h5>
 
-		<div class="container">
-			<div class="square">
-				<div class="brief">
-					<p class="description">
-						When visiting a physical clothing store, individuals must allocate
-						time for travel, parking, and navigating through multiple aisles
-						to locate their desired items. This process can pose challenges,
-						particularly for individuals with busy schedules, as it demands
-						additional time and effort.
-					</p>
-				</div>
-			</div>
+      <div class="container">
+        <div class="square">
+          <div class="brief">
+            <p class="description">
+              When visiting a physical clothing store, individuals must allocate
+              time for travel, parking, and navigating through multiple aisles
+              to locate their desired items. This process can pose challenges,
+              particularly for individuals with busy schedules, as it demands
+              additional time and effort.
+            </p>
+          </div>
+        </div>
 
-			<div class="square">
-				<div class="brief">
-					<p class="description">
-						Physical clothing stores are not easily accessible to everybody,
-						especially those that live far or in remote places or have
-						disabilities that affect mobility. This can negatively affect them
-						because it restricts their options for buying clothing and
-						diminishes their shopping experience.
-					</p>
-				</div>
-			</div>
+        <div class="square">
+          <div class="brief">
+            <p class="description">
+              Physical clothing stores are not easily accessible to everybody,
+              especially those that live far or in remote places or have
+              disabilities that affect mobility. This can negatively affect them
+              because it restricts their options for buying clothing and
+              diminishes their shopping experience.
+            </p>
+          </div>
+        </div>
 
-			<div class="square">
-				<div class="brief">
-					<p class="description">
-						Physical clothing stores often experience overcrowding,
-						particularly during peak hours or busy seasons. This can lead to
-						challenges in navigating through crowded aisles and enduring
-						lengthy queues in checkouts, causing stress and inconvenience for
-						shoppers.
-					</p>
-				</div>
-			</div>
-		</div>
-		<h3 class="headline">Persona Spectrum</h3>
+        <div class="square">
+          <div class="brief">
+            <p class="description">
+              Physical clothing stores often experience overcrowding,
+              particularly during peak hours or busy seasons. This can lead to
+              challenges in navigating through crowded aisles and enduring
+              lengthy queues in checkouts, causing stress and inconvenience for
+              shoppers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3 class="headline">Persona Spectrum</h3>
 
-		<p class="persona">
-			Having a persona spectrum helped me know who I was designing for
-		</p>
-		<p class="persona-b">
-			In my research of the clothing industry, delivery industry, and its
-			participants, I developed a persona spectrum that encompasses different
-			types of users. The primary user group I focused on is the average
-			clothing shopper, as they exhibit a multitude of pain points in their
-			shopping experience. Additionally, I identified delivery drivers as a
-			secondary group, given their direct interaction with the clothing
-			shopper.
-		</p>
-		<div class="spectrum-flex">
-			<img src="../images/image1.svg" class="spectrum" />
-			<img src="../images/image2.svg" class="spectrum" />
-			<img src="../images/image3.svg" class="spectrum" />
-		</div>
-		<h3 class="benefits">
-			Expected benefits desired by the average clothing shopper
-		</h3>
-		<div class="bento-box">
-			<div class="bento">Convenience</div>
-			<div class="bento">Flexibility and control</div>
-			<div class="bento">Time-saving</div>
-		</div>
-		<h3 class="headline">Outstanding Inquiries</h3>
-		<ul class="disc">
-			<li class="disc">
-				In the realm of consumer preferences, is there a demand for a mobile
-				application that facilitates online shopping and offers convenient
-				doorstep delivery of clothing items?
-			</li>
-			<li class="disc">
-				Are there existing mobile applications available that provide users
-				with the functionality to shop for clothing online and conveniently
-				receive doorstep deliveries?
-			</li>
-			<li class="disc">
-				Is there room for improvement in the functionality and features of
-				existing online mobile applications that cater to online clothing
-				stores?
-			</li>
-		</ul>
-		<h3 class="review">Survey</h3>
-		<div class="info">
-			I conducted a survey to gather insights and opinions from average
-			clothing shoppers
-		</div>
-		<p class="info">
-			In order to gather additional data, I conducted a survey and distributed
-			it on various social media platforms. The purpose of the survey was to
-			gauge the general inclination of individuals towards using mobile
-			applications for receiving clothes through delivery services. The survey
-			yielded the following significant findings:
-		</p>
-		<div class="find-flex">
-			<p class="finding">
-				<strong>Finding 1:</strong> The survey revealed that a majority of
-				individuals prefer using mobile applications for receiving clothes
-				through delivery services, indicating a growing trend in online
-				shopping convenience.
-			</p>
-			<p class="finding">
-				<strong>Finding 2:</strong> Among the surveyed participants, the
-				younger demographic showed a higher inclination towards using mobile
-				applications for receiving clothes, suggesting a shift in consumer
-				behavior driven by technology adoption.
-			</p>
-			<p class="finding">
-				<strong>Finding 3:</strong> The survey findings highlighted specific
-				features and benefits that users value in mobile applications for
-				receiving clothes, such as ease of use, quick delivery, and a wide
-				range of available clothing options.
-			</p>
-		</div>
-		<div class="circle-one">
-			<img src="../images/circle1.svg" class="diagram" />
+      <p class="persona">
+        Having a persona spectrum helped me know who I was designing for
+      </p>
+      <p class="persona-b">
+        In my research of the clothing industry, delivery industry, and its
+        participants, I developed a persona spectrum that encompasses different
+        types of users. The primary user group I focused on is the average
+        clothing shopper, as they exhibit a multitude of pain points in their
+        shopping experience. Additionally, I identified delivery drivers as a
+        secondary group, given their direct interaction with the clothing
+        shopper.
+      </p>
+      <div class="spectrum-flex">
+        <img src="../images/image1.svg" class="spectrum" />
+        <img src="../images/image2.svg" class="spectrum" />
+        <img src="../images/image3.svg" class="spectrum" />
+      </div>
+      <h3 class="benefits">
+        Expected benefits desired by the average clothing shopper
+      </h3>
+      <div class="bento-box">
+        <div class="bento">Convenience</div>
+        <div class="bento">Flexibility and control</div>
+        <div class="bento">Time-saving</div>
+      </div>
+      <h3 class="headline">Outstanding Inquiries</h3>
+      <ul class="disc">
+        <li class="disc">
+          In the realm of consumer preferences, is there a demand for a mobile
+          application that facilitates online shopping and offers convenient
+          doorstep delivery of clothing items?
+        </li>
+        <li class="disc">
+          Are there existing mobile applications available that provide users
+          with the functionality to shop for clothing online and conveniently
+          receive doorstep deliveries?
+        </li>
+        <li class="disc">
+          Is there room for improvement in the functionality and features of
+          existing online mobile applications that cater to online clothing
+          stores?
+        </li>
+      </ul>
+      <h3 class="review">Survey</h3>
+      <div class="info">
+        I conducted a survey to gather insights and opinions from average
+        clothing shoppers
+      </div>
+      <p class="info">
+        In order to gather additional data, I conducted a survey and distributed
+        it on various social media platforms. The purpose of the survey was to
+        gauge the general inclination of individuals towards using mobile
+        applications for receiving clothes through delivery services. The survey
+        yielded the following significant findings:
+      </p>
+      <div class="find-flex">
+        <p class="finding">
+          <strong>Finding 1:</strong> The survey revealed that a majority of
+          individuals prefer using mobile applications for receiving clothes
+          through delivery services, indicating a growing trend in online
+          shopping convenience.
+        </p>
+        <p class="finding">
+          <strong>Finding 2:</strong> Among the surveyed participants, the
+          younger demographic showed a higher inclination towards using mobile
+          applications for receiving clothes, suggesting a shift in consumer
+          behavior driven by technology adoption.
+        </p>
+        <p class="finding">
+          <strong>Finding 3:</strong> The survey findings highlighted specific
+          features and benefits that users value in mobile applications for
+          receiving clothes, such as ease of use, quick delivery, and a wide
+          range of available clothing options.
+        </p>
+      </div>
+      <div class="circle-one">
+        <img src="../images/circle1.svg" class="diagram" />
 
-			<p class="spice">
-				During the survey, participants were queried regarding their shopping
-				habits, including frequency and preference for online versus physical
-				clothing store purchases. A majority expressed a preference for
-				shopping in online clothing stores.
-			</p>
-		</div>
-		<div class="circle-two">
-			<img src="../images/circle2.svg" class="diagram" />
+        <p class="spice">
+          During the survey, participants were queried regarding their shopping
+          habits, including frequency and preference for online versus physical
+          clothing store purchases. A majority expressed a preference for
+          shopping in online clothing stores.
+        </p>
+      </div>
+      <div class="circle-two">
+        <img src="../images/circle2.svg" class="diagram" />
 
-			<p>
-				As part of the survey, participants were asked to rate their past
-				experiences with online clothing shopping stores on a scale of 1-10.
-				The analysis revealed that a significant majority of respondents had
-				positive experiences, with the younger demographic showing a
-				particularly enthusiastic response towards shopping in online clothing
-				stores.
-			</p>
-		</div>
-		<div class="circle-three">
-			<img src="../images/circle3.svg" class="diagram" />
+        <p>
+          As part of the survey, participants were asked to rate their past
+          experiences with online clothing shopping stores on a scale of 1-10.
+          The analysis revealed that a significant majority of respondents had
+          positive experiences, with the younger demographic showing a
+          particularly enthusiastic response towards shopping in online clothing
+          stores.
+        </p>
+      </div>
+      <div class="circle-three">
+        <img src="../images/circle3.svg" class="diagram" />
 
-			<p>
-				In the survey conducted on online clothing stores, 100% of the
-				participants highlighted the significance of expedited delivery or
-				doorstep delivery options. They expressed their dissatisfaction with
-				the extended shipping times provided by online clothing stores.
-			</p>
-		</div>
+        <p>
+          In the survey conducted on online clothing stores, 100% of the
+          participants highlighted the significance of expedited delivery or
+          doorstep delivery options. They expressed their dissatisfaction with
+          the extended shipping times provided by online clothing stores.
+        </p>
+      </div>
 
-		<h3 class="headline">Interview</h3>
-		<p class="interview-b">Talking to an Online Clothing Shop Owner</p>
-		<p class="bold">
-			I conducted an interview with the owner of an online clothing store to
-			gather insights and validate certain assumptions as part of my research
-			process.
-		</p>
-		<div class="chat-box">
-			<img src="../images/chat2.svg" class="chatq" />
-			<img src="../images/chat1.svg" class="chata" />
-		</div>
-		<div class="gap-fix">
-			<h3 class="headline">Defining the Persona</h3>
-			<p class="sum">
-				Leveraging comprehensive research and a deep understanding of the
-				target audience, I developed detailed personas and organized the users
-				into two key groups: the average clothing shopper and the delivery
-				driver. Throughout the design process, these user groups played
-				pivotal roles as integral components of the overall solution.
-			</p>
-		</div>
-		<div class="two-person">
-			<img src="../images/persona2.png" class="two" />
-			<img src="../images/persona1.png" class="two" />
-		</div>
+      <h3 class="headline">Interview</h3>
+      <p class="interview-b">Talking to an Online Clothing Shop Owner</p>
+      <p class="bold">
+        I conducted an interview with the owner of an online clothing store to
+        gather insights and validate certain assumptions as part of my research
+        process.
+      </p>
+      <div class="chat-box">
+        <img src="../images/chat2.svg" class="chatq" />
+        <img src="../images/chat1.svg" class="chata" />
+      </div>
+      <div class="gap-fix">
+        <h3 class="headline">Defining the Persona</h3>
+        <p class="sum">
+          Leveraging comprehensive research and a deep understanding of the
+          target audience, I developed detailed personas and organized the users
+          into two key groups: the average clothing shopper and the delivery
+          driver. Throughout the design process, these user groups played
+          pivotal roles as integral components of the overall solution.
+        </p>
+      </div>
+      <div class="two-person">
+        <img src="../images/persona2.png" class="two" />
+        <img src="../images/persona1.png" class="two" />
+      </div>
 
-		<div class="gap-fix">
-			<h3 class="review">User Journey</h3>
-			<h3 class="headline">Mapping out the pain points</h3>
-			<p class="mapping">
-				A user journey map was meticulously created to comprehensively
-				understand pain points and areas requiring design attention. The user
-				journey map below vividly captures the interactions of an average
-				clothing shopper using the mobile application, facilitating a focus on
-				specific pain points. The map revealed a key pain point for the
-				average clothing shopper: the lack of clothing retailer options on the
-				Hub page. Addressing this issue will enhance the mobile app's user
-				experience and increase overall satisfaction.
-			</p>
-		</div>
-	</div>
+      <div class="gap-fix">
+        <h3 class="review">User Journey</h3>
+        <h3 class="headline">Mapping out the pain points</h3>
+        <p class="mapping">
+          A user journey map was meticulously created to comprehensively
+          understand pain points and areas requiring design attention. The user
+          journey map below vividly captures the interactions of an average
+          clothing shopper using the mobile application, facilitating a focus on
+          specific pain points. The map revealed a key pain point for the
+          average clothing shopper: the lack of clothing retailer options on the
+          Hub page. Addressing this issue will enhance the mobile app's user
+          experience and increase overall satisfaction.
+        </p>
+      </div>
+    </div>
 
-	<div class="u-journey">
-		<img src="../images/userjourney.svg" class="journey" />
-	</div>
-	<div class="g-fix">
-		<h3 class="headline">Sketches and Wireframes</h3>
-		<p class="w">
-			After a thorough analysis of the insights derived from the user journey
-			map, I implemented improvements on the Hub page, primarily by increasing
-			the number of clothing retailers featured on the Hub page. The next step
-			involved converting these valuable findings into concrete features for
-			seamless integration into the final prototype, which was accomplished
-			through the creation of preliminary sketches and wireframes. The primary
-			objective was to address pain points, particularly the lack of clothing
-			retailer options that were identified during the user journey analysis.
-		</p>
-		<img src="../images/scan1.webp" class="scan" />
-	</div>
-	<div class="g-fix">
-		<h3 class="headline flow-fix">User Flow</h3>
-		<p class="user-flow">
-			Following the ideation phase for the final solution, the user flow was
-			carefully crafted to outline the sequential steps within the mobile
-			application. This thorough process aimed to enhance the visual
-			representation of the user's interaction and navigation journey,
-			highlighting significant screens, actions, and decision points
-			encountered along the way. By organizing the user flow, a comprehensive
-			visualization was achieved, offering valuable insights into the overall
-			user experience and facilitating a more streamlined and intuitive
-			design.
-		</p>
-		<img src="../images/userflow.svg" class="u-flow" />
-	</div>
-	<div class="g-fix">
-		<h3 class="headline">High Fidelity Design</h3>
-		<p class="high">
-			During this phase, the main goal was to validate the user flow of the
-			mobile application. To achieve this, a high-fidelity design was
-			carefully developed to accurately depict the intended user flow.
-		</p>
-		<div class="image-box">
-			<img src="../images/one.svg" />
-			<img src="../images/two.png" />
-			<img src="../images/three.png" />
-			<img src="../images/4.png" />
-			<img src="../images/five.svg" />
-			<img src="../images/six.svg" />
-			<img src="../images/seven.svg" />
-			<img src="../images/eight.svg" />
-		</div>
-	</div>
-	<div class="g-fix">
-		<h3 class="headline">Design Iterations</h3>
-		<p class="iterations">
-			Design iterations were implemented to improve the aesthetics and visual
-			appeal of the mobile application. The purpose of these iterations was to
-			refine and enhance the overall design, making it more visually appealing
-			and engaging to the users. Various design elements and components were
-			modified and adjusted to achieve a more polished and visually pleasing
-			final result.
-		</p>
+    <div class="u-journey">
+      <img src="../images/userjourney.svg" class="journey" />
+    </div>
+    <div class="g-fix">
+      <h3 class="headline">Sketches and Wireframes</h3>
+      <p class="w">
+        After a thorough analysis of the insights derived from the user journey
+        map, I implemented improvements on the Hub page, primarily by increasing
+        the number of clothing retailers featured on the Hub page. The next step
+        involved converting these valuable findings into concrete features for
+        seamless integration into the final prototype, which was accomplished
+        through the creation of preliminary sketches and wireframes. The primary
+        objective was to address pain points, particularly the lack of clothing
+        retailer options that were identified during the user journey analysis.
+      </p>
+      <img src="../images/scan1.webp" class="scan" />
+    </div>
+    <div class="g-fix">
+      <h3 class="headline flow-fix">User Flow</h3>
+      <p class="user-flow">
+        Following the ideation phase for the final solution, the user flow was
+        carefully crafted to outline the sequential steps within the mobile
+        application. This thorough process aimed to enhance the visual
+        representation of the user's interaction and navigation journey,
+        highlighting significant screens, actions, and decision points
+        encountered along the way. By organizing the user flow, a comprehensive
+        visualization was achieved, offering valuable insights into the overall
+        user experience and facilitating a more streamlined and intuitive
+        design.
+      </p>
+      <img src="../images/userflow.svg" class="u-flow" />
+    </div>
+    <div class="g-fix">
+      <h3 class="headline">High Fidelity Design</h3>
+      <p class="high">
+        During this phase, the main goal was to validate the user flow of the
+        mobile application. To achieve this, a high-fidelity design was
+        carefully developed to accurately depict the intended user flow.
+      </p>
+      <div class="image-box">
+        <img src="../images/one.svg" />
+        <img src="../images/two.png" />
+        <img src="../images/three.png" />
+        <img src="../images/4.png" />
+        <img src="../images/five.svg" />
+        <img src="../images/six.svg" />
+        <img src="../images/seven.svg" />
+        <img src="../images/eight.svg" />
+      </div>
+    </div>
+    <div class="g-fix">
+      <h3 class="headline">Design Iterations</h3>
+      <p class="iterations">
+        Design iterations were implemented to improve the aesthetics and visual
+        appeal of the mobile application. The purpose of these iterations was to
+        refine and enhance the overall design, making it more visually appealing
+        and engaging to the users. Various design elements and components were
+        modified and adjusted to achieve a more polished and visually pleasing
+        final result.
+      </p>
 
-		<div class="oldhub">
-			<img src="../images/old-hub-page.png" class="oldh" />
-			<img src="../images/x.svg" class="x" />
-			<div class="straight">
-				<h4 class="old">Old Hub Page</h4>
-				<p class="oldpar">
-					The visual aesthetics of this Hub page are subpar and unappealing
-					primarily due to the absence of color elements, resulting in
-					challenges in effectively differentiating information.
-				</p>
-			</div>
-		</div>
-		<div class="newhub">
-			<img src="../images/two.png" class="newh" />
-			<img src="../images/checkmark.svg" class="check" />
-			<div class="straight">
-				<h4 class="old">New Hub Page</h4>
-				<p class="oldpar">
-					I successfully enhanced the visual aesthetics of the Hub page by
-					implementing a strategic incorporation of color elements and an
-					intuitive design concept, resulting in a more appealing overall
-					appearance. The revamp accentuates key elements and improves the Hub
-					page's recognition.
-				</p>
-			</div>
-		</div>
-		<div class="g-fix">
-			<h3 class="headline">Visual System</h3>
-			<p class="system">
-				After finalizing the high-fidelity design, the visual system was
-				established to create a cohesive visual identity centered around a
-				simple color palette and enriched by contemporary design elements. The
-				visual system directly resulted from the comprehensive high-fidelity
-				design and aimed to enhance the overall aesthetics and user
-				experience.
-			</p>
-			<img src="../images/visual-system.png" class="v-system" />
-		</div>
-		<div class="g-fix">
-			<h3 class="headline">Usability Testing</h3>
-			<p class="test">
-				Before finalizing this project, a usability test was conducted to
-				evaluate the usability and user experience of the product. Users were
-				observed and their feedback was collected as they interacted with the
-				product and performed specific tasks. The purpose of the usability
-				test was to assess the effectiveness, efficiency, and satisfaction of
-				the user interaction with the product.
-			</p>
-		</div>
-		<div class="gif-box">
-			<img src="../images/first.gif" class="gif" />
-			<img src="../images/second.gif" class="gif" />
-		</div>
-		<div class="g-fix">
-			<p class="u-test">
-				The usability tests yielded favorable outcomes, as all participants
-				demonstrated effortless navigation within the mobile application
-				without encountering any notable issues or errors. The users
-				successfully navigated the app, displaying a clear understanding of
-				its buttons and the process of transitioning between different pages
-				within the mobile application.
-			</p>
-		</div>
-		<div class="g-fix">
-			<h3 class="headline">Reflection</h3>
-			<p class="reflection">
-				Designing this mobile application was a challenging process that
-				demanded a lot of patience and hard work. I had to create many
-				different screens for the app and pay close attention to every detail.
-				Doing the same thing over and over again was tiring, and I realized
-				the importance of taking care of myself and managing my time well.
-				Making something that looks beautiful and appealing takes a lot of
-				time and effort. In the future, I'll remember to balance my creativity
-				with self-care to stay productive and healthy while working on design
-				projects.
-			</p>
-		</div>
-	</div>
+      <div class="oldhub">
+        <img src="../images/old-hub-page.png" class="oldh" />
+        <img src="../images/x.svg" class="x" />
+        <div class="straight">
+          <h4 class="old">Old Hub Page</h4>
+          <p class="oldpar">
+            The visual aesthetics of this Hub page are subpar and unappealing
+            primarily due to the absence of color elements, resulting in
+            challenges in effectively differentiating information.
+          </p>
+        </div>
+      </div>
+      <div class="newhub">
+        <img src="../images/two.png" class="newh" />
+        <img src="../images/checkmark.svg" class="check" />
+        <div class="straight">
+          <h4 class="old">New Hub Page</h4>
+          <p class="oldpar">
+            I successfully enhanced the visual aesthetics of the Hub page by
+            implementing a strategic incorporation of color elements and an
+            intuitive design concept, resulting in a more appealing overall
+            appearance. The revamp accentuates key elements and improves the Hub
+            page's recognition.
+          </p>
+        </div>
+      </div>
+      <div class="g-fix">
+        <h3 class="headline">Visual System</h3>
+        <p class="system">
+          After finalizing the high-fidelity design, the visual system was
+          established to create a cohesive visual identity centered around a
+          simple color palette and enriched by contemporary design elements. The
+          visual system directly resulted from the comprehensive high-fidelity
+          design and aimed to enhance the overall aesthetics and user
+          experience.
+        </p>
+        <img src="../images/visual-system.png" class="v-system" />
+      </div>
+      <div class="g-fix">
+        <h3 class="headline">Usability Testing</h3>
+        <p class="test">
+          Before finalizing this project, a usability test was conducted to
+          evaluate the usability and user experience of the product. Users were
+          observed and their feedback was collected as they interacted with the
+          product and performed specific tasks. The purpose of the usability
+          test was to assess the effectiveness, efficiency, and satisfaction of
+          the user interaction with the product.
+        </p>
+      </div>
+      <div class="gif-box">
+        <img src="../images/first.gif" class="gif" />
+        <img src="../images/second.gif" class="gif" />
+      </div>
+      <div class="g-fix">
+        <p class="u-test">
+          The usability tests yielded favorable outcomes, as all participants
+          demonstrated effortless navigation within the mobile application
+          without encountering any notable issues or errors. The users
+          successfully navigated the app, displaying a clear understanding of
+          its buttons and the process of transitioning between different pages
+          within the mobile application.
+        </p>
+      </div>
+      <div class="g-fix">
+        <h3 class="headline">Reflection</h3>
+        <p class="reflection">
+          Designing this mobile application was a challenging process that
+          demanded a lot of patience and hard work. I had to create many
+          different screens for the app and pay close attention to every detail.
+          Doing the same thing over and over again was tiring, and I realized
+          the importance of taking care of myself and managing my time well.
+          Making something that looks beautiful and appealing takes a lot of
+          time and effort. In the future, I'll remember to balance my creativity
+          with self-care to stay productive and healthy while working on design
+          projects.
+        </p>
+      </div>
+    </div>
 
-	<div class="last">See more work</div>
-	<div class="three-items">
-		<a class="maze" href="../case-study-2/index.html"> MAZE</a>
-		<a class="boldy" href="../case-study-3/index.html"> Bold</a>
-		<a class="freshf" href="../case-study-4/index.html"> Freshfind</a>
-	</div>
+    <div class="last">See more work</div>
+    <div class="three-items">
+      <a class="maze" href="../case-study-2/index.html"> MAZE</a>
+      <a class="boldy" href="../case-study-3/index.html"> Bold</a>
+      <a class="freshf" href="../case-study-4/index.html"> Freshfind</a>
+    </div>
 
-	<footer>
-		<a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
-			<div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-		</a>
-		<a href="https://github.com/azunaeine" target="_blank">
-			<div class="icon"><i class="fa-brands fa-github"></i></div>
-		</a>
-		<a href="https://twitter.com/xxxazuna" target="_blank">
-			<div class="icon"><i class="fa-brands fa-twitter"></i></div>
-		</a>
-		<a href="mailto:azunaeine@gmail.com" target="_blank">
-			<div class="icon">
-				<i class="fa-solid fa-envelope" style="background: none; box-shadow: none"></i>
-			</div>
-		</a>
-		<div class="copyrighttext">
-			© Azuna Ekundayo <span class="year">2022</span>
-		</div>
-	</footer>
+    <footer>
+      <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+      </a>
+      <a href="https://github.com/azunaeine" target="_blank">
+        <div class="icon"><i class="fa-brands fa-github"></i></div>
+      </a>
+      <a href="https://twitter.com/xxxazuna" target="_blank">
+        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+      </a>
+      <a href="mailto:azunaeine@gmail.com" target="_blank">
+        <div class="icon">
+          <i
+            class="fa-solid fa-envelope"
+            style="background: none; box-shadow: none"
+          ></i>
+        </div>
+      </a>
+      <div class="copyrighttext">
+        © Azuna Ekundayo <span class="year">2022</span>
+      </div>
+    </footer>
 
-	<script>
-		// update the year to the current year
-		// 1. grab the year span
-		const yearSpan = document.querySelector("span.year");
-		// 2. set the innerHTML = current year
-		const currentYear = new Date().getFullYear();
-		yearSpan.innerHTML = currentYear;
-	</script>
-	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
-	<script src="../common/common-case-study-js.js"></script>
-</body>
-
+    <script>
+      // update the year to the current year
+      // 1. grab the year span
+      const yearSpan = document.querySelector("span.year");
+      // 2. set the innerHTML = current year
+      const currentYear = new Date().getFullYear();
+      yearSpan.innerHTML = currentYear;
+    </script>
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../common/common-case-study-js.js"></script>
+  </body>
 </html>

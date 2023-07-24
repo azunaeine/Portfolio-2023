@@ -1,319 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../common/common-case-study-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>MAZE</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="../common/common-case-study-styles.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
-	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
-	<title>MAZE</title>
-</head>
-
-<body>
-	<div class="loader">
-		<div class="loader_icon"></div>
+  <body>
+    <div class="loader">
+      <div class="loader_icon"></div>
     </div>
-	<div class="hamburger-menu-content">
-		<a class="hamburger-menu-nav-item" href="../index.html"> Home</a>
-		<a class="hamburger-menu-nav-item"href="../about/index.html"> About </a>
-		<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-			class="hamburger-menu-nav-item" target="_blank">Resume</a>
-	</div>
-	<nav class="nav-bar">
-		<div class="panel-fade-in"></div>
-		<a class="s-icon" href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo" /></a>
+    <div class="hamburger-menu-content">
+      <a class="hamburger-menu-nav-item" href="../index.html"> Home</a>
+      <a class="hamburger-menu-nav-item" href="../about/index.html"> About </a>
+      <a
+        href="https://drive.google.com/file/d/1uLXBSILn9RizXddDTxU8b7XusnnCFbgf/view?usp=sharing"
+        class="hamburger-menu-nav-item"
+        target="_blank"
+        >Resume</a
+      >
+    </div>
+    <nav class="nav-bar">
+      <div class="panel-fade-in"></div>
+      <a class="s-icon" href="../index.html"
+        ><img src="../images/logo.svg" alt="logo" class="logo"
+      /></a>
 
-		<i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
-		<i class="btn-hamburger-menu btn-close-menu fa-solid fa-close" onclick="hideMenu()"></i>
+      <i class="btn-hamburger-menu fa-solid fa-bars" onclick="showMenu()"></i>
+      <i
+        class="btn-hamburger-menu btn-close-menu fa-solid fa-close"
+        onclick="hideMenu()"
+      ></i>
 
-		<div class="nav-items">
-			<a class="nav-item" href="../index.html"> Home</a>
-			<a class="nav-item" href="../about/index.html"> About </a>
-			<a href="https://drive.google.com/file/d/1uwLK8-65qkTxyYEZzgp7h76_p43Szilq/view?usp=sharing"
-				class="nav-item" target="_blank">Resume</a>
-		</div>
-	</nav>
-	<script>
-		function showMenu() {
-			const hamburgerMenuContent = document.querySelector(
-				".hamburger-menu-content"
-			);
-			hamburgerMenuContent.classList.add("visible");
+      <div class="nav-items">
+        <a class="nav-item" href="../index.html"> Home</a>
+        <a class="nav-item" href="../about/index.html"> About </a>
+        <a
+          href="https://drive.google.com/file/d/1uLXBSILn9RizXddDTxU8b7XusnnCFbgf/view?usp=sharing"
+          class="nav-item"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
+    </nav>
+    <script>
+      function showMenu() {
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        hamburgerMenuContent.classList.add("visible");
 
-			const btnCloseMenu = document.querySelector(".btn-close-menu");
-			btnCloseMenu.classList.add("visible");
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.add("visible");
 
-			const body = document.querySelector("body");
-			body.classList.add("menu-is-open");
-		}
+        const body = document.querySelector("body");
+        body.classList.add("menu-is-open");
+      }
 
-		// javascript animate an element function
-		function hideMenu() {
-			// 1. grab the element
-			const hamburgerMenuContent = document.querySelector(
-				".hamburger-menu-content"
-			);
-			// 2. change its class
-			hamburgerMenuContent.classList.remove("visible");
+      // javascript animate an element function
+      function hideMenu() {
+        // 1. grab the element
+        const hamburgerMenuContent = document.querySelector(
+          ".hamburger-menu-content"
+        );
+        // 2. change its class
+        hamburgerMenuContent.classList.remove("visible");
 
-			const btnCloseMenu = document.querySelector(".btn-close-menu");
-			btnCloseMenu.classList.remove("visible");
+        const btnCloseMenu = document.querySelector(".btn-close-menu");
+        btnCloseMenu.classList.remove("visible");
 
-			const body = document.querySelector("body");
-			body.classList.remove("menu-is-open");
-		}
-	</script>
-	<div class="mini stack">
-		<span class="ux">UI/UX Design</span>
-		<h3 class="intro">MAZE</h3>
-	</div>
-	<div class="screen-opening">
-		<div class="images-wrapper">
-			<img src="../images/Opening.svg" class="screen" id="test1" />
-			<img src="../images/planning.png" class="screen" id="special" />
-			<img src="../images/book.svg" class="screen" id="test2" />
-			<img src="../images/video calls.svg" class="screen" id="test3" />
-		</div>
-	</div>
-	<div class="padder">
-		<div class="mini">
-			<h3 class="summary">Summary</h3>
-			<p>
-				Tutoring services play a crucial role in assisting students in
-				comprehending challenging concepts and addressing problems encountered
-				in their school subjects. This mobile application integrates video
-				calling, planning, and professional tutors within a single platform,
-				providing a comprehensive tutoring experience.
-			</p>
+        const body = document.querySelector("body");
+        body.classList.remove("menu-is-open");
+      }
+    </script>
+    <div class="mini stack">
+      <span class="ux">UI/UX Design</span>
+      <h3 class="intro">MAZE</h3>
+    </div>
+    <div class="screen-opening">
+      <div class="images-wrapper">
+        <img src="../images/Opening.svg" class="screen" id="test1" />
+        <img src="../images/planning.png" class="screen" id="special" />
+        <img src="../images/book.svg" class="screen" id="test2" />
+        <img src="../images/video calls.svg" class="screen" id="test3" />
+      </div>
+    </div>
+    <div class="padder">
+      <div class="mini">
+        <h3 class="summary">Summary</h3>
+        <p>
+          Tutoring services play a crucial role in assisting students in
+          comprehending challenging concepts and addressing problems encountered
+          in their school subjects. This mobile application integrates video
+          calling, planning, and professional tutors within a single platform,
+          providing a comprehensive tutoring experience.
+        </p>
 
-			<div class="flex-row">
-				<div>
-					<h4>Role</h4>
-					<ul>
-						<li>User Research,</li>
-						<li>Visual Design,</li>
-						<li>UX Design</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Tools</h4>
-					<ul>
-						<li>Figma,</li>
-						<li>Adobe Illustrator</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Timeline</h4>
-					<ul>
-						<li>8 weeks</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Team</h4>
-					<ul>
-						<li>Azuna</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Prototype</h4>
-					<a target="_blank"
-						href="https://www.figma.com/proto/nh1ABbmX6oIGAV74ZDGwLJ/MAZE?type=design&node-id=18-23&t=JMxRkSojKJ2sm18c-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=13%3A6&mode=design"><button
-							class="btn-view">View</button></a>
-				</div>
-			</div>
-		</div>
-		<div class="mini together">
-			<h3 class="summary">The Problem</h3>
-			<p>
-				Many students struggle to understand difficult concepts and complete
-				their school projects and assignments, necessitating the need for
-				effective tutoring services. However, existing tutoring solutions
-				often lack an integrated and comprehensive approach. The absence of a
-				mobile application that combines video calling, planning, and
-				professional tutors limits students' access to convenient and
-				personalized support. Therefore, there is a need for a tutoring
-				platform that seamlessly integrates these functionalities to provide
-				students with a holistic and efficient learning experience.
-			</p>
-		</div>
-		<div class="mini together">
-			<h3 class="summary">The Solution</h3>
-			<p>
-				My solution is to develop a mobile application that transforms the
-				tutoring experience by seamlessly integrating
-				<strong>video calling,</strong> <strong>planning,</strong> and access
-				to <strong>professional tutors.</strong> The platform I envision will
-				provide students with a convenient and personalized learning
-				environment. With seamless communication via video calls, students can
-				actively participate in real-time interactive sessions, connecting
-				them with experienced tutors who can effectively address their
-				specific needs and challenges. Additionally, the mobile application
-				will offer a planning feature, assisting students in organizing their
-				assignment deadlines efficiently. By harmoniously combining these
-				essential components, my solution aims to elevate students'
-				comprehension of difficult concepts and empower them to excel in their
-				school subjects.
-			</p>
-		</div>
-		<div class="three-box">
-			<div class="one">
-				<img src="../images/video calls.svg" class="phone-one" />
-				<div class="caption">
-					<h3 class="title">Video Calls</h3>
-					<p>
-						The platform facilitates seamless video calling functionality,
-						allowing users to connect and engage in real-time video sessions
-						with their preferred tutors.
-					</p>
-				</div>
-			</div>
-			<div class="deux">
-				<img src="../images/planning.png" class="phone-one" />
-				<div class="caption">
-					<h3 class="title">Planning</h3>
-					<p>
-						The planning feature enables users to effectively organize
-						assignment deadlines, providing them with the ability to manage
-						their academic tasks efficiently.
-					</p>
-				</div>
-			</div>
-			<div class="three">
-				<img src="../images/lesson-tracker.png" class="phone-one" />
+        <div class="flex-row">
+          <div>
+            <h4>Role</h4>
+            <ul>
+              <li>User Research,</li>
+              <li>Visual Design,</li>
+              <li>UX Design</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tools</h4>
+            <ul>
+              <li>Figma,</li>
+              <li>Adobe Illustrator</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Timeline</h4>
+            <ul>
+              <li>8 weeks</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Team</h4>
+            <ul>
+              <li>Azuna</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Prototype</h4>
+            <a
+              target="_blank"
+              href="https://www.figma.com/proto/nh1ABbmX6oIGAV74ZDGwLJ/MAZE?type=design&node-id=18-23&t=JMxRkSojKJ2sm18c-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=13%3A6&mode=design"
+              ><button class="btn-view">View</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mini together">
+        <h3 class="summary">The Problem</h3>
+        <p>
+          Many students struggle to understand difficult concepts and complete
+          their school projects and assignments, necessitating the need for
+          effective tutoring services. However, existing tutoring solutions
+          often lack an integrated and comprehensive approach. The absence of a
+          mobile application that combines video calling, planning, and
+          professional tutors limits students' access to convenient and
+          personalized support. Therefore, there is a need for a tutoring
+          platform that seamlessly integrates these functionalities to provide
+          students with a holistic and efficient learning experience.
+        </p>
+      </div>
+      <div class="mini together">
+        <h3 class="summary">The Solution</h3>
+        <p>
+          My solution is to develop a mobile application that transforms the
+          tutoring experience by seamlessly integrating
+          <strong>video calling,</strong> <strong>planning,</strong> and access
+          to <strong>professional tutors.</strong> The platform I envision will
+          provide students with a convenient and personalized learning
+          environment. With seamless communication via video calls, students can
+          actively participate in real-time interactive sessions, connecting
+          them with experienced tutors who can effectively address their
+          specific needs and challenges. Additionally, the mobile application
+          will offer a planning feature, assisting students in organizing their
+          assignment deadlines efficiently. By harmoniously combining these
+          essential components, my solution aims to elevate students'
+          comprehension of difficult concepts and empower them to excel in their
+          school subjects.
+        </p>
+      </div>
+      <div class="three-box">
+        <div class="one">
+          <img src="../images/video calls.svg" class="phone-one" />
+          <div class="caption">
+            <h3 class="title">Video Calls</h3>
+            <p>
+              The platform facilitates seamless video calling functionality,
+              allowing users to connect and engage in real-time video sessions
+              with their preferred tutors.
+            </p>
+          </div>
+        </div>
+        <div class="deux">
+          <img src="../images/planning.png" class="phone-one" />
+          <div class="caption">
+            <h3 class="title">Planning</h3>
+            <p>
+              The planning feature enables users to effectively organize
+              assignment deadlines, providing them with the ability to manage
+              their academic tasks efficiently.
+            </p>
+          </div>
+        </div>
+        <div class="three">
+          <img src="../images/lesson-tracker.png" class="phone-one" />
 
-				<div class="caption">
-					<h3 class="title">Lesson Tracker</h3>
-					<p>
-						MAZE combines access to professional tutors with the ability to
-						monitor and track lesson progress.
-					</p>
-				</div>
-			</div>
-		</div>
+          <div class="caption">
+            <h3 class="title">Lesson Tracker</h3>
+            <p>
+              MAZE combines access to professional tutors with the ability to
+              monitor and track lesson progress.
+            </p>
+          </div>
+        </div>
+      </div>
 
-		<h3 class="headline">Understanding the Problem</h3>
-		<p class="problem">
-			After reflecting on the problem statement, I wanted to dive deeper into
-			what I was solving so I began to ask myself a series of questions.
-		</p>
-		<ul class="disc">
-			<li class="disc">What are the needs and goals of the users?</li>
-			<li class="disc">Why is this problem impactful and significant?</li>
-			<li class="disc">
-				How can the mobile app be effectively designed to accommodate all user
-				needs and requirements?
-			</li>
-		</ul>
-		<div class="fea">
-			<h3 class="headline">Prioritizing Features</h3>
-			<p class="feature">
-				Afterward, a visual graph was created to outline the potential
-				features, offering a clear visual representation of the prioritized
-				features. This graph proved to be an invaluable reference for
-				identifying focal points and strategizing future enhancements and
-				additional features. It is important to note that not all of the
-				features displayed on the visual graph will be incorporated into the
-				current mobile application.
-			</p>
-		</div>
-		<img src="../images/prioritization.svg" class="blue" />
-		<div class="partial-box">
-			<h3 class="headline">Affinity Mapping</h3>
-			<p class="feature">
-				I looked at the information from the visual graph and sorted out the
-				important features into different groups for easier understanding.
-			</p>
-			<img src="../images/affinity Mapping.svg" class="blue" />
-			<h3 class="headline">Establishing the Grid System</h3>
-			<p class="grid">
-				The selection and implementation of a grid system are fundamental
-				aspects of interface design. In this project, I opted for the 6-point
-				grid system due to its adaptability and suitability. Throughout the
-				design process, I made a concerted effort to align all UI elements
-				with the 6-point grid below, ensuring consistency and a cohesive
-				visual layout.
-			</p>
-			<img src="../images/Grid.png" class="blue-grid" />
-			<h3 class="headline">Wireframes</h3>
-			<p class="wireframes">
-				Wireframing is an essential process in my project as it allows me to
-				visualize and plan the layout and structure of the user interface. By
-				creating wireframes, I am able to map out the placement of key
-				elements, such as buttons, menus, and content sections, ensuring a
-				clear and intuitive design. These wireframes serve as a blueprint for
-				the development phase, providing a solid foundation for building an
-				effective and user-friendly interface.
-			</p>
-			<img src="../images/scan2.jpg" class="scan" />
-			<h3 class="headline">High Fidelity Design</h3>
-			<p class="high">
-				Upon completion of the wireframing process, I gained a clear vision of
-				the final concept for the mobile application. Subsequently, I
-				proceeded to implement various design elements, such as colors, icons,
-				and other visual components, onto MAZE. These additions further
-				enhanced the aesthetic appeal and user experience of the mobile
-				application, aligning it with the intended design direction.
-			</p>
-			<div class="flex-wrapper">
-				<img src="../images/Opening.svg" class="wrap" />
-				<img src="../images/planning.png" class="wrap" />
-				<img src="../images/lesson-tracker.png" class="wrap" />
-				<img src="../images/video calls.svg" class="wrap" />
-				<img src="../images/book.svg" class="wrap" />
-				<img src="../images/test.svg" class="wrap" />
-			</div>
-			<h3 class="headline">Reflection</h3>
-			<p class="reflection">
-				In this project, I had the opportunity to explore new UX techniques,
-				such as affinity mapping and 6-column grids, which I hadn't used
-				before. It was a bit challenging, but trying these new things helped
-				me learn and improve my skills in ux.
-			</p>
-		</div>
-	</div>
-	<div class="adjust">
-		<div class="last">See more work</div>
-		<div class="three-items">
-			<a class="levitate" href="../case-study-1/index.html"> Levitate</a>
-			<a class="boldy" href="../case-study-3/index.html"> Bold</a>
-			<a class="freshf" href="../case-study-4/index.html"> Freshfind</a>
-		</div>
-	</div>
-	<footer>
-		<a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
-			<div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-		</a>
-		<a href="https://github.com/azunaeine" target="_blank">
-			<div class="icon"><i class="fa-brands fa-github"></i></div>
-		</a>
-		<a href="https://twitter.com/xxxazuna" target="_blank">
-			<div class="icon"><i class="fa-brands fa-twitter"></i></div>
-		</a>
-		<a href="mailto:azunaeine@gmail.com" target="_blank">
-			<div class="icon">
-				<i class="fa-solid fa-envelope" style="background: none; box-shadow: none"></i>
-			</div>
-		</a>
-		<div class="copyrighttext">
-			© Azuna Ekundayo <span class="year">2022</span>
-		</div>
-	</footer>
-	<script>
-		// update the year to the current year
-		// 1. grab the year span
-		const yearSpan = document.querySelector("span.year");
-		// 2. set the innerHTML = current year
-		const currentYear = new Date().getFullYear();
-		yearSpan.innerHTML = currentYear;
-	</script>
-	<script src="https://kit.fontawesome.com/b85921a939.js" crossorigin="anonymous"></script>
-	<script src="../common/common-case-study-js.js"></script>
-</body>
-
+      <h3 class="headline">Understanding the Problem</h3>
+      <p class="problem">
+        After reflecting on the problem statement, I wanted to dive deeper into
+        what I was solving so I began to ask myself a series of questions.
+      </p>
+      <ul class="disc">
+        <li class="disc">What are the needs and goals of the users?</li>
+        <li class="disc">Why is this problem impactful and significant?</li>
+        <li class="disc">
+          How can the mobile app be effectively designed to accommodate all user
+          needs and requirements?
+        </li>
+      </ul>
+      <div class="fea">
+        <h3 class="headline">Prioritizing Features</h3>
+        <p class="feature">
+          Afterward, a visual graph was created to outline the potential
+          features, offering a clear visual representation of the prioritized
+          features. This graph proved to be an invaluable reference for
+          identifying focal points and strategizing future enhancements and
+          additional features. It is important to note that not all of the
+          features displayed on the visual graph will be incorporated into the
+          current mobile application.
+        </p>
+      </div>
+      <img src="../images/prioritization.svg" class="blue" />
+      <div class="partial-box">
+        <h3 class="headline">Affinity Mapping</h3>
+        <p class="feature">
+          I looked at the information from the visual graph and sorted out the
+          important features into different groups for easier understanding.
+        </p>
+        <img src="../images/affinity Mapping.svg" class="blue" />
+        <h3 class="headline">Establishing the Grid System</h3>
+        <p class="grid">
+          The selection and implementation of a grid system are fundamental
+          aspects of interface design. In this project, I opted for the 6-point
+          grid system due to its adaptability and suitability. Throughout the
+          design process, I made a concerted effort to align all UI elements
+          with the 6-point grid below, ensuring consistency and a cohesive
+          visual layout.
+        </p>
+        <img src="../images/Grid.png" class="blue-grid" />
+        <h3 class="headline">Wireframes</h3>
+        <p class="wireframes">
+          Wireframing is an essential process in my project as it allows me to
+          visualize and plan the layout and structure of the user interface. By
+          creating wireframes, I am able to map out the placement of key
+          elements, such as buttons, menus, and content sections, ensuring a
+          clear and intuitive design. These wireframes serve as a blueprint for
+          the development phase, providing a solid foundation for building an
+          effective and user-friendly interface.
+        </p>
+        <img src="../images/scan2.jpg" class="scan" />
+        <h3 class="headline">High Fidelity Design</h3>
+        <p class="high">
+          Upon completion of the wireframing process, I gained a clear vision of
+          the final concept for the mobile application. Subsequently, I
+          proceeded to implement various design elements, such as colors, icons,
+          and other visual components, onto MAZE. These additions further
+          enhanced the aesthetic appeal and user experience of the mobile
+          application, aligning it with the intended design direction.
+        </p>
+        <div class="flex-wrapper">
+          <img src="../images/Opening.svg" class="wrap" />
+          <img src="../images/planning.png" class="wrap" />
+          <img src="../images/lesson-tracker.png" class="wrap" />
+          <img src="../images/video calls.svg" class="wrap" />
+          <img src="../images/book.svg" class="wrap" />
+          <img src="../images/test.svg" class="wrap" />
+        </div>
+        <h3 class="headline">Reflection</h3>
+        <p class="reflection">
+          In this project, I had the opportunity to explore new UX techniques,
+          such as affinity mapping and 6-column grids, which I hadn't used
+          before. It was a bit challenging, but trying these new things helped
+          me learn and improve my skills in ux.
+        </p>
+      </div>
+    </div>
+    <div class="adjust">
+      <div class="last">See more work</div>
+      <div class="three-items">
+        <a class="levitate" href="../case-study-1/index.html"> Levitate</a>
+        <a class="boldy" href="../case-study-3/index.html"> Bold</a>
+        <a class="freshf" href="../case-study-4/index.html"> Freshfind</a>
+      </div>
+    </div>
+    <footer>
+      <a href="https://www.linkedin.com/in/azunaekundayo/" target="_blank">
+        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+      </a>
+      <a href="https://github.com/azunaeine" target="_blank">
+        <div class="icon"><i class="fa-brands fa-github"></i></div>
+      </a>
+      <a href="https://twitter.com/xxxazuna" target="_blank">
+        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+      </a>
+      <a href="mailto:azunaeine@gmail.com" target="_blank">
+        <div class="icon">
+          <i
+            class="fa-solid fa-envelope"
+            style="background: none; box-shadow: none"
+          ></i>
+        </div>
+      </a>
+      <div class="copyrighttext">
+        © Azuna Ekundayo <span class="year">2022</span>
+      </div>
+    </footer>
+    <script>
+      // update the year to the current year
+      // 1. grab the year span
+      const yearSpan = document.querySelector("span.year");
+      // 2. set the innerHTML = current year
+      const currentYear = new Date().getFullYear();
+      yearSpan.innerHTML = currentYear;
+    </script>
+    <script
+      src="https://kit.fontawesome.com/b85921a939.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../common/common-case-study-js.js"></script>
+  </body>
 </html>
