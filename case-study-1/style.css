@@ -956,6 +956,7 @@ p.test {
   }
   .bold {
     font-size: 21px;
+    line-height: 2.7rem;
   }
 
   .chatq,
