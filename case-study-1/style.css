@@ -148,6 +148,11 @@ a.hamburger-menu-nav-item {
   margin-top: 2em;
 }
 
+.green {
+  color: #0ad81dff;
+  font-weight: 700;
+}
+
 .intro {
   color: black;
   font-weight: 700;
