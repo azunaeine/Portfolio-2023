@@ -367,7 +367,10 @@ p.persona {
   font-style: italic;
   font-size: 1rem;
 }
-
+.open {
+  text-align: center;
+  font-size: 0.7rem;
+}
 .persona-b {
   margin-top: 2rem;
 }
@@ -647,6 +650,11 @@ p.test {
   #test2,
   #test3 {
     display: block;
+  }
+
+  .open {
+    text-align: center;
+    font-size: 0.9rem;
   }
 
   #special {
@@ -1062,5 +1070,9 @@ p.test {
 
   .gif {
     width: 25em;
+  }
+  .open {
+    text-align: center;
+    font-size: 1.1rem;
   }
 }
