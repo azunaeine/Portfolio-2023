@@ -29,6 +29,10 @@
   transform: scale(1.23) translateX(20px);
 }
 
+.response {
+  text-align: center;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
