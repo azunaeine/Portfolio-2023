@@ -29,7 +29,7 @@
   transform: scale(1.23) translateX(20px);
 }
 
-.response {
+p.response {
   text-align: center !important;
 }
 
