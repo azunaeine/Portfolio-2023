@@ -262,7 +262,7 @@ a.hamburger-menu-nav-item {
   padding: 1.75rem 2.8125rem 1.8125rem;
   border-radius: 0.75rem;
   background-color: black;
-  box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.5);
   -webkit-transition: box-shadow 350ms, -webkit-transform 350ms;
   transition: box-shadow 350ms, transform 350ms, -webkit-transform 350ms;
   color: #fff;
@@ -398,7 +398,7 @@ footer {
   color: white;
   padding-top: 15px;
   border-radius: 1.625rem;
-  box-shadow: 0 0.063rem 0.665rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.063rem 0.665rem 0 rgba(0, 0, 0, 0.5);
 }
 
 .two {
@@ -816,7 +816,7 @@ footer {
     padding-right: 29px;
     padding-left: 41px;
     border-radius: 20px;
-    box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.5);
     -webkit-transition-duration: 350ms, 350ms;
     transition-duration: 350ms, 350ms;
     color: #fff;
