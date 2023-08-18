@@ -105,6 +105,9 @@ a.hamburger-menu-nav-item {
   gap: 3em;
   margin-top: 2em;
 }
+body.menu-is-open {
+  overflow: hidden;
+}
 .skill-box {
   background-color: #fff;
   border-radius: 16px;
