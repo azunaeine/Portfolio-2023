@@ -217,7 +217,7 @@ p {
 }
 
 .btn-view {
-  background: rgba(14, 30, 216, 1);
+  background-color: rgba(14, 30, 216, 1);
   border: none;
   padding: 1em;
   border-radius: 31px;
