@@ -223,7 +223,7 @@ p {
 }
 
 .btn-view {
-  background-color: (10, 216, 29, 1);
+  background-color: rgba(10, 216, 29, 1);
   border: none;
   padding: 1em;
   border-radius: 31px;
