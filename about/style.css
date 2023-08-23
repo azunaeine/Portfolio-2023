@@ -126,7 +126,7 @@ body.menu-is-open {
   padding: 28px 52px;
   border-radius: 20px;
   background-color: #fff;
-  box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.2);
   color: #000000;
   font-size: 20px;
   line-height: 1em;
@@ -136,6 +136,7 @@ body.menu-is-open {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  border: solid 1px black;
 }
 
 h6 {
