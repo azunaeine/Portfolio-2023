@@ -209,6 +209,10 @@ p {
   font-weight: 400;
 }
 
+.visual-row li {
+  font-size: 18px;
+}
+
 .btn-view {
   background: rgba(14, 30, 216, 1);
   border: none;
@@ -233,7 +237,7 @@ a {
   text-decoration: none;
 }
 
-.visaul-row li {
+.visual-row li {
   line-height: 1.5em;
   font-size: 18px;
 }
@@ -269,6 +273,10 @@ p.problem {
   .landfresh {
     width: 27em;
   }
+
+  .visual-row li {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -295,6 +303,10 @@ p.problem {
   p.reflection {
     font-size: 1.5rem;
     line-height: 3rem;
+  }
+
+  .visual-row li {
+    font-size: 18px;
   }
 
   .btn-view {
