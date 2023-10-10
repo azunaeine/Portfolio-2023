@@ -265,7 +265,7 @@ a {
   text-decoration: none;
 }
 
-.visaul-row li {
+.visual-row li {
   line-height: 1.5em;
   font-size: 18px;
 }
@@ -287,10 +287,6 @@ p.problem {
 .problem {
   font-size: 1.5rem;
   line-height: 4rem;
-}
-
-.visual-row li {
-  font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
