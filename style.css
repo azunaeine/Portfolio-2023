@@ -416,8 +416,8 @@ footer {
   top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 16em;
-  height: 15em;
+  width: 7em;
+  height: 12em;
 }
 
 .three {
@@ -501,9 +501,8 @@ footer {
 }
 
 .title-one {
-  text-transform: uppercase;
   font-size: 1.563rem;
-  color: #0e1ed8;
+  color: #f1a30c;
 }
 
 .title-two {
@@ -663,8 +662,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30em;
-    height: 27em;
+    width: 9em;
+    height: 19em;
   }
 
   .nav-bar {
@@ -722,8 +721,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 52em;
-    height: 46em;
+    width: 14em;
+    height: 30em;
   }
 
   .shadow {
