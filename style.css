@@ -404,7 +404,7 @@ footer {
 .two {
   width: 6.25rem;
   height: 6.25rem;
-  background: #f1a30c;
+  background: #0e1ed8ff;
   border-radius: 50%;
   margin: auto;
   display: inline-block;
@@ -416,7 +416,7 @@ footer {
   top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 7em;
+  width: 15em;
   height: 12em;
 }
 
@@ -502,12 +502,12 @@ footer {
 
 .title-one {
   font-size: 1.563rem;
-  color: #f1a30c;
+  color: #0e1ed8ff;
 }
 
 .title-two {
   font-size: 1.563rem;
-  color: #d2de32;
+  color: #f4e100;
 }
 
 .title-three {
@@ -574,8 +574,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 21em;
-    height: 17em;
+    width: 25em;
+    height: 19em;
   }
 
   .four img {
@@ -662,8 +662,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 9em;
-    height: 19em;
+    width: 29em;
+    height: 29em;
   }
 
   .nav-bar {
@@ -721,8 +721,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 14em;
-    height: 30em;
+    width: 53em;
+    height: 46em;
   }
 
   .shadow {
@@ -741,9 +741,9 @@ footer {
     position: absolute;
     top: 48%;
     left: 50%;
-    transform: translate(-50%, -44%);
-    width: 38em;
-    height: 32em;
+    transform: translate(-50%, -50%);
+    width: 40em;
+    height: 30em;
   }
 
   .square {
